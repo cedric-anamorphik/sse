@@ -1,0 +1,95 @@
+{
+	"people":[  
+		{  
+		 "name":"Derrick Pitts",
+		 "title":"NASA Solar System Ambassador",
+		 "img":"images/galpic_dpitts.png",
+		 "url":"/",
+		 "group":""
+		},
+		{  
+		 "name":"Fran Baganel",
+		 "title":"Professor",
+		 "img":"images/galpic_fbaganel.png",
+		 "url":"/",
+		 "group":""
+		},
+		{  
+		 "name":"David Kring",
+		 "title":"Senior Staff Scientist",
+		 "img":"images/galpic_dkring.png",
+		 "url":"/",
+		 "group":""
+		},
+		{  
+		 "name":"Rosaly Lopes",
+		 "title":"Planetary Scientist",
+		 "img":"images/galpic_rlopes.png",
+		 "url":"/",
+		 "group":""
+		},
+		{  
+		 "name":"Art B. Chmielewski",
+		 "title":"Project Manager",
+		 "img":"images/galpic_achmielewski.png",
+		 "url":"/",
+		 "group":""
+		},
+		{  
+		 "name":"Keri Bean",
+		 "title":"Science Planner",
+		 "img":"images/galpic_kbean.png",
+		 "url":"/",
+		 "group":""
+		},
+		{  
+		 "name":"Mehdi Benna",
+		 "title":"Planetary Scientist",
+		 "img":"images/galpic_mbenna.png",
+		 "url":"/",
+		 "group":""
+		},
+		{  
+		 "name":"Tanya Harrison",
+		 "title":"Planetary Scientist",
+		 "img":"images/galpic_tharrison.png",
+		 "url":"/",
+		 "group":""
+		},
+		{  
+		 "name":"Derrick Pitts",
+		 "title":"NASA Solar System Ambassador",
+		 "img":"images/galpic_dpitts.png",
+		 "url":"/",
+		 "group":""
+		},
+		{  
+		 "name":"Derrick Pitts",
+		 "title":"NASA Solar System Ambassador",
+		 "img":"images/galpic_dpitts.png",
+		 "url":"/",
+		 "group":""
+		},
+		{  
+		 "name":"Fran Baganel",
+		 "title":"Professor",
+		 "img":"images/galpic_fbaganel.png",
+		 "url":"/",
+		 "group":""
+		},
+		{  
+		 "name":"David Kring",
+		 "title":"Senior Staff Scientist",
+		 "img":"images/galpic_dkring.png",
+		 "url":"/",
+		 "group":""
+		},
+		{  
+		 "name":"Rosaly Lopes",
+		 "title":"Planetary Scientist",
+		 "img":"images/galpic_rlopes.png",
+		 "url":"/",
+		 "group":""
+		}
+	]
+}

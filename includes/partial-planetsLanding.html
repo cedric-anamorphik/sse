@@ -1,0 +1,139 @@
+<style>body{background-color: #000}#header{background-image: url("images/SSE_L2_Purple_TopBannerGlow.svg")}.footer>.container{background-image: url("images/SSE_L2_Purple_FooterGlow.svg")}</style>
+<div id="gallery-wrapper" class="navbar">
+	<!-- Filter Panel -->
+	<div id="side-panel">
+		<div id="filter-btn-wrapper">
+			<div id="filter-panel-wrapper">
+				<a href="javascript: cfp();" class="panel-btn" id="opener">FILTERS</a>
+			</div>
+		</div>
+		<div id="celestial-panel-wrapper">
+			<div id="celestial-filterpanel" class="visible">
+				<a href="javascript: ccfp();" id="close-btn"><img src="images/btn_filter_close.png"/></a>
+				<div class="celestialFilters">
+					<p class="section-title">Filters</p>
+					<!-- Celestial filter options -->
+					<form>
+						<input type="checkbox" id="cb1" name="cb" value="" data-group="active-exp" onchange="checkState(this)">
+							<label for="cb1">Active Exploration</label><br>
+						<input type="checkbox" id="cb2" name="cb" value="" data-sort="size" onchange="sortItOut(this)">
+							<label for="cb2">Size</label>
+						<input type="checkbox" id="cb3" name="cb" value="" onchange="hideGalHeaders(this)">
+							<label for="cb3">Hide Categories</label>
+					</form>
+					<!-- sse legend -->
+					<div id="sseLegend" ng-controller="PlanetGalCtrl" >
+						<div class="section-title">
+							<p>Map Selector:</p>
+						</div>
+						<div id="legend">
+							<table>
+								<tbody>
+									<tr ng-repeat="legend in sseLegend" data-id="{{$index+1}}">
+										<td class="legend-icons">
+											<a ng-href="{{legend.url}}" style="background-image:{{legend.img}}" onmouseover="iconHover(this)" onmouseout="iconStandard(this)">
+												<div class="icon"><img ng-src="{{legend.img}}"/></div>
+											</a>
+										</td>
+										<td class="legend-list">
+											<a ng-href="{{legend.url}}" onmouseover="itemHover(this)" onmouseout="itemStandard(this)">
+												<p class="list-item">{{legend.name}}</p>
+											</a>
+										</td>
+										<td class="legend-sidelabel">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="sidelabel-txt">
+								<p class="txt-sse">OUR SOLAR SYSTEM</p>
+								<a href="#"><p class="txt-beyond">BEYOND</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Gallery Sections -->
+	<div id="sseGallery" class="gal-container">
+		<div class="navbar gal-header" id="gallery-sectionbar">
+				<p class="gallery-section-title" style="z-index: 3">Planets</p>
+				<div class="socialBar">
+					<a href="#" id="icon-facebook"><img src="images/20x20_facebook.png" class="social-icons"/></a>
+					<a href="#" id="icon-twitter"><img src="images/20x20_twitter.png" class="social-icons"/></a>
+					<a href="#" id="icon-youtube"><img src="images/20x20_youtube.png" class="social-icons"/></a>
+					<a href="#" id="icon-share"><img src="images/20x20_share.png" class="social-icons"/></a>
+					<a href="#" id="icon-email"><img src="images/20x20_email.png" class="social-icons"/></a>
+					<a href="#" id="icon-print"><img src="images/20x20_print.png" class="social-icons"/></a>
+				</div>
+		</div>
+		<!-- Planets section -->
+		<div ng-controller="PlanetGalCtrl" class="navbar img-gallery shuffle-grid" id="planets-gallery">
+				<div ng-repeat="planet in galleryPlanets" data-section="planets-gallery" data-size="{{planet.size}}" data-id="{{$index+1}}" class="item shuffle-item col-md-3 col-sm-4 col-xs-6 gal-pic celestial" data-groups='["{{planet.group}}"]'>
+					<a href="#/{{planet.url}}">
+						<img ng-src="{{planet.img}}" class="img-responsive"/>
+						<p class="gal-name">{{planet.name}}</p>
+					</a>
+				</div>
+		</div>
+		<!-- Small Bodies section -->
+		<div class="navbar gal-header" id="gallery-sectionbar">
+				<a><p class="gallery-section-title">Small Bodies</p></a>
+		</div>
+		<div ng-controller="PlanetGalCtrl" class="navbar img-gallery shuffle-grid" id="smallBodies-gallery">
+			<div ng-repeat="smallBody in gallerySmallBodies"  class="item shuffle-item col-md-3 col-sm-4 col-xs-6 gal-pic celestial"  data-section="smallBodies-gallery" data-size="{{smallBody.size}}" data-id="{{$index+1}}" data-groups='["{{smallBody.group}}"]'>
+				<a href="#/{{smallBody.url}}">
+					<img ng-src="{{smallBody.img}}" class="img-responsive"/>
+					<p class="gal-name">{{smallBody.name}}</p>
+				</a>
+			</div>
+		</div>
+		<!-- Moons section -->
+		<div class="navbar gal-header" id="gallery-sectionbar">
+				<p class="gallery-section-title">Moons</p>
+		</div>
+		<div ng-controller="PlanetGalCtrl" class="navbar img-gallery shuffle-grid" id="moons-gallery">
+				<div ng-repeat="moon in galleryMoons"  class="item col-md-3 col-sm-4 col-xs-6 gal-pic"  data-section="moons-gallery" data-size="{{moon.size}}" data-id="{{$index+1}}" data-groups='["{{moon.group}}"]'>
+					<a href="#/{{moon.url}}">
+						<img ng-src="{{moon.img}}" class="img-responsive"/>
+						<p class="gal-name">{{moon.name}}</p>
+					</a>
+				</div>
+		</div>
+		<!-- Regions section -->
+		<div class="navbar gal-header" id="gallery-sectionbar">
+				<p class="gallery-section-title">Regions</p>
+		</div>
+		<div ng-controller="PlanetGalCtrl" class="navbar img-gallery shuffle-grid" id="regions-gallery">
+				<div ng-repeat="region in galleryRegions"  class="item col-md-3 col-sm-4 col-xs-6 gal-pic" data-section="regions-gallery" data-size="{{region.size}}" data-id="{{$index+1}}" data-groups='["{{region.group}}"]'>
+					<a href="#/{{region.url}}">
+						<img ng-src="{{region.img}}" class="img-responsive"/>
+						<p class="gal-name">{{region.name}}</p>
+					</a>
+				</div>
+		</div>
+		<!-- Stars section -->
+		<div class="navbar gal-header" id="gallery-sectionbar">
+				<p class="gallery-section-title">Stars</p>
+		</div>
+		<div ng-controller="PlanetGalCtrl" class="navbar img-gallery shuffle-grid" id="stars-gallery">
+				<div ng-repeat="star in galleryStars"  class="item col-md-3 col-sm-4 col-xs-6 gal-pic"  data-section="stars-gallery" data-size="{{star.size}}" data-id="{{$index+1}}" data-groups='["{{star.group}}"]'>
+					<a href="#/{{star.url}}">
+						<img ng-src="{{star.img}}" class="img-responsive"/>
+						<p class="gal-name">{{star.name}}</p>
+					</a>
+				</div>
+		</div>
+	</div>
+	<!-- Planet Comparitive Info Section -->
+	<div class="container" id="gallery-sectionbar2">
+		<div id="galleryInfoWrapper">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<button class="galbtn-blue-L">Compare the Planets</button>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<button class="galbtn-blue-R">What is a Planet?</button>
+			</div>
+	</div>
+</div>

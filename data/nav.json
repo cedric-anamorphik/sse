@@ -1,0 +1,130 @@
+{
+	"section": [
+		{
+			"sectionName": "Home",
+			"sectionTitle": "Home",
+			"sectionUrl": "/"
+		},
+		{
+			"sectionName": "Planets",
+			"sectionTitle": "Planets",
+			"sectionUrl": "planets/"
+		},
+		{
+			"sectionName": "Missions",
+			"sectionTitle": "Missions",
+			"sectionUrl": "missions/"
+		},
+		{
+			"sectionName": "People",
+			"sectionTitle": "People",
+			"sectionUrl": "people/"
+		},
+		{
+			"sectionName": "News",
+			"sectionTitle": "News & Events",
+			"sectionUrl": "news/",
+			"sub": [
+				{
+					"pageName": "archive",
+					"pageTitle": "News Archive",
+					"pageUrl": "news/archive.cfm"
+				},
+				{
+					"pageName": "calendars",
+					"pageTitle": "Calendars",
+					"pageUrl": "news/calendars.cfm"
+				},
+				{
+					"pageName": "whatsup",
+					"pageTitle": "What's Up",
+					"pageUrl": "news/whatsup.cfm"
+				},
+				{
+					"pageName": "column1",
+					"pageTitle": "Columnist: Dr. James Green",
+					"pageUrl": "news/column-archive.cfm?AuthorID=1"
+				},
+				{
+					"pageName": "column2",
+					"pageTitle": "10 Things...",
+					"pageUrl": "news/column-archive.cfm?AuthorID=2"
+				},
+				{
+					"pageName": "column3",
+					"pageTitle": "Celestial Wonderings",
+					"pageUrl": "news/column-archive.cfm?AuthorID=3"
+				},
+				{
+					"pageName": "faq",
+					"pageTitle": "FAQ",
+					"pageUrl": "faq/index.cfm"
+				},
+				{
+					"pageName": "breaking",
+					"pageTitle": "Breaking News",
+					"pageUrl": "news/breaking"
+				},
+				{
+					"pageName": "greatshots",
+					"pageTitle": "Great Shots Blog",
+					"pageUrl": "news/greatshots"
+				},
+				{
+					"pageName": "special_events",
+					"pageTitle": "Special Events",
+					"pageUrl": "news/special_events",
+					"sub": [
+						{
+							"pageName": "special_events.50th",
+							"pageTitle": "50th Anniversary of Solar System Exploration",
+							"pageUrl": "50th/index.cfm"
+						},
+						{
+							"pageName": "special_events.transitofvenus",
+							"pageTitle": "Transit of Venus",
+							"pageUrl": "news/transitofvenus"
+						},
+						{
+							"pageName": "special_events.msl_landing",
+							"pageTitle": "Mars Landing 2012",
+							"pageUrl": "news/msl_landing"
+						},
+						{
+							"pageName": "special_events.the_truth_about_2012",
+							"pageTitle": "2012: Doom or Hype?",
+							"pageUrl": "news/the_truth_about_2012"
+						}
+					]
+				},
+				{
+					"pageName": "challengeform",
+					"pageTitle": "Observing Challenge Entry Form",
+					"pageUrl": "news/challengeform"
+				}
+			]
+		},
+		{
+			"sectionName": "Galleries",
+			"sectionTitle": "Galleries",
+			"sectionUrl": "galleries/"
+		},
+		{
+			"sectionName": "History",
+			"sectionTitle": "History",
+			"sectionUrl": "history/"
+		},
+		{
+			"sectionName": "Kids",
+			"sectionTitle": "Kids",
+			"sectionUrl": "kids/"
+		},
+		{
+			"sectionName": "Educ",
+			"sectionTitle": "Education",
+			"sectionUrl": "educ/"
+		}
+	]
+}
+
+	

@@ -1,0 +1,25 @@
+<div ng-class="widgets.sidebar_nav.container.classes" role="tabpanel" ng-show="widgets.sidebar_nav.tabs.primary.data.length > 0">
+<div class="sidebar-second-col-wrapper clearfix">
+<div class="content-wrapper clearfix">
+
+  <tabset>
+    <tab heading="{{widgets.sidebar_nav.tabs.primary.header}}" class="tab-header first">
+      <ul>
+        <li ng-repeat="navItem in widgets.sidebar_nav.tabs.primary.data">
+          <a href="#/{{navItem.url}}">{{navItem.title}}</a>
+        </li>
+      </ul>
+    </tab>
+    <tab heading="{{widgets.sidebar_nav.tabs.secondary.header}}" class="tab-header last">
+      <ul>
+        <li ng-repeat="navItem in widgets.sidebar_nav.tabs.secondary.data">
+          <!-- <a ui-sref="{{navItem.state}}({ planet_id: '{{navItem.id}}' })" ui-sref-opts="{reload: true}">{{navItem.title}}</a> -->
+          <a href="#/planets/{{navItem.pageName}}">{{navItem.pageTitle}}</a>
+        </li>
+      </ul>
+    </tab>
+  </tabset>
+
+</div>
+</div>
+</div>

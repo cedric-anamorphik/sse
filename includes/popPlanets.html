@@ -1,0 +1,18 @@
+<div id="pop-wrapper">
+	<div class="hdr-pop">
+		<div class="hnl f19 light-blue">Planets</div>
+	</div>
+	<img ng-src="{{popPlanetsUrl}}"/>
+	<div class="pop-list">
+		<div ng-repeat="planet in planets" class="item">
+			<a href="#/{{planet.pageUrl}}" ng-mouseover="updatePopImg($index)">
+				<p class="pop-name hnl f14 ro-white light-purple2">&nbsp;&nbsp;{{$index+1}}.&emsp;{{planet.name}}</p>
+			</a>
+		</div>
+	</div>
+	<div class="sb-more">
+		<a href="#/planets/">
+			<p>More</p>
+		</a>
+	</div>
+</div>

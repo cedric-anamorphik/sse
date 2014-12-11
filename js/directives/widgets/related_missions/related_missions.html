@@ -1,0 +1,11 @@
+<div id="related-missions-section" ng-show="widgets.related_missions.data.missions.length > 0" ng-class="widgets.related_missions.container.classes">
+	<div class="sidebar-second-col-wrapper">
+		<div class="content-wrapper">
+			<div class="cfont1 title">Missions to {{widgets.related_missions.data.title}}</div>
+			<a class="cf6 related-missions-more" href="#/{{widgets.related_missions.data.url}}">more<img src="images/more_arrow.png"/></a>
+			<ul id="mission-list">
+				<li ng-repeat="mission in widgets.related_missions.data.missions"><a href="#/{{mission.url}}">{{mission.title}}</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

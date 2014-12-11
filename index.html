@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html ng-app="sse">
+	<head>
+		<meta charset="utf-8">
+		<title>Solar System Exploration</title>
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-resource.js"></script>
+		<script src="js/angular-ui-router.min.js"></script>
+		<script src="js/angular-sanitize.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="js/angular-touch.js"></script>
+		<script src="js/jquery.shuffle.modernizr.js"></script>
+		<script src="js/modenizr.js"></script>
+		<script src="js/flowtype.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/blur.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/models/angular-timer.min.js"></script>
+
+		<script type="text/javascript" src="js/libraries/lodash/lodash.js"></script>
+		<script type="text/javascript" src="js/libraries/lodash/angular-lodash.js"></script>
+		<script type="text/javascript" src="js/libraries/angular-ui-bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+		<!-- widgets -->
+		<link rel="stylesheet" type="text/css" href="css/widgets.css" />
+		<script type="text/javascript" src="js/services/AppDataFactory.js"></script>
+		<script type="text/javascript" src="js/controllers/controllers.js"></script>
+		<script type="text/javascript" src="js/controllers/PageController.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/sidebar/sidebar.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/footer/footer.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/related_facts/related_facts.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/related_images/related_images.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/related_missions/related_missions.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/learning_focus/learning_focus.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/credits_info/credits_info.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/featured_carousel/featured_carousel.js"></script>
+		<link href="js/directives/widgets/featured_carousel/featured_carousel.css" rel="stylesheet">
+		<script type="text/javascript" src="js/directives/widgets/profiles/profiles.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/related_events/related_events.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/related_news/related_news.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/related_stories/related_stories.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/sidebar_nav/sidebar_nav.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/timeline/timeline.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/planetmoons/planetmoons.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/quick_links/quick_links.js"></script>
+		<script type="text/javascript" src="js/directives/widgets/vital_stats/vital_stats.js"></script>
+		<!-- END widgets -->
+		<!-- Slick Carousel -->
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="slick/slick.js"></script>
+		<script src="slick/dist/slick.js"></script>
+		<!-- END Slick Carousel -->
+		<script type="text/javascript">
+        document.write('<base href="#' + window.location.pathname + '" /> ');
+        </script>
+	</head>
+
+	<body>
+	<!-- HEADER-->
+	<div class="navbar" id="header-wrapper">
+		<div id="header" class="conatiner navbar-inverse " role="navigation">
+			<div class="navbar-header col-sm-5 col-xs-12">
+				<!-- SWITCH the svg to priority and the png as the fallback -->
+				<a class="navbar-brand col-6" href="#/"><img src="images/nasa_logo.png" onerror="this.onerror=null; this.src='images/nasa_logo.svg'"/></a>
+				<div id="logo-title" class="col-6 cf16">National Aeronautics and<br>Space Administration</div>
+				<div class="cf15 mobile-hdr-title">Solar System Exploration</div>
+			</div>
+			<div class="col-sm-7 col-xs-12 sse-hdr">
+				<div id="user-menu">
+					<form name="input" method="get" id="search-form">
+						<input type="text" name="search-field" placeholder="Search">
+					</form>
+					<a class="btn-search" href=""><img src="images/button_search.png"/></a>
+					<a class="btn-mainmenu" href="javascript: mm();"><img src="images/button_menu.png"/></a>
+					<div id="main-menu-wrapper">
+					<a href="javascript: mm();" id="close-btn"><img src="images/btn_filter_close.png"/></a>
+						<div id="menu-panel">
+							<div id="menu" ng-controller="MainNavCtrl">
+								<div class="menu-item" ng-repeat="menu in mainMenu">
+									<div id="menu-selection">
+										<div class="arrow" data-toggle="collapse" data-target="#{{menu.sectionName}}-tgt" onclick="mis(this)"></div>
+										<input type="button" class="btn btn-primary" data-toggle="collapse" data-target="#{{menu.sectionName}}-tgt" data-url="{{menu.sectionUrl}}" onmouseover="mif(this)" onmouseout="miu(this)" onclick="mis(this)" value="{{menu.sectionTitle}}">
+									</div>
+									<ul ng-show="{{menu.sub}}" id="{{menu.sectionName}}-tgt" class="collapse">
+										<a href="#/{{menu.sectionUrl}}" onclick="mm()" data-toggle="collapse" data-target="#{{menu.sectionName}}-tgt">Main</a>
+										<li ng-repeat="sub in menu.sub">
+											<a ng-href="#/{{sub.pageUrl}}" onclick="mm()" data-toggle="collapse" data-target="#{{menu.sectionName}}-tgt">
+												<p title="{{sub.pageTitle}}">{{sub.pageTitle}}</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cf15 sse-hdr-title">Solar System Exploration</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SIDEBAR-FIRST -->
+	<div ui-view="sidebar-first" id="sidebarFirst">
+	</div>
+	<!-- MAIN CONTENT -->
+	<div ui-view="content">
+	</div>
+	<div ui-view>
+	</div>
+	<footer></footer>
+	</body>
+</html>

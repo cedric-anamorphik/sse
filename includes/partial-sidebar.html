@@ -1,0 +1,143 @@
+<!-- SIDEBAR PANEL -->
+<div ng-controller="SSEdata">
+	<div class="sidebar">
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<!-- Sidebar navigation -->
+		<div class="sidebar-first-nav" ng-controller="SBNavCtrl">
+			<div class="sb1-nav"><a href=""><img src="images/button_timeline.png" scroller="factoids-wrapper" ng-click="doStuff($event.target)"/></a></div>
+			<div class="sb1-nav"><a href=""><img src="images/button_trending.png" scroller="popular-wrapper" ng-click="doStuff($event.target)"/></a></div>
+			<div class="sb1-nav"><a href=""><img src="images/button_people.png" scroller="people-wrapper" ng-click="doStuff($event.target)"/></a></div>
+			<div class="sb1-nav"><a href=""><img src="images/button_social.png" scroller="social-wrapper" ng-click="doStuff($event.target)"/></a></div>
+		</div>
+		<!-- Factoids section -->
+		<div ng-controller="FactoidsCarouselCtrl">
+			<div id="factoids-wrapper">
+			<carousel interval="myInterval">
+			  <slide>				
+				<table class="factoid-table" >
+					<tr>
+						<td class="factoid-fact hnb f19 white">{{ data.ssPlanets }}</td>
+						<td class="factoid-label hnl f17 light-purple">Planets</td>
+					</tr>
+					<tr>
+						<td class="factoid-fact hnb f19 white">{{ data.ssKnownMoons }}</td>
+						<td class="factoid-label hnl f17 light-purple">Known Moons</td>
+					</tr>
+					<tr>
+						<td class="factoid-fact hnb f19 white">{{ data.ssDwarfPlanets }}</td>
+						<td class="factoid-label hnl f17 light-purple">Dwarf Planets</td>
+					</tr>
+					<tr>
+						<td class="factoid-fact hnb f19 white">{{ data.ssAsteroids }}</td>
+						<td class="factoid-label hnl f17 light-purple">Asteroids</td>
+					</tr>
+					<tr>
+						<td class="factoid-fact hnb f19 white">{{ data.ssComets }}</td>
+						<td class="factoid-label hnl f17 light-purple">Comets</td>
+					</tr>
+					<tr>
+						<td class="factoid-fact hnb f19 white">{{ data.ssOnDeck }}</td>
+						<td class="factoid-label hnl f17 light-purple">On Deck</td>
+					</tr>
+				</table>
+			  </slide>
+			  <slide>
+				<table class="factoid-table">
+					<tr>
+						<td class="factoid-fact hnb f19 white">{{ data.mInFlight }}</td>
+						<td class="factoid-label hnl f17 light-purple">In Flight</td>
+					</tr>
+					<tr>
+						<td class="factoid-fact hnb f19 white">{{ data.mCompleted }}</td>
+						<td class="factoid-label hnl f17 light-purple">Completed</td>
+					</tr>
+					<tr>
+						<td class="factoid-fact hnb f19 white">{{ data.mInDevelopment }}</td>
+						<td class="factoid-label hnl f17 light-purple">Development</td>
+					</tr>
+					<tr>
+						<td class="factoid-fact hnb f19 white">{{ data.mConcepts }}</td>
+						<td class="factoid-label hnl f17 light-purple">Concepts</td>
+					</tr>
+					<tr>
+						<td class="factoid-fact hnb f19 white">{{ data.mOnDeck }}</td>
+						<td class="factoid-label hnl f17 light-purple">On Deck</td>
+					</tr>
+				</table>
+			  </slide>
+			  <slide>
+				<div>
+					<p class="hnl f16 light-purple" id="countdownSubhead">{{data.cSubhead}}</p>
+					<timer end-time="1420070400000" class="cf1">
+						<table class="factoid2" id="countdownTable">
+							<tr>
+								<td class="hnb f19 white">{{days}}</td>
+								<td class="hnb f19 white">{{hours}}</td>
+								<td class="hnb f19 white">{{minutes}}</td>
+								<td class="hnb f19 white">{{seconds}}</td>
+							</tr>
+							<tr>
+								<td class="hnl f17 light-purple">days</td>
+								<td class="hnl f17 light-purple">hours</td>
+								<td class="hnl f17 light-purple">minutes</td>
+								<td class="hnl f17 light-purple">seconds</td>
+							</tr>
+						</table>
+					</timer>
+				</div>
+				<div ng-controller='TimeCtrl' id="sidebarClock">
+					<p class="hnm f16 white">{{ clock | date:'mediumTime'}}<span class="hnm f16 light-purple"> - Current Time</span></p>
+				</div>
+			  </slide>
+			</carousel>
+			</div>
+		</div>
+		<!-- Most Popular section -->
+		<div ng-controller="PopCtrl" id="popular-wrapper">
+			<div class="hdr-popular">
+				<div class="hnb f18 white">Most Popular</div>
+			</div>
+			<slick  dots="false" infinite="false" arrows="true" init-onload="true" data="planets" id="slick-popular">
+				<div class="item"><popPlanets></popPlanets></div>
+				<div class="item"><popMissions></popMissions></div>
+				<div class="item"><popImages></popImages></div>
+				<div class="item"><popDownloads></popDownloads></div>
+			</slick>
+		</div>
+		<!-- People section -->
+		<div id="people-wrapper">
+			<div class="hdr-people">
+				<div class="hnb f18 white">People</div>
+			</div>
+			<slick dots="false" infinite="true" arrows="true" slides-to-show="3" slides-to-scroll="1" data="people" init-onload="true" id="slick-people" async2>
+					<div ng-repeat="profile in people" class="item">
+						<img ng-src="{{profile.imgUrl}}" class="profile-img"/>
+						<p class="profile-name hnl f14">{{profile.name}}</p>
+						<p class="profile-title hnl f10">{{profile.title}}</p>
+						<!-- <p class="cf4">{{profile.quote}}</p> -->
+					</div>
+			</slick>
+			<div class="sb-more">
+				<a href="#/people/">
+					<p>More</p>
+				</a>
+			</div>
+		</div>
+		<!-- Social section -->
+		<div id="social-wrapper" ng-controller='FeedCtrl'>
+			<div ng-repeat="feed in feeds | orderBy:'title'">
+				<div class="hdr-social">
+					<div class="cf1 social-hdr">Social Space</div>
+					<div class="social-icons-wrapper">
+						<div class="social-icon"><img src="images/20x20_blue_facebook.png"/></div>
+						<div class="social-icon"><img src="images/20x20_blue_twitter.png"/></div>
+						<div class="social-icon"><img src="images/20x20_blue_youtube.png"/></div>
+					</div>
+				</div>
+				<p class="social-list-sidebar"><span ng-repeat="item in feed.entries">
+				<a href="{{item.link}}" class="social-title" target="_blank">{{item.title}}</a> (<span class="social-date">{{item.publishedDate | date:'d-MM-yyyy HH:mm'}}</span>)<br />
+				</span></p>
+			</div>
+		</div>
+	</div>
+</div>

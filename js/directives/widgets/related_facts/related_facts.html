@@ -1,0 +1,15 @@
+<div id="related-facts-section" class="widgets" ng-show="widgets.related_facts.length > 0">
+<div class="sidebar-second-col-wrapper">
+<div class="content-wrapper">
+
+	<div class="cf5">Did you know?</div>
+    <!-- <slick dots="false" infinite="true" arrows="true" slides-to-show="1" slides-to-scroll="1" data="widgets.related_facts" control="slickHandle" init-onload="true" id="slick_relatedFacts"> -->
+          <div ng-repeat="fact in widgets.related_facts" class="item">
+            <div class="related-fact-content" id="relatedFacts">{{fact.content}}</div>
+            <div class="cf6 related-fact-more clearfix"><span class="more-link"><a href="#/{{fact.url}}" class="cfont11">more facts<img src="images/more_arrow.png" class="arrow-indicator"></a></span></div>
+        </div>
+    <!-- </slick> -->
+
+</div>
+</div>
+</div>

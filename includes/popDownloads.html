@@ -1,0 +1,16 @@
+<div id="pop-wrapper">
+	<div class="hdr-pop">
+		<div class="hnl f19 light-blue">Downloads</div>
+	</div>
+	<img ng-src="{{popDownloadsUrl}}"/>
+	<div class="pop-list">
+		<div ng-repeat="download in downloads" class="item">
+			<p ng-mouseover="updatePopImg($index)" class="pop-name hnl f14 ro-white light-purple2">&nbsp;&nbsp;{{$index+1}}.&emsp;{{download.name}}</p>
+		</div>
+	</div>
+	<div class="sb-more">
+		<a href="#/downloads">
+			<p>More</p>
+		</a>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+<div id="related-stories" class="page-related-stories cf11 col-xs-6"  ng-show="widgets.related_stories.length > 0">
+	<div class="col-wrapper">
+		<div class="related-stores-content-wrapper">
+			<div class="cf8 title">Related Stories</div>
+			<a class="cf6 related-missions-more" href="/news">more<img src="images/more_arrow.png"/></a>
+        <ul>
+          <li ng-repeat="story in widgets.related_stories"><a href="#/{{story.url}}" class="cf12">{{story.title}}</a></li>
+        </ul>
+		</div>
+	</div>
+</div>

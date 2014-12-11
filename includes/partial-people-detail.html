@@ -1,0 +1,38 @@
+<style>body{background-color: #000;}</style>
+<div class="container page people" id="page-people-detail">
+	<div ng-class="page.css.content" id="pageContent">
+    <div class="main-content-wrapper">
+    <div class="main-content-header clearfix">
+		<div class="featured">
+		<h1 class="story-section-title">People</h1>
+		<h2 class="story-title cfont9"><strong>{{page.data.title}}</strong>: {{page.data.main.featuredposition}}</h2>
+		<div class="image-wrapper">
+		<img src="{{page.data.main.featureImage}}"  />
+		</div>
+		<div class="cfont14 caption">{{page.data.main.featureCaption}}</div>
+		</div>
+		</div> <!-- /header  -->
+		<div class="main-content-wrapper-inner">
+		<div class="cf14" ng-bind-html="page.data.main.content"></div>
+		<div id="feature-credits" class="clearfix">
+<!-- 			<div class="page-related-stories cf11 col-xs-6" ng-show="page.data.related_stories.length > 0">
+				<div class="cf11" style="font-weight: bold;">Related Stories</div>
+				<ul>
+					<li ng-repeat="story in page.data.related_stories"><a shref="{{story.url}}" class="cf12">{{story.title}}</a></li>
+				</ul>
+			</div>-->
+			<related-stories></related-stories>
+			<div class="col-xs-6 cf13" id="page-credits">
+				<div>Last Updated: {{page.data.update_date}}</div>
+			</div>
+		</div> <!-- /feature-credits -->
+		</div> <!-- /wrapper-inner -->
+		</div> <!-- /content-wrapper -->
+	</div>
+		<div ng-class="page.css.sidebar" id="sidebar-second" ng-show="page.hasSidebar==true">
+			<profiles></profiles>
+			<learning-focus></learning-focus>
+			<related-missions no-bottom></related-missions>
+			<related-images></related-images>
+		</div>
+</div>

@@ -1,0 +1,16 @@
+<div id="pop-wrapper">
+	<div class="hdr-pop">
+		<div class="hnl f19 light-blue">Missions</div>
+	</div>
+	<img ng-src="{{popMissionsUrl}}"/>
+	<div class="pop-list">
+		<div ng-repeat="mission in missions" class="item">
+			<p ng-mouseover="updatePopImg($index)" class="pop-name hnl f14 ro-white light-purple2">&nbsp;&nbsp;{{$index+1}}.&emsp;{{mission.name}}</p>
+		</div>
+	</div>
+	<div class="sb-more">
+		<a href="#/missions/">
+			<p>More</p>
+		</a>
+	</div>
+</div>

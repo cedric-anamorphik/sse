@@ -1,0 +1,28 @@
+<div id="related-images-section" ng-show="widgets.related_images.data.images.length > 0" class="widgets clearfix">
+	<div class="sidebar-second-col-wrapper clearfix">
+		<div class="related-images-content-wrapper clearfix">
+			<div class="related-images-header-wrapper clearfix">
+			<div class="related-images-title pull-left" ng-bind-html="widgets.related_images.header"></div>
+			<a class="cf6 related-images-more" href="#">more<img src="images/more_arrow.png"/></a>
+			</div> <!-- /header-wrapper -->
+			<div id="related-images-list">
+				<div class="featured-image">
+					<div class="image-wrapper">
+					<img ng-src="{{widgets.related_images.featured.image_src}}"  class="img-responsive" alt="{{widgets.related_images.featured.alttext}}" />
+				  </div>
+					<div class="cf10 feature-tagline" ng-bind-html="widgets.related_images.featured.title"></div>
+				</div>
+				<div ng-repeat="i in widgets.related_images.rows.counter_collection" ng-class="widgets.related_images.fn.gallery_collection_classes(i);">
+					<div ng-repeat="j in widgets.related_images.rows.per_row_collection" ng-class="widgets.related_images.fn.gallery_item_classes(j);">
+						<img ng-src="{{widgets.related_images.data.images[i * widgets.related_images.rows.per_row + j].thumbnail}}" alt="{{widgets.related_images.data.images[i * widgets.related_images.rows.per_row + j].alt}}" ng-click="widgets.related_images.fn.set_featured(i * widgets.related_images.rows.per_row + j);" ng-class="widgets.related_images.fn.is_featured(i * widgets.related_images.rows.per_row + j);" class="img-responsive col-1" alt="" />
+					</div>
+				</div>
+				<!-- <ul class="related-images-gallery col-md-12 col-xs-12">
+					<li ng-repeat="image in widgets.related_images.data.images" ng-class="widgets.related_images.fn.gallery_item_classes($index);">
+						<img ng-src="{{image.thumbnail}}" alt="{{image.alt}}" ng-click="widgets.related_images.fn.set_featured($index);" ng-class="widgets.related_images.fn.is_featured($index);" class="img-responsive col-1" alt="" />
+					</li>
+				</ul> -->
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,15 @@
+<div id="learn-more-section" ng-show="widgets.learning_focus.data.length > 0" ng-class="widgets.learning_focus.container.classes">
+	<div class="sidebar-second-col-wrapper">
+		<div class="content-wrapper clearfix">
+
+ 			<slick dots="false" infinite="true" arrows="true" slides-to-show="1" slides-to-scroll="1" data="widgets.learning_focus.data" on-after-change="widgets.learning_focus.fn.onAfterChange();" init-onload="true" id="slick_learningFocus">
+					<div ng-repeat="focus in widgets.learning_focus.data" class="item">
+						<div class="cf7 title-center title">{{focus.title}}</div>
+						<a shref="{{focus.url}}"><img ng-src="{{focus.image}}" class="img-responsive" /></a>
+					</div>
+			</slick>
+
+			<a class="cf6 learn-more-more" href="#">learn more<img src="images/more_arrow.png"/></a>
+		</div>
+	</div>
+</div>

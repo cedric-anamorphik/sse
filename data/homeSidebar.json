@@ -1,0 +1,283 @@
+{  
+   "ssTitle":"Our Solar System",
+   "ssPlanets":"8",
+   "ssKnownMoons":"146",
+   "ssDwarfPlanets":"5",
+   "ssAsteroids":"64,431",
+   "ssComets":"3,272",
+   "ssOnDeck":"Ceres",
+   "mTitle":"Missions",
+   "mInFlight":"27",
+   "mCompleted":"243",
+   "mInDevelopment":"10",
+   "mConcepts":"15",
+   "mOnDeck":"Rosetta",
+   "cTitle":"Countdown",
+   "cSubhead":"Comet Sliding Spring Mars Encounter",
+   "cEventDate":"01/05/2014:1:0:0",
+   "popPlanets":[  
+      {  
+         "name":"Jupiter",
+         "description":"Jupiter is rivaled only by the sun in its influence on our solar system.",
+		 "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"Saturn",
+         "description":"Saturn's stunning rings are one of the intriguing mysteries of this giant world.",
+		 "url":"images/popPlanet_saturn.jpg"
+      },
+      {  
+         "name":"Mercury",
+         "description":"The sun-scorched innermost planet is an intriguing world of extremes.",
+		 "url":"images/popPlanet_mercury.jpg"
+      },
+      {  
+         "name":"Venus",
+         "description":"This dim world of intense heat and volcanic activity is Earth gone awry.",
+		 "url":"images/popPlanet_venus.jpg"
+      },
+      {  
+         "name":"Mars",
+         "description":"Mars may have once been a wet world like Earth. Where did the water go?",
+		 "url":"images/popPlanet_mars.jpg"
+      }
+   ],
+   "popMissions":[  
+      {  
+         "name":"MSL/Curiosity",
+         "description":"This mission will employ an advanced rover and landing technologies on Mars.",
+		 "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"Juno",
+         "description":"The Juno spacecraft will, for the first time, see below Jupiter's dense clouds.",
+		 "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"Voyager 2",
+         "description":"Voyager 1 and 2 took advantage of a rare planetary alignment to conduct a historic tour of the outer solar system and build enough velocity to...",
+		  "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"Cassini",
+         "description":"Cassini has been unlocking the secrets of Saturn, its ringsand moons since 2004.",
+		  "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"New Horizons",
+         "description":"New Horizons is the first mission to explore Pluto and the Kuiper Belt.",
+		  "url":"images/popPlanet_jupiter.jpg"
+      }
+   ],
+   "popImages":[  
+      {  
+         "name":"Comet ISON Passes Through Virgo",
+         "description":"Comet ISON shines in this five-minute exposure.",
+		  "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"Hubble Ultra Deep Field 2014",
+         "description":"Astronomers have assembled a comprehensive picture of the evolving universe.",
+		  "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"Comet Siding Spring: Near Miss!",
+         "description":"Comet Siding Spring (C/2013 A1) will make a close flyby of Mars on 19 Oct 2014.",
+		  "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"First Earthling in Space",
+         "description":"The first being to travel to outer space was a dog.",
+		  "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"Pi Day",
+         "description":"In honor of Pi Day, JPL Education highlights just some of the ways scientists...",
+		  "url":"images/popPlanet_jupiter.jpg"
+      }
+   ],
+   "popDownloads":[  
+      {  
+         "name":"Solar System Lithograph Set",
+         "description":"A complete information packet on the planets and bodies of our solar system.",
+		  "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"Explorers' Guide to the Solar System",
+         "description":"Exploring other worlds stretches our minds and excites our imaginations.",
+		  "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"Our Solar System Lithograph",
+         "description":"An overview of our solar system.",
+		  "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"Solar System Roadmap (2006)",
+         "description":"NASA's plans for the exploration of the solar system over the next 30 years.",
+		  "url":"images/popPlanet_jupiter.jpg"
+      },
+      {  
+         "name":"Visions and Voyages for Planetary Science 2013 - 2022",
+         "description":"This is the latest planetary science decadal study.",
+		  "url":"images/popPlanet_jupiter.jpg"
+      }
+   ],
+   "people":[  
+      {  
+         "img":"images/people_c_raymond.jpg",
+         "name":"Carol Raymond",
+         "title":"Deputy Principal Investigator",
+		 "quote":"We are on the verge of an explosion of knowledge of what makes up the other bodies of our solar system."
+      },
+      {  
+         "img":"images/people_j_taylor.jpg",
+         "name":"Jeff Taylor",
+         "title":"cosmochemist",
+		 "quote":"Learn how to communicate effectively in both writing and speaking.This is essential so you can tell other scientists what you have discovered and let the public know how you are spending their tax dollars."
+      },
+      {  
+         "img":"images/people_t_harrison.jpg",
+         "name":"Tanya Harrison",
+         "title":"Planetary Scientist",
+		 "quote":"It was almost surreal -- not only are you picking what to take pictures of on Mars, you're also typically the first person on Earth to see those pictures when they come back from Mars."
+      },
+      {  
+         "img":"images/people_j_taylor.jpg",
+         "name":"Bill Bo",
+         "title":"Lead Researcher"
+      },
+      {  
+         "img":"images/people_t_harrison.jpg",
+         "name":"Brittney Ugene",
+         "title":"Lead Researcher"
+      }
+   ],
+    "galPlanets":[  
+      {  
+         "name":"Mercury",
+         "img":"images/galpic_mercury.png",
+		 "size":"1516",
+		 "group":""
+      },
+	  {  
+         "name":"Venus",
+         "img":"images/galpic_venus.png",
+		 "size":"3760",
+		 "group":""
+      },
+	  {  
+         "name":"Earth",
+         "img":"images/galpic_earth.png",
+		 "size":"3959",
+		 "group":"active-exp"
+      },
+	  {  
+         "name":"Mars",
+         "img":"images/galpic_mars.png",
+		 "size":"2106",
+		 "group":"active-exp"
+	  },
+	  {  
+         "name":"Jupiter",
+         "img":"images/galpic_jupiter.png",
+		 "size":"43441",
+		 "group":"active-exp"
+      },
+	  {  
+         "name":"Saturn",
+         "img":"images/galpic_saturn.png",
+		 "size":"36184",
+		 "group":"active-exp"
+      },
+	  {  
+         "name":"Uranus",
+         "img":"images/galpic_uranus.png",
+		 "size":"15759",
+		"group":"active-exp"		 
+      },
+	  {  
+         "name":"Neptune",
+         "img":"images/galpic_neptune.png",
+		 "size":"15299",
+		 "class":" size"
+      }
+   ],
+    "galSmallBodies":[  
+      {  
+         "name":"Meteors & Meteorites",
+         "img":"images/galpic_meteors.png",
+		 "class":" size",
+		 "size":"1",
+		 "group":"active-exp"
+      },
+	  {  
+         "name":"Asteroids",
+         "img":"images/galpic_asteroids.png",
+		 "size":"1",
+		 "group":"active-exp"
+      },
+	  {  
+         "name":"Dwarf Planets",
+         "img":"images/galpic_dwarf.png",
+		 "size":"2",
+		 "group":"active-exp"
+      },
+	  {  
+         "name":"Comets",
+         "img":"images/galpic_comets.png",
+		 "class":"active-exp size",
+		 "size":"1",
+		 "group":"active-exp"
+      }
+   ],
+   "galMoons":[  
+      {  
+         "name":"Earth's Moon",
+         "img":"images/galpic_earthMoon.png",
+		 "size":"2,159",
+		 "group":""
+      },
+	  {  
+         "name":"Other Moons",
+         "img":"images/galpic_otherMoons.png",
+		 "size":"100",
+		 "group":"active-exp"
+      }
+   ],
+   "galRegions":[  
+      {  
+         "name":"Our Solar System",
+         "img":"images/galpic_solarSystem.png",
+		 "size":"1,250,000,000",
+		 "group":"active-exp"
+      },
+	  {  
+         "name":"Kuiper Belt",
+         "img":"images/galpic_kuiper.png",
+		 "size":"92,000,000,000",
+		 "group":""
+      },
+	  {  
+         "name":"Oort Cloud",
+         "img":"images/galpic_oort.png",
+		 "size":"1,000,000,000,000",
+		 "group":"active-exp"
+      },
+	  {  
+         "name":"Beyond our Solar System",
+         "img":"images/galpic_beyondss.png",
+		 "size":"",
+		 "group":"active-exp"
+		 
+      }
+   ],
+   "galStars":[  
+      {  
+         "name":"Sun",
+         "img":"images/galpic_sun.png",
+		 "size":"864,938",
+		 "group":""
+      }
+   ]
+}

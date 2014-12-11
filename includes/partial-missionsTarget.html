@@ -1,0 +1,64 @@
+<style>body{background-color: #000}#header{background-image: url("images/SSE_L2_Purple_TopBannerGlow.svg");}.celestialFilters{height: 100px;}.celestialFilters form input, .celestialFilters form label{top: 0 !important;}</style>
+<div id="gallery-wrapper" class="navbar">
+	<!-- Filter Panel -->
+	<div id="side-panel">
+		<div id="filter-btn-wrapper">
+			<div id="filter-panel-wrapper">
+				<a href="javascript: cfp();" class="panel-btn" id="opener">FILTERS</a>
+			</div>
+		</div>
+		<div id="celestial-panel-wrapper">
+			<div id="celestial-filterpanel" class="visible">
+				<a href="javascript: ccfp();" id="close-btn"><img src="images/btn_filter_close.png"/></a>
+				<div class="celestialFilters missions">
+					<p class="section-title">Filters</p>
+					<!-- Celestial filter options -->
+					<form>
+						<input type="checkbox" id="cb3" name="cb" value="" onchange="hideGalHeaders(this)">
+							<label for="cb3">Hide Categories</label>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Gallery Sections -->
+	<div id="sseGallery" class="gal-container">
+		<div class="navbar gal-header" id="gallery-sectionbar">
+				<p class="gallery-section-title" style="z-index: 3">Missions</p>
+				<div id="mission-links">
+					<div class="hdr-btn">
+						<a href="#/missions/">
+							<p>In Flight</p>
+						</a>
+					</div>
+					<div class="hdr-btn selected">
+						<a href="#/missions/target">
+							<p>By Target</p>
+						</a>
+					</div>
+					<div class="hdr-btn">
+						<a href="#/missions/type">
+							<p>By Type</p>
+						</a>
+					</div>
+				</div>
+				<div class="socialBar">
+					<a href="#" id="icon-facebook"><img src="images/20x20_facebook.png" class="social-icons"/></a>
+					<a href="#" id="icon-twitter"><img src="images/20x20_twitter.png" class="social-icons"/></a>
+					<a href="#" id="icon-youtube"><img src="images/20x20_youtube.png" class="social-icons"/></a>
+					<a href="#" id="icon-share"><img src="images/20x20_share.png" class="social-icons"/></a>
+					<a href="#" id="icon-email"><img src="images/20x20_email.png" class="social-icons"/></a>
+					<a href="#" id="icon-print"><img src="images/20x20_print.png" class="social-icons"/></a>
+				</div>
+		</div>
+		<div ng-controller="MissionsTargetCtrl" class="navbar img-gallery shuffle-grid ro" id="missionTarget-gallery">
+			<div ng-repeat="mission in missionTarget" data-id="{{$index+1}}" data-section="missionTarget-gallery"  class="item shuffle-item col-md-3 col-sm-4 col-xs-6 gal-pic celestial spritz" data-groups='["{{mission.group}}"]'>
+				<a href="#/{{mission.url}}" class="icon">
+					<img ng-src="images/spacer_square.png" class="filler"/>
+					<img ng-src="{{mission.imgUrl}}" class="sprite"/>
+				</a>
+				<p class="gal-name">{{mission.name}}</p>
+			</div>
+		</div>
+	</div>
+</div>

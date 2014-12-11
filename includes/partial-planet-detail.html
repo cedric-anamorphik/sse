@@ -1,0 +1,33 @@
+<style>body{background-color: #000;}</style>
+<div class="container page planets" id="page-planet-detail">
+  <div ng-class="page.css.content" id="pageContent">
+    <div class="main-content-wrapper">
+    <div class="main-content-header clearfix">
+    <div class="socialBar pull-right">
+      <a href="#" id="icon-facebook"><img src="images/20x20_facebook.png" class="social-icons"/></a>
+      <a href="#" id="icon-twitter"><img src="images/20x20_twitter.png" class="social-icons"/></a>
+      <a href="#" id="icon-youtube"><img src="images/20x20_youtube.png" class="social-icons"/></a>
+      <a href="#" id="icon-share"><img src="images/20x20_share.png" class="social-icons"/></a>
+      <a href="#" id="icon-email"><img src="images/20x20_email.png" class="social-icons"/></a>
+      <a href="#" id="icon-print"><img src="images/20x20_print.png" class="social-icons"/></a>
+    </div>
+    <h1 class="section-header-title pull-left">Planets:&nbsp;&nbsp;<span class="section-page-title">{{page.data.title}}</span></h1>
+    </div>
+    <featured-carousel></featured-carousel>
+    <!-- <h3 class="story-date">{{page.data.update_date}} (source: {{page.data.source}})</h3> -->
+    <div class="cfont2 main-content" ng-bind-html="page.data.main.content"></div>
+    </div> <!-- /main-content -->
+    <vital-stats></vital-stats>
+    <quick-links></quick-links>
+    <timeline></timeline>
+    <planet-moons></planet-moons>
+    <related-news last-element></related-news>
+  </div>
+  <div ng-class="page.css.sidebar" id="sidebar-second" ng-show="page.hasSidebar==true">
+        <sidebar-nav nav-path="{{page.data.path_prefix}}" no-bottom></sidebar-nav>
+        <related-images></related-images>
+        <related-missions></related-missions>
+        <profiles></profiles>
+        <related-events no-bottom></related-events>
+  </div>
+</div>

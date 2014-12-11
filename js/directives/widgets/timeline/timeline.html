@@ -1,0 +1,22 @@
+<div class="timeline" ng-show="widgets.timeline.data.length > 0">
+<div class="inner-wrapper">
+
+  <slick dots="false" infinite="true" arrows="true" slides-to-show="5" slides-to-scroll="1" data="widgets.timeline.data" init-onload="true" on-after-change="widgets.timeline.fn.set_featured();" id="slick_timeline">
+    <div ng-repeat="item in widgets.timeline.data" ng-class="widgets.timeline.fn.item_classes($index);">
+      <div class="image-wrapper">
+        <div class="image-wrapper-inner">
+        <img ng-src="{{item.image}}" alt="{{item.title}}">
+        </div>
+      </div>
+    </div>
+  </slick>
+  <div class="selected">
+    <div class="cfont8">{{widgets.timeline.selected.title}}</div>
+    <div class="cfont9">{{widgets.timeline.selected.date}}</div>
+    <div class="cfont10">{{widgets.timeline.selected.content}}</div>
+
+    <div class="more-button more-info"><div><a href="#/{{widgets.timeline.selected.url}}" class="cfont9">More</a></div></div>
+  </div>
+
+</div>
+</div>

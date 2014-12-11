@@ -1,0 +1,33 @@
+<style>body{background-color: #000}#sseGallery, gallery-section-title, #gallery-sectionbar{background-color: #a5722b}</style>
+<div id="gallery-wrapper" class="navbar">
+	<!-- Gallery Sections -->
+	<div id="sseGallery" class="gal-container people">
+		<div class="navbar gal-header people" id="gallery-sectionbar">
+				<p class="gallery-section-title" style="z-index: 3">People</p>
+				<div class="socialBar">
+					<a href="#" id="icon-facebook"><img src="images/20x20_facebook_ppl.png" class="social-icons"/></a>
+					<a href="#" id="icon-twitter"><img src="images/20x20_twitter_ppl.png" class="social-icons"/></a>
+					<a href="#" id="icon-youtube"><img src="images/20x20_youtube_ppl.png" class="social-icons"/></a>
+					<a href="#" id="icon-share"><img src="images/20x20_share_ppl.png" class="social-icons"/></a>
+					<a href="#" id="icon-email"><img src="images/20x20_email_ppl.png" class="social-icons"/></a>
+					<a href="#" id="icon-print"><img src="images/20x20_print_ppl.png" class="social-icons"/></a>
+				</div>
+		</div>
+		<!-- Planets section -->
+		<div ng-controller="PeopleGalCtrl" class="navbar img-gallery shuffle-grid" id="people-gallery">
+				<div ng-repeat="person in people | limitTo: peopleLimit()" data-id="{{$index+1}}" class="item shuffle-item col-md-3 col-sm-4 col-xs-6 gal-pic celestial" data-groups='["{{person.group}}"]'>
+					<div class="img-window">
+						<a ng-href="#/{{person.url}}">
+							<img ng-src="images/spacer_square.png" class="filler"/>
+							<img ng-src="images/txt-bgshadow.png" class="txt-bg"/>
+							<img ng-src="{{person.image}}" class="img-responsive"/>
+						</a>
+					</div>
+					<p class="gal-name hnl f17">{{person.name}}<br><span class="title hnl f13">{{person.title}}</span></p>
+				</div>
+				<div id="more-wrapper">
+					<button ng-show="hasMorePeopleToShow()" ng-click="showMorePeople()" id="btn-more" class="hnl f20">Show more</button>
+				</div>
+		</div>
+	</div>
+</div>

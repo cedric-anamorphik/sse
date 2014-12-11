@@ -1,0 +1,22 @@
+<div>
+	<p class="cf3" id="countdownSubhead">{{data.cSubhead}}</p>
+	<timer end-time="1420070400000" class="cf1">
+		<table class="factoid2" id="countdownTable">
+			<tr>
+				<td>{{days}}</td>
+				<td>{{hours}}</td>
+				<td>{{minutes}}</td>
+				<td>{{seconds}}</td>
+			</tr>
+			<tr>
+				<td class="cf2">days</td>
+				<td class="cf2">hours</td>
+				<td class="cf2">minutes</td>
+				<td class="cf2">seconds</td>
+			</tr>
+		</table>
+	</timer>
+</div>
+<div ng-controller='TimeCtrl' id="sidebarClock">
+	<p class="cf1">{{ clock | date:'mediumTime'}}<span class="cf2"> - Current Time</span></p>
+</div>
