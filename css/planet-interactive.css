@@ -1,0 +1,150 @@
+.planet-interactive-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 700px;
+  max-height: 700px;
+  top: 0;
+  right: 0;
+}
+
+.planet-interactive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0 0 100% 0;
+}
+.planet-interactive .planet-interactive-objects {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.planet-interactive-object-scale {
+  position: absolute;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+.planet-interactive-object-scale img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.planet-interactive-object {
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+.planet-interactive-visible {
+  display: block;
+}
+
+
+.planet-interactive-object #sun {
+  height: 99.0714285714%;
+  width: 99.1428571429%;
+  top: 0.4642857143%;
+  left: 0.4285714286%;
+}
+.planet-interactive-object #mercury {
+  height: 35.3571428571%;
+  width: 35.5%;
+  top: 32.3214285714%;
+  left: 32.25%;
+}
+.planet-interactive-object #venus {
+  height: 44.1428571429%;
+  width: 44.2857142857%;
+  top: 27.9285714286%;
+  left: 27.8571428571%;
+}
+.planet-interactive-object #earth {
+  height: 44.1428571429%;
+  width: 44.7142857143%;
+  top: 27.9285714286%;
+  left: 27.6428571429%;
+}
+.planet-interactive-object #mars {
+  width: 38.2142857143%;
+  height: 38.4285714286%;
+  left: 30.8928571429%;
+  top: 30.7857142857%;
+}
+.planet-interactive-object #asteroid {
+  width: 20.7142857143%;
+  height: 27.2857142857%;
+  left: 39.6428571429%;
+  top: 36.3571428571%;
+}
+.planet-interactive-object #ceres {
+  width: 22%;
+  height: 22%;
+  left: 39%;
+  top: 39%;
+}
+.planet-interactive-object #jupiter {
+  height: 56.3571428571%;
+  width: 57.0%;
+  top: 21.8214285714%;
+  left: 21.5%;
+}
+.planet-interactive-object #saturn {
+  height: 54%;
+  width: 125.7857142857%;
+  top: 23%;
+  left: -12.8928571429%;
+}
+.planet-interactive-object #uranus {
+  width: 43.2142857143%;
+  height: 88.5%;
+  left: 28.3928571429%;
+  top: 5.75%;
+}
+.planet-interactive-object #neptune {
+  height: 44.5714285714%;
+  width: 44.7142857143%;
+  top: 27.7142857143%;
+  left: 27.6428571429%;
+}
+.planet-interactive-object #pluto {
+  width: 29.1428571429%;
+  height: 29.3571428571%;
+  left: 35.4285714286%;
+  top: 35.3214285714%;
+}
+.planet-interactive-object #eris {
+  width: 29.0714285714%;
+  height: 29.0714285714%;
+  left: 35.4642857143%;
+  top: 35.4642857143%;
+}
+.planet-interactive-object #kbo {
+  width: 28.9285714286%;
+  height: 33.3571428571%;
+  left: 35.5357142857%;
+  top: 33.3214285714%;
+}
+.planet-interactive-object #comet {
+  height: 85%;
+  width: 102.5714285714%;
+  top: 7.5%;
+  left: -1.2857142857%;
+}
+.planet-interactive-container {
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  max-height: 700px;
+}
