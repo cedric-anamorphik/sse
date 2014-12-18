@@ -1,0 +1,709 @@
+body, html {
+	background-color: #FFFFFF;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.navContent a 
+{ 
+	COLOR: #8AB081; 
+	text-decoration: none; 
+	font-size: 11px;
+}
+
+.navContent a:link 
+{ 
+	color: #8AB081; 
+	text-decoration: none; 
+	font-size: 11px;
+}
+.navContent a:visited 
+{ 
+	color: #8AB081; 
+	text-decoration: none; 
+	font-size: 11px;
+}
+.navContent a:hover 
+{ 
+	color: #F9F9F9; 
+	text-decoration: none;
+	font-size: 11px;
+}
+.navContentOn 
+{ 
+	color: #F9F9F9; 
+	text-decoration: none;
+	font-size: 11px;
+}
+
+.topNavContent a 
+{ 
+	COLOR: #35521E; 
+	text-decoration: underline; 
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.topNavContent a:link 
+{ 
+	color: #35521E; 
+	text-decoration: none; 
+	font-size: 11px;
+	font-weight: bold;
+}
+.topNavContent a:visited 
+{ 
+	color: #35521E; 
+	text-decoration: none; 
+	font-size: 11px;
+	font-weight: bold;
+}
+.topNavContent a:hover 
+{ 
+	color: #F9F9F9; 
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+}
+.topNavContentOn 
+{ 
+	color: #F9F9F9; 
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.editLinks
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 10px;
+   color: #000000;
+   font-weight: bold;
+	text-decoration: none;
+}
+
+.editLinks:hover
+{
+   color: #000099;
+	text-decoration: underline;
+}
+
+.pageTitle
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   color: #000000;
+   font-weight: bold;
+}
+
+.pageSubtitle
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   color: #000000;
+   font-weight: bold;
+}
+
+.pageSubtitle02
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   color: #000000;
+   font-weight: bold;
+}
+
+.pageSubtitle03
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #000000;
+   font-weight: bold;
+}
+
+.pageContent
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #000000;
+}
+
+.pageContentBold
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #000000;
+   font-weight: bold;
+}
+
+.pageContact
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   color: #000000;
+}
+
+.error 
+{
+   font-family: Helvetica, Arial, sans-serif; 
+   font-size: 12px; 
+   font-weight: bold; 
+   color: #ff0000;
+}
+
+/* begin sitemap */
+.sitemapTitle
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   color: #003399;
+   font-weight: bold;
+}
+
+a.sitemapTitle:link, a.sitemapTitle:visited
+{
+   text-decoration: none;
+}
+
+a.sitemapTitle:hover
+{
+   text-decoration: underline;
+}
+
+.sitemapItem
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #000000;
+}
+
+a.sitemapItem:link, a.sitemapItem:visited
+{
+   text-decoration: none;
+}
+
+a.sitemapItem:hover
+{
+   text-decoration: underline;
+}
+
+tr.sitemapLight
+{
+   background: #F0F5FF;
+}
+
+tr.sitemapDark
+{
+   background: #D7E3FA;
+}
+
+td, li
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+}
+
+td.header
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 11px;
+   color: #000000;
+}
+
+a.header:link, a.header:visited
+{
+   text-decoration: none;
+   color: #000000;
+}
+
+a.header:hover
+{
+   text-decoration: underline;
+}
+
+a.footer:link, a.footer:visited
+{
+   text-decoration: none;
+   color: #000000;
+}
+
+a.footer:hover
+{
+   text-decoration: underline;
+}
+
+.featureTitle
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   font-weight: bold;
+   color: #000000;
+}
+
+.featureText
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #000000;
+}
+
+a.more:link, a.more:visited
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   color: #CC3300;
+   text-decoration: none;
+}
+
+a.more:hover
+{
+   text-decoration: underline;
+}
+
+a.moreblue:link, a.moreblue:visited
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   color: #CC3300;
+   text-decoration: none;
+}
+
+a.moreblue:hover
+{
+   text-decoration: underline;
+}
+
+.latestTitle
+{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #CC3300;
+}
+
+.announcementTitle
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   color: #000000;
+}
+
+.announcementSpecial
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   font-weight: bold;
+   color: #FF0000;
+}
+
+a.announcementLnk:link, a.announcementLnk:visited
+{
+   font-family: Helvetica, Arial, sans-serif;
+   color: #FF0000;
+	text-decoration: underline;
+}
+
+a.announcementLnk:hover
+{
+   text-decoration: none;
+   color: #000000;
+	text-decoration: underline;
+}
+
+.announcementText
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #000000;
+}
+
+a.blackBoldLnk:link, a.blackBoldLnk:visited
+{
+   font-family: Helvetica, Arial, sans-serif;
+   color: #000000;
+   font-weight: bold;
+	text-decoration: underline;
+}
+
+a.blackBoldLnk:hover
+{
+   text-decoration: none;
+   color: #000000;
+   font-weight: bold;
+	text-decoration: none;
+}
+
+.imageMission
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   color: #000000;
+}
+
+.imageTitle
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   color: #CC3300;
+}
+
+.imageCaption
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #000000;
+}
+
+.imageCaptionBlue
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #1042A3;
+}
+
+a.imageCaption:link, a.imageCaption:visited
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #000000;
+}
+
+.multimediaTitle
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   color: #CC3300;
+}
+.multimediaTitleBlack
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   color: #000000;
+}
+
+.multimediaTitleWhite
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   color: #ffffff;
+}
+
+a.multimediaFormat:link, a.multimediaFormat:visited
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   text-decoration: none;
+   color: #000000;
+}
+
+a.multimediaFormat:hover
+{
+   text-decoration: underline;
+}
+
+
+
+.multimediaCaption
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 13px;
+   color: #000000;
+}
+
+.multimediaLinkText
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #000000;
+}
+
+
+
+.contentHeading1
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 18px;
+   color: #003399;
+   font-weight: bold;
+}
+
+/* for spanish pages */
+.standard
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+}
+
+
+
+
+.pressreleaseTitle
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   color: #000000;
+   font-weight: bold;
+}
+
+.pressreleaseText
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+}
+
+.pressreleaseDate
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   color: #003399;
+   font-weight: bold;
+}
+
+
+/* countdown styles*/
+.countdown-home	{
+   font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color : #663300;
+	font-weight: bold;
+   font-size: 10px;  
+   background:#E6B145;
+}
+
+.countdown-home2	{
+   font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color : #FDFFFF;
+	font-weight: bold;
+   font-size: 11px;  
+   background:#006699;
+}
+
+.countdown-home-title	{
+   font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color : #FFCB66;
+	font-weight: bold;
+   font-size: 12px;  
+   background:#006699;
+   font-style: italic;
+}
+
+.countdown-home-text	{
+   font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color : #FDFFFF;
+	font-weight: bold;
+   font-size: 11px;  
+   background:#006699;
+}
+
+a.countdown-home2Link	{
+   font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color : #FDFFFF;
+	font-weight: bold;
+   font-size: 11px;  
+   background:#006699;
+}
+
+a.countdown-home-textLink	{
+   font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color : #FDFFFF;
+	font-weight: bold;
+   font-size: 11px;  
+   background:#006699;
+}
+
+.spotlightHeading01
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   color: #000000;
+}
+
+.spotlightHeading02
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   font-weight: bold;
+   color: #000000;
+}
+
+.spotlightText01
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   font-weight: normal;
+   color: #000000;
+}
+
+.imageCaption 
+{
+   font-family: Helvetica, Arial, sans-serif; 
+   font-size: 9px; 
+   color: #666666;
+   font-style: italic;
+}
+
+.compact 
+{
+	margin-top: 10px; 
+	margin-bottom: 10px;
+}
+
+.staticlink 
+{
+	color: #114FAC; 
+	text-decoration:none;
+}
+
+.maintext 
+{
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 13px;
+}
+
+.smalltext
+{
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 11px;
+}
+
+.emaillink
+{
+	color: #CD6700;
+}
+
+.peopleTitle
+{
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 16px; 
+	font-weight: bold; 
+	color: #000000;
+}
+
+.peopleSubtitle
+{
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 14px; 
+	font-weight: bold; 
+	color: #000000;
+}
+
+.adminbigheader
+{
+	font-size: 16px; 
+	font-weight: bold; 
+	color: #993300;
+}
+
+.adminheader 
+{
+	font-size: 14px; 
+	font-weight: bold; 
+	color: #993300;
+}
+
+.adminlink 
+{
+	font-weight: bold; 
+	color: #AA5500;
+}
+
+.adminlink2 
+{
+	font-size: 11px; 
+	font-weight: bold; 
+	color: #AA5500;
+}
+
+.underconst, a.underconst {
+	color: #AAAAAA;
+	text-decoration: none;
+}
+
+.admintext 
+{
+	color: #AA5500;
+}
+
+td.ns0TD1
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   background-color: #F0F5FF;
+   color: #000000;
+}
+
+td.ns0TD2
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   background-color: #D7E3FA;
+   color: #000000;
+}
+
+td.ns0TD3
+{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   background-color: #FFF5F0;
+   color: #AA0000;
+}
+
+.tableheaderlink {
+	color: #8091AC;
+	font-size: 14px;
+	font-style: bold;
+}
+
+div#contentArea {
+	width: 100%;	
+	background-color: #E2E2E2;
+}
+
+div#contentAreaTitle {
+	text-align:center;
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   color: #003399;
+   font-weight: bold;
+}
+
+td.cssbutton {
+	background: #fff;
+	padding: 1px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: x-small;
+	border : 1px solid #aaa;	
+}
+
+.adminleftcol {
+	float: left;
+	text-align: left;
+	padding-top: 4px;
+	padding-right: 4px;
+}
+
+.adminrightcol {
+	float: right;
+	text-align: left;
+	padding-top: 4px;
+	padding-right: 4px;
+}

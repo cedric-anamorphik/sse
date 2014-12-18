@@ -11,13 +11,16 @@
 			<a href="#" id="icon-email"><img src="images/20x20_email.png" class="social-icons"/></a>
 			<a href="#" id="icon-print"><img src="images/20x20_print.png" class="social-icons"/></a>
 		</div>
-		<h1 class="section-header-title">{{page.data.section}}</h1>
-		<h2 class="story-title">{{page.data.title}}</h2>
-		<h3 class="story-date">{{page.data.update_date}} <span ng-show="page.data.source != ''">(source: {{page.data.source}})</span></h3>
+		<h1 class="section-header-title cf-ln cf-s26">{{page.data.section}}</h1>
+		<h2 class="story-title cf-s18">{{page.data.title}}</h2>
+		<h3 class="story-date cf-s12">{{page.data.update_date}} <span ng-show="page.data.source != ''">(source: {{page.data.source}})</span></h3>
 		</div> <!-- /content-header -->
-		<img src="images/editorial-img-fpo.jpg" class="img-responsive" id="heroPic"/>
+		<!-- <div ng-show="page.featured_image.show == true">
+			<img ng-src="{{page.featured_image.src}}" alt="{{page.featured_image.alt}}" />
+		</div> -->
 		<div class="main-content-wrapper-inner">
-		<p class="cf14" ng-bind-html="page.data.main.content"></p>
+		<text-content-parse raw-html="page.data.main.content" content-images="page.data.main.images"></text-content-parse>
+		<!-- <p ng-bind-html="page.data.main.content"></p> -->
 
 		<div id="feature-credits">
 			<related-stories></related-stories>
@@ -30,7 +33,7 @@
 		<div ng-class="page.css.sidebar" id="sidebar-second" ng-show="page.hasSidebar==true">
 			<related-facts></related-facts>
 			<learning-focus></learning-focus>
-			<related-missions></related-missions>
+			<related-missions no-bottom></related-missions>
 			<related-images></related-images>
 		</div>
 	</div>

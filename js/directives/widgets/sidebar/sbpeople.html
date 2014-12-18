@@ -1,0 +1,21 @@
+<div id="people-wrapper">
+	<div class="hdr-people">
+		<div class="hnb f18 white">People</div>
+	</div>
+	<div class="quote"><p class="hnli f13">{{profileQuote}}</p></div>
+	<slick dots="false" infinite="true" arrows="true" slides-to-show="3" slides-to-scroll="1" init-onload="true" on-after-change="updateProfile();" data="people" id="slick-people">
+			<div ng-repeat="profile in people" class="item">
+				<a href="#/{{profile.pageUrl}}" class="profile-wrapper">
+					<img ng-src="{{profile.imgUrl}}" class="profile-img"/>
+					<p class="profile-name hnl f14">{{profile.name}}</p>
+					<p class="profile-title hnl f10">{{profile.title}}</p>
+				</a>
+				<!-- <p class="cf4">{{profile.quote}}</p> -->
+			</div>
+	</slick>
+	<div class="sb-more">
+		<a href="#/people/">
+			<p class="hnl f18">More</p>
+		</a>
+	</div>
+</div>

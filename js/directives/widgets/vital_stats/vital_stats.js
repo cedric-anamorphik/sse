@@ -18,8 +18,9 @@ app.directive('vitalStats', ['appDataFactory', function(appDataFactory) {
       if(_.has(scope.page.data,'missions')) {
         scope.widgets.vital_stats.missions.data = scope.page.data.missions;
         _.forEach(scope.widgets.vital_stats.missions.data,function(mission) {
-          mission.classes = ['col-md-2','spritz','mission-' + mission.type.toLowerCase()];
+          mission.classes = ['col-md-2','col-sm-3','col-xs-4','spritz','mission-' + mission.type.toLowerCase()];
         });
+        scope.widgets.vital_stats.missions.data[0].classes.push('active');
         scope.widgets.vital_stats.missions.selected = scope.widgets.vital_stats.missions.data[0];
       }
 
@@ -37,7 +38,6 @@ app.directive('vitalStats', ['appDataFactory', function(appDataFactory) {
 
       scope.widgets.vital_stats.missions.fn.mission_icon_classes = function(index) {
         var icon_classes = scope.widgets.vital_stats.missions.data[index].classes;
-        //icon_classes.push('mission-'+mission.type.toLowerCase());
         return icon_classes;
       }
     }

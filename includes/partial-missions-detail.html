@@ -11,11 +11,12 @@
       <a href="#" id="icon-email"><img src="images/20x20_email.png" class="social-icons"/></a>
       <a href="#" id="icon-print"><img src="images/20x20_print.png" class="social-icons"/></a>
     </div>
-    <h1 class="section-header-title pull-left">Missions:&nbsp;&nbsp;<span class="section-page-title">{{page.data.title}}</span></h1>
+    <h1 class="section-header-title cf-ln cf-s26">Missions</h1>
+    <h1 class="section-page-title cf-ln cf-s26">{{page.data.title}}<span ng-show="page.data.subtitle != ''">: {{page.data.subtitle}}</span></h1>
     </div> <!-- /content-header -->
     <featured-carousel></featured-carousel>
     <!-- <h3 class="story-date">{{page.data.update_date}} (source: {{page.data.source}})</h3> -->
-    <div class="cfont2 main-content" ng-bind-html="page.data.main.content"></div>
+    <div class="main-content" ng-bind-html="page.data.main.content"></div>
     </div> <!-- /main-content -->
     <vital-stats></vital-stats>
     <related-news></related-news>

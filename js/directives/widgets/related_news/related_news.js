@@ -12,7 +12,7 @@ app.directive('relatedNews', ['appDataFactory',function(appDataFactory) {
         scope.widgets.news.limitTo = 3;
         scope.widgets.news.fn = {};
         scope.widgets.news.container = {}
-        scope.widgets.news.container.classes = ['content-widget','clearfix'];
+        scope.widgets.news.container.classes = ['related-news','content-widget','clearfix'];
         console.log(_.has(attrs,'lastElement'));
         if(_.has(attrs,'lastElement')) {
           scope.widgets.news.container.classes.push('last');

@@ -28,7 +28,7 @@
 				<div id="mission-links">
 					<div class="hdr-btn selected">
 						<a href="#/missions/">
-							<p>In Flight</p>
+							<p>Active</p>
 						</a>
 					</div>
 					<div class="hdr-btn">
@@ -56,7 +56,7 @@
 				<div ng-repeat="mission in missionLanding" data-section="missions-gallery" data-size="{{mission.size}}" data-id="{{$index+1}}" class="item shuffle-item col-md-3 col-sm-4 col-xs-6 gal-pic celestial" data-groups='["{{mission.group}}"]'>
 					<a href="#/{{mission.url}}">
 						<img ng-src="{{mission.imgUrl}}" class="img-responsive"/>
-						<p class="gal-name">{{mission.name}}</p>
+						<p class="gal-name">{{mission.title}}</p>
 					</a>
 				</div>
 		</div>

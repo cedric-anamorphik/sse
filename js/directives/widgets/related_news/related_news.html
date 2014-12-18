@@ -1,18 +1,17 @@
 <div id="related_news" ng-show="widgets.news.data.length > 0" ng-class="widgets.news.container.classes">
 <div class="inner-wrapper clearfix">
 <div class="header-wrapper clearfix">
-<div class="cfont7 pull-left">News</div>
-<div class="pull-right more-link">
+<div class="cf-hnl cf-s26 pull-left">News</div>
+<div class="pull-right more-link cf-s12">
 <a href="{{widgets.news.related_url}}" class="cfont11" ng-show="widgets.news.related_url != ''">more<img src="images/more_arrow.png" class="arrow-indicator"></a>
 </div>
 </div><!-- /header-wrapper -->
 <div class="content-wrapper clearfix">
-<div ng-repeat="item in widgets.news.data | limitTo:widgets.news.limitTo" class="item col-md-4">
-  <div class="news-img pull-left col-md-6 col-sm-6 col-xs-6" ng-show="widgets.news.fn.showThumbnail(item);"><img ng-src="{{item.image}}" /></div>
-  <div class="col-md-6 col-sm-6 col-xs-6">
-  <div class="news-item"><a href="#/{{item.url}}" class="cfont11">{{item.title}}</a></div>
-  <div class="news-pubdate cfont12">{{item.pubdate}}</div>
-  </div>
+<div ng-repeat="item in widgets.news.data | limitTo:widgets.news.limitTo" class="item col-md-4 col-sm-4 col-xs-6 clearfix">
+  <!-- <div class="news-img pull-left clearfix" ng-show="widgets.news.fn.showThumbnail(item);"> --><img ng-src="{{item.image}}" class="pull-left" ng-show="widgets.news.fn.showThumbnail(item);" /><!-- </div> -->
+
+  <div class="news-item"><a href="#/{{item.url}}" class="cfont11 cf-s12">{{item.title | characters: 65 }}</a></div>
+  <div class="news-pubdate cfont12 cf-s12">{{item.pubdate}}</div>
 </div>
 </div>
 

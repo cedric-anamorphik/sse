@@ -1,6 +1,6 @@
 'use strict';
 
-app.directive('profiles', ['appDataFactory',function(appDataFactory) {
+app.directive('profiles', ['appDataFactory','$q',function(appDataFactory,$q) {
     return {
       restrict: 'E',
       templateUrl: "js/directives/widgets/profiles/profiles.html",
@@ -17,29 +17,25 @@ app.directive('profiles', ['appDataFactory',function(appDataFactory) {
           scope.widgets.people.container.classes.push('no-bottom');
         }
 
-        appDataFactory.loadData().then(function(page_data) {
-          /*if(typeof page_data.sidebar.people != 'undefined') {
-            scope.people = page_data.sidebar.people;
-          }*/
-          if(_.has(page_data.sidebar,'people') && page_data.sidebar.people.length > 0) {
-            scope.widgets.people.data = page_data.sidebar.people;
-            scope.widgets.people.featured = scope.widgets.people.data[scope.widgets.people.current];
-          } else {
-            if(_.has(page_data.sidebar,'learn') && page_data.sidebar.learn.length > 0) {
-              scope.widgets.people.currentLearningFocus = page_data.sidebar.learn[scope.widgets.learningFocusIndex.value];
-              if(_.has(scope.widgets.people.currentLearningFocus,'related_people')
-                && scope.widgets.people.currentLearningFocus.related_people.length > 0) {
-                scope.widgets.people.data = scope.widgets.people.currentLearningFocus.related_people;
-                scope.widgets.people.featured = scope.widgets.people.data[scope.widgets.people.current];
-              }
+        if(_.has(scope.page.data.sidebar,'people') && scope.page.data.sidebar.people.length > 0) {
+          scope.widgets.people.data = scope.page.data.sidebar.people;
+        } else {
+          if(_.has(scope.page.data.sidebar,'learn') && scope.page.data.sidebar.learn.length > 0) {
+            scope.widgets.people.currentLearningFocus = scope.page.data.sidebar.learn[scope.widgets.learningFocusIndex.value];
+            if(_.has(scope.widgets.people.currentLearningFocus,'related_people')
+              && scope.widgets.people.currentLearningFocus.related_people.length > 0) {
+              scope.widgets.people.data = scope.widgets.people.currentLearningFocus.related_people;
             }
           }
+        }
 
+        if(scope.widgets.people.data.length > 0) {
           _.forEach(scope.widgets.people.data, function(person) {
             person.classes = ['item'];
           });
-          scope.widgets.people.data[0].classes.push('featured');
-        });
+          scope.widgets.people.featured = scope.widgets.people.data[scope.widgets.people.current];
+          scope.widgets.people.data[scope.widgets.people.current].classes.push('featured');
+        }
 
         scope.widgets.people.fn.onAfterChange = function() {
           scope.widgets.people.current = $('#slick-people').slickCurrentSlide();
@@ -56,13 +52,15 @@ app.directive('profiles', ['appDataFactory',function(appDataFactory) {
         }
 
         scope.$watch('widgets.learningFocusIndex.value', function(newVal, oldVal) {
-          appDataFactory.loadData().then(function(page_data) {
-            scope.widgets.people.currentLearningFocus = page_data.sidebar.learn[scope.widgets.learningFocusIndex.value];
+          /*appDataFactory.loadData().then(function(page_data) {*/
+          if(_.has(scope.page.data.sidebar,'learn') && scope.page.data.sidebar.learn.length > 0) {
+            scope.widgets.people.currentLearningFocus = scope.page.data.sidebar.learn[scope.widgets.learningFocusIndex.value];
             if(_.has(scope.widgets.people.currentLearningFocus,'related_people')
               && scope.widgets.people.currentLearningFocus.related_people.length > 0) {
               scope.widgets.people.data = scope.widgets.people.currentLearningFocus.related_people;
             }
-          });
+          }
+          /*});*/
         });
 
       }

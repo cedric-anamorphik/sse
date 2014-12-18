@@ -1,0 +1,351 @@
+html {
+	height: 100%;
+}
+
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.04);
+}
+
+body
+{
+	height: 100%;
+	background-color:   #0176A0;
+	background-image:   -moz-radial-gradient(center, ellipse cover, #734c85 0%, #000000 100%);
+	background-image:   -webkit-radial-gradient(center, ellipse cover, #734c85 0%, #000000 100%);
+	background-image:   -o-radial-gradient(center, ellipse cover, #734c85 0%, #000000 100%);
+	background-image:   -ms-radial-gradient(center, ellipse cover, #734c85 0%, #000000 100%);
+	background-image:   radial-gradient(center, ellipse cover, #734c85 0%, #000000 100%);
+	filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr = '#734c85', endColorstr = '#000000', GradientType = 0);
+}
+
+.galleryHeader
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 90px;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.galleryTitle
+{
+	position: absolute;
+	top: 30px;
+	right: 108px;
+	width: 360px;
+	height: 36px;
+	line-height: 36px;
+	color: #FFF;
+	font-family: 'Quicksand' !important;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: -4px;
+    text-shadow: #fff 0px 0px 1px;
+    text-align: right;
+}
+
+.galleryName
+{
+	position: absolute;
+	top: 28px;
+	left: 40px;
+	width: 360px;
+	height: 30px;
+	line-height: 30px;
+	color: #FFF;
+	font-family: 'Quicksand' !important;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: -4px;
+    text-shadow: #fff 0px 0px 1px;
+    text-align: left;
+    z-index: 1000;
+}
+
+.searchButton,
+.menuButton
+{
+	width: 28px;
+	height: 24px;
+	color: #5f8acf;
+	font-family: 'Quicksand' !important;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	border: 1px solid #374a68;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.searchButton
+{
+	position: absolute;
+	top: 35px;
+	right: 58px;
+}
+
+.menuButton
+{
+	position: absolute;
+	top: 35px;
+	right: 20px;
+}
+
+.galleryWrapper
+{
+	position: absolute;
+	top: 90px;
+	left: 0px;
+	width: 100%;
+	height: calc(100% - 180px);
+	background: #151f29;
+	background-image:   -moz-radial-gradient(top center, ellipse cover, #3e5977 0%, #1f2f3f 45%, #151f29 100%);
+	background-image:   -webkit-radial-gradient(top center, ellipse cover, #3e5977 0%, #1f2f3f 45%, #151f29 100%);
+	background-image:   -o-radial-gradient(top center, ellipse cover, #3e5977 0%, #1f2f3f 45%, #151f29 100%);
+	background-image:   -ms-radial-gradient(top center, ellipse cover, #3e5977 0%, #1f2f3f 45%, #151f29 100%);
+	background-image:   radial-gradient(top center, ellipse cover, #3e5977 0%, #1f2f3f 45%, #151f29 100%);
+	border-top: 1px solid #292534;
+	border-bottom: 1px solid #292534;
+	-moz-box-shadow:    inset 0 3px 6px #16203b;
+	-webkit-box-shadow: inset 0 3px 6px #16203b;
+	box-shadow:         inset 0 3px 6px #16203b;
+}
+
+.galleryLogo
+{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	padding: 0px;
+	margin: 0px;
+	width: 300px;
+	height: 80px;
+	background:url('../images/NASABanner-trans.png') 0px 1px no-repeat;
+}
+
+.active-label {
+	position: absolute;
+	top: calc(70% + 8px);
+	left: 0px;
+	width: 1300px;
+	text-align: center;
+	height: 14px;
+	line-height: 14px;
+	font-size: 14px;
+	font-family: 'Quicksand' !important;
+	font-weight: 400;
+	text-shadow: #fff 0px 0px 1px;
+	color: #fff;
+}
+
+.navigation {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.navigation img {
+	margin: 1px;
+	width: 127px;
+	height: 84px;
+}
+
+.navigation .navigation-label {
+	position: absolute;
+	top: 88px;
+	left: 6px;
+	width: 10000em;
+	height: 10px;
+	line-height: 10px;
+	font-family: 'Arial';
+	font-size: 10px;
+	text-align: left;
+	color: #758ba7;
+}
+
+.navigation-wrapper {
+	position: absolute;
+	top: calc(70% + 30px);
+	left: 0;
+	width: 100%;
+	height: 86px;
+	display: block;
+}
+
+.navigation-wrapper .navigation {
+	overflow: hidden;
+	position: relative;
+}
+
+.navigation-wrapper .navigation ul {
+	width: 20000em;
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation-wrapper .navigation li {
+	position: relative;
+	opacity: .5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+	text-align: center;
+	width: 140px;
+	height: 110px;
+	overflow: hidden;
+	float: left;
+}
+
+.navigation-wrapper .navigation li.active {
+	opacity: 1;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.navigation-wrapper .navigation li.active .navigation-label {
+	color: #fff;
+}
+
+.navigation-wrapper .navigation li.active img{
+	margin: 0px;
+	border: 1px solid #fff;
+}
+
+.carousel {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.carousel img {
+	margin: auto auto;
+	max-width: 100%;
+	max-height: 100%;	
+}
+
+.carousel-wrapper {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 70%;
+}
+
+.carousel-wrapper .carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-wrapper .carousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.carousel-wrapper .carousel li {
+	text-align: center;
+	width: 1300px;
+  float: left;
+  height: 100%;
+}
+
+/** Stage carousel controls **/
+
+.carousel-wrapper .prev-main,
+.carousel-wrapper .next-main {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    color: #fff;
+}
+
+.carousel-wrapper .prev-main {
+    left: 0;
+}
+
+.carousel-wrapper .next-main {
+    right: 0;
+}
+
+.carousel-wrapper .prev-main.inactive,
+.carousel-wrapper .next-main.inactive {
+    display: none;
+}
+
+.carousel-wrapper .prev-main .prev-box,
+.carousel-wrapper .next-main .next-box {
+    opacity: .2;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
+    position: absolute;
+    top: calc(50% - 29px);
+    width: 42px;
+    height: 58px;
+    line-height: 40px;
+    border: 1px solid #758ba7;
+    border-radius: 6px;
+}
+
+.carousel-wrapper .prev-main .prev-arrow {
+	position: absolute;
+	top: 10px;
+	left: 14px;
+	width: 34px;
+	height: 34px;
+	border-top: 2px solid #758ba7;
+	border-left: 2px solid #758ba7;
+	-ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+}
+
+.carousel-wrapper .next-main .next-arrow {
+	position: absolute;
+	top: 10px;
+	left: -8px;
+	width: 34px;
+	height: 34px;
+	border-top: 2px solid #758ba7;
+	border-right: 2px solid #758ba7;
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+.carousel-wrapper .prev-main .prev-box {
+    left: 20px;
+}
+
+.carousel-wrapper .next-main .next-box {
+    right: 20px;
+}
+
+.carousel-wrapper .prev-main:hover .prev-box,
+.carousel-wrapper .next-main:hover .next-box {
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.box-transparent-background {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 6px;
+	background: #1f2f3f;
+    opacity: .4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}

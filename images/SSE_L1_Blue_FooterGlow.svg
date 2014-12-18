@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="922.758px" height="75.741px" viewBox="0 0 922.758 75.741" enable-background="new 0 0 922.758 75.741"
+	 xml:space="preserve">
+<g>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0.258" y="0" width="922.5" height="75.403">
+			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="0.258" y="0" width="922.5" height="75.403" id="SVGID_1_">
+		<g filter="url(#Adobe_OpacityMaskFilter)">
+			
+				<radialGradient id="SVGID_2_" cx="565.3867" cy="2043.2087" r="84.498" gradientTransform="matrix(5.4675 0 0 -0.9291 -2629.9905 1896.1639)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.094" style="stop-color:#F9F9F9"/>
+				<stop  offset="0.2183" style="stop-color:#E8E8E8"/>
+				<stop  offset="0.3597" style="stop-color:#CDCDCD"/>
+				<stop  offset="0.5137" style="stop-color:#A7A7A7"/>
+				<stop  offset="0.6778" style="stop-color:#757575"/>
+				<stop  offset="0.8477" style="stop-color:#3A3A3A"/>
+				<stop  offset="0.997" style="stop-color:#000000"/>
+			</radialGradient>
+			<ellipse fill="url(#SVGID_2_)" cx="461.258" cy="-2.148" rx="462" ry="78.505"/>
+		</g>
+	</mask>
+	
+		<radialGradient id="SVGID_3_" cx="466.0078" cy="1875.9539" r="544.2537" gradientTransform="matrix(1 0 0 -0.9545 0 1865.472)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0.3021" style="stop-color:#1D3558"/>
+		<stop  offset="0.8452" style="stop-color:#1D3558;stop-opacity:0.1413"/>
+		<stop  offset="0.9346" style="stop-color:#1D3558;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#1D3558;stop-opacity:0"/>
+	</radialGradient>
+	<path mask="url(#SVGID_1_)" fill="url(#SVGID_3_)" d="M922.758,0H0.258c0,43.227,206.506,75.403,461.25,75.403
+		C716.251,75.403,922.758,43.226,922.758,0z"/>
+</g>
+</svg>

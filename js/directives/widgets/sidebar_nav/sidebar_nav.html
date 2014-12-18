@@ -3,18 +3,25 @@
 <div class="content-wrapper clearfix">
 
   <tabset>
-    <tab heading="{{widgets.sidebar_nav.tabs.primary.header}}" class="tab-header first">
+    <tab class="tab-header first">
+      <tab-heading>
+      ALL ABOUT: <span>{{widgets.sidebar_nav.tabs.primary.header | words: 1 }}</span>
+      </tab-heading>
       <ul>
         <li ng-repeat="navItem in widgets.sidebar_nav.tabs.primary.data">
-          <a href="#/{{navItem.url}}">{{navItem.title}}</a>
+          <a ng-href="#/{{navItem.url}}">{{navItem.title}}</a>
         </li>
       </ul>
     </tab>
-    <tab heading="{{widgets.sidebar_nav.tabs.secondary.header}}" class="tab-header last">
+    <tab class="tab-header last">
+      <tab-heading>
+      <span>{{widgets.sidebar_nav.tabs.secondary.header}}</span>
+      </tab-heading>
       <ul>
         <li ng-repeat="navItem in widgets.sidebar_nav.tabs.secondary.data">
           <!-- <a ui-sref="{{navItem.state}}({ planet_id: '{{navItem.id}}' })" ui-sref-opts="{reload: true}">{{navItem.title}}</a> -->
-          <a href="#/planets/{{navItem.pageName}}">{{navItem.pageTitle}}</a>
+          <a ng-href="#/planets/{{navItem.pageName}}">{{navItem.pageTitle}}</a>
+          <!--<a ng-click="widgets.sidebar_nav.fn.transitionTo(navItem.pageName)">{{navItem.pageTitle}}</a>-->
         </li>
       </ul>
     </tab>

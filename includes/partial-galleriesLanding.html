@@ -1,0 +1,39 @@
+<style>body{background-color: #000}#header{background-image: url("images/SSE_L2_Purple_TopBannerGlow.svg")}.footer>.container{background-image: url("images/SSE_L2_Purple_FooterGlow.svg")}</style>
+<div id="gallery-wrapper" class="navbar">
+	<!-- Gallery Sections -->
+	<div id="sseGallery" class="gal-container galleries">
+		<div class="navbar gal-header galleries" id="gallery-sectionbar">
+				<p class="gallery-section-title" style="z-index: 3">Galleries</p>
+				<div class="socialBar">
+					<a href="#" id="icon-facebook"><img src="images/20x20_facebook.png" class="social-icons"/></a>
+					<a href="#" id="icon-twitter"><img src="images/20x20_twitter.png" class="social-icons"/></a>
+					<a href="#" id="icon-youtube"><img src="images/20x20_youtube.png" class="social-icons"/></a>
+					<a href="#" id="icon-share"><img src="images/20x20_share.png" class="social-icons"/></a>
+					<a href="#" id="icon-email"><img src="images/20x20_email.png" class="social-icons"/></a>
+					<a href="#" id="icon-print"><img src="images/20x20_print.png" class="social-icons"/></a>
+				</div>
+		</div>
+		<!-- Planets section -->
+		<div class="gal-wrapper">
+			<p class="hnl f17 white">Best Of</p>
+			<div id="less-wrapper">
+				<button ng-show="hasMorePeopleToShow()" ng-click="showMorePeople()" id="btn-more" class="hnl f20">Show less</button>
+			</div>
+			<div ng-controller="galleriesCtrl" class="navbar img-gallery" id="people-gallery">
+				<div ng-repeat="best in bestofgal | limitTo: bestLimit()" data-id="{{$index+1}}" class="item col-md-3 col-sm-4 col-xs-6 gal-pic">
+					<div class="img-window">
+						<a ng-href="#/{{best.url}}">
+							<img ng-src="images/spacer_square.png" class="filler"/>
+							<img ng-src="images/txt-bgshadow.png" class="txt-bg"/>
+							<img ng-src="{{best.bestThumb}}" class="img-responsive"/>
+						</a>
+					</div>
+					<p class="gal-name hnl f17">{{best.title}}<br><span class="title hnl f13">{{person.title}}</span></p>
+				</div>
+				<div id="more-wrapper">
+					<button ng-show="hasMoreBestToShow()" ng-click="showMoreBest()" id="btn-more" class="hnl f20">Show more</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

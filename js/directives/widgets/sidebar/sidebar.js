@@ -3,13 +3,14 @@ var feeds = [];
 
 angular.module('sse.directives', ['ngResource'])
 	.factory('FeedLoader', function ($resource) {
+	
         return $resource('http://ajax.googleapis.com/ajax/services/feed/load', {}, {
-            fetch: { method: 'JSONP', params: {v: '1.0', callback: 'JSONP_CALLBACK'} }
+            fetch: { method: 'JSONP', params: {v: '1.0', callback: 'JSON_CALLBACK'} }
         });
     })
     .service('FeedList', function ($rootScope, FeedLoader) {
-        this.jsonp = function() {
-            var feedSources = [{title: 'Slashdot', url: 'http://rss.slashdot.org/Slashdot/slashdot'}];
+        this.get = function() {
+            var feedSources = [{title: 'NASA JPL NEWS', url: 'http://www.jpl.nasa.gov/multimedia/rss/news.xml'}];
             if (feeds.length === 0) {
                 for (var i=0; i<feedSources.length; i++) {
                     FeedLoader.fetch({q: feedSources[i].url, num: 10}, {}, function (data) {
@@ -20,6 +21,12 @@ angular.module('sse.directives', ['ngResource'])
             }
             return feeds;
         };
+    })
+	.controller('FeedCtrl', function ($scope, FeedList) {
+        $scope.feeds = FeedList.get();
+        $scope.$on('FeedList', function (event, data) {
+            $scope.feeds = data;
+        });
     })
 	// LOAD Factoid 1
 	.directive('factoid1', function () {
@@ -36,10 +43,15 @@ angular.module('sse.directives', ['ngResource'])
 		 }
 	})
 	// LOAD Factoid 3
-	.directive('factoid3', function () {
+	.directive('factoid3', function ($timeout) {
 		return {
 		  restrict: 'E',
-		  templateUrl: 'includes/factoid3.html'
+		  templateUrl: 'includes/factoid3.html',
+		  link: function(scope,element,attrs) {
+			 $timeout(function() {
+				 $(element).slick(scope.$eval(attrs.slickSlider));
+			 });
+		   }
 		 }
 	})
 	// LOAD Popular Planets
@@ -69,6 +81,12 @@ angular.module('sse.directives', ['ngResource'])
 		  restrict: 'E',
 		  templateUrl: 'includes/popDownloads.html'
 		 }
+	})
+	.directive('sbpeople', function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'js/directives/widgets/sidebar/sbpeople.html'
+		}
 	})
 	// INIT factoid frames
 	.directive("async", function( $timeout ) {

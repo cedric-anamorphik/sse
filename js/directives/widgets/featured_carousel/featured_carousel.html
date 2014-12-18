@@ -1,10 +1,10 @@
-<div class="featured-carousel">
-<carousel interval="widgets.featured_carousel.interval">
+<div class="featured-carousel" ng-show="widgets.featured_carousel.data.length > 0">
+<carousel interval="widgets.featured_carousel.interval" disable-ng-animate>
   <slide ng-repeat="slide in widgets.featured_carousel.data" active="slide.active">
     <div ng-switch="slide.type">
     <div ng-switch-when="image">
       <img ng-src="{{slide.image}}">
-      <div class="carousel-caption">
+      <div class="carousel-caption cf-s17">
         {{slide.content}}
       </div>
     </div>
@@ -14,7 +14,7 @@
           <iframe id="targetFrame" ng-src="{{slide.url}}" frameborder="0" height="1200" width="1200"></iframe>
         </div>
       </div>
-      <div class="carousel-caption">Pellentesque dictum leo convallis nisi fermentum, vitae accumsan risus blandit.</div>
+      <div class="carousel-caption cf-s17">{{slide.content}}</div>
     </div>
     </div>
   </slide>

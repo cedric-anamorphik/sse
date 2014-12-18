@@ -85,6 +85,7 @@ var devDetect = {
 /*+++++++++++++++++*/
 $(document).ready(function(){
 
+	$('#header').removeClass("navbar-fixed-top");
 	// Center gallery images
 	var galpic = $('.gal-pic:nth-child(1)'),
 	galpicWidth = galpic.width();	
@@ -162,6 +163,69 @@ $(document).ready(function(){
 	$('#menu').delegate('.menu-item:first-child input', 'click', function(){
 		window.location.href = "#/";
 	});
+	
+	// This is the connector function.
+	// It connects one item from the navigation carousel to one item from the
+	// stage carousel.
+	// The default behaviour is, to connect items with the same index from both
+	// carousels. This might _not_ work with circular carousels!
+	var connector = function(itemNavigation, carouselMain) {
+		return carouselMain.jcarousel('items').eq(itemNavigation.index());
+	};
+
+	// Setup the carousels. Adjust the options for both carousels here.
+	var carouselMain      = $('.carousel-main').jcarousel();
+	console.log(carouselMain);
+	var carouselNavigation = $('.carousel-navigation').jcarousel();
+	console.log(carouselNavigation);
+
+	// We loop through the items of the navigation carousel and set it up
+	// as a control for an item from the stage carousel.
+	carouselNavigation.jcarousel('items').each(function() {
+		var item = $(this);
+
+	// This is where we actually connect to items.
+	var target = connector(item, carouselMain);
+
+	item
+		.on('jcarouselcontrol:active', function() {
+			carouselNavigation.jcarousel('scrollIntoView', this);
+			item.addClass('active');
+			var label = item.find('.navigation-label').html();
+			$('.active-label').html(label);
+		})
+		.on('jcarouselcontrol:inactive', function() {
+			item.removeClass('active');
+		})
+		.jcarouselControl({
+			target: target,
+			carousel: carouselMain
+		});
+});
+
+// Setup controls for the stage carousel
+$('.prev-main')
+	.on('jcarouselcontrol:inactive', function() {
+		$(this).addClass('inactive');
+	})
+	.on('jcarouselcontrol:active', function() {
+		$(this).removeClass('inactive');
+	})
+	.jcarouselControl({
+		target: '-=1'
+	});
+
+$('.next-main')
+	.on('jcarouselcontrol:inactive', function() {
+		$(this).addClass('inactive');
+	})
+	.on('jcarouselcontrol:active', function() {
+		$(this).removeClass('inactive');
+	})
+	.jcarouselControl({
+		target: '+=1'
+	});
+
 });
 
 /*+++++++++++++++*/
@@ -209,6 +273,14 @@ $(window).resize(function(){
 		$('.navbar.news .btn-group a').removeClass("selected");
 		$('.navbar.news .btn-group a#list').addClass("selected");
 		$('#news-gallery .item').addClass("list-group-item");
+	}
+	
+	var pathname = window.location.pathname;
+	if (pathname == "/devel/sse/dev/" || "/devel/sse/staging/"){
+		var windowH = $(window).height(),
+		headerH = $('#header').height(),
+		targetH = windowH-headerH;
+		$("#menu").css("height", targetH);
 	}
 	
 });
@@ -384,25 +456,43 @@ function itemStandard(data){
 /* Main Menu
 /*+++++++++++*/
 function mm(){
+	$('#menu .menu-item:first-child div.panel-collapse').remove();
 	$('#main-menu-wrapper').toggle( "fast");
 	var footerOffset = $('.footer').offset(),
 		hdrHeight = $('#header').height(),
 		offsetVal = footerOffset.top - hdrHeight;
 		$('#menu').css("height", offsetVal);
+	var pathname = window.location.pathname;
+	if (pathname == "/devel/sse/dev/" || "/devel/sse/staging/"){
+		var windowH = $(window).height(),
+		headerH = $('#header').height(),
+		targetH = windowH-headerH;
+		$("#menu").css("height", targetH);
+	}
 }
 // Menu Item Focus
 function mif(data){
 	var thisEl = data,
 	parentEl = $(thisEl).parent(),
-	currArrow = $(parentEl).find('.arrow');
-	$(currArrow).css('backgroundPosition', "-11px,0");
+	currArrow = $(parentEl).find('.arrow'),
+	currSel = $(parentEl).find('.arrow.selected');
+	if($(currArrow).hasClass("selected")){
+		$(currArrow).css('backgroundPosition', "-22px,0");
+	} else {
+		$(currArrow).css('backgroundPosition', "-11px,0");
+	}	
 }
 // Menu Item Unfocus
 function miu(data){
 	var thisEl = data,
 	parentEl = $(thisEl).parent(),
-	currArrow = $(parentEl).find('.arrow');
-	$(currArrow).css('backgroundPosition', "0,0");
+	currArrow = $(parentEl).find('.arrow'),
+	currSel = $(parentEl).find('.arrow.selected');
+	if($(currArrow).hasClass("selected")){
+		$(currArrow).css('backgroundPosition', "-22px,0");
+	} else {
+		$(currArrow).css('backgroundPosition', "0,0");
+	}
 }
 // Menu Item Select
 function mis(data){
@@ -410,8 +500,15 @@ function mis(data){
 	parentEl = $(thisEl).parent(),
 	currArrow = $(parentEl).find(".arrow");
 	$('#menu .arrow, #menu input').removeClass("selected");
-	$(thisEl).addClass("selected");
-	$(currArrow).addClass("selected");
+	$('#menu .arrow').css('backgroundPosition', "0,0");
+	if (!$(thisEl).hasClass("selected")){
+		$(thisEl).addClass("selected");
+		$(currArrow).addClass("selected");
+	} else {
+		$(thisEl).removeClass("selected");
+		$(currArrow).removeClass("selected");
+	}
+	$(currArrow).css('backgroundPosition', "-22px,0");
 }
 
 // News Items
@@ -431,3 +528,12 @@ function gotoArticle(el){
 	target = $(parentEl).attr("href");
 	alert(target);
 }
+
+$('#factoids-carousel').on('slide.bs.carousel', function (event) {
+	alert("you made it here via on");
+	var active = $(event.target).find('.carousel-inner > .item.active');
+	var from = active.index();
+	var next = $(event.relatedTarget);
+	var to = next.index();
+	var direction = event.direction;
+});

@@ -3,10 +3,10 @@
 <div class="content-wrapper">
 
 <div class="header-wrapper">
-<div class="cfont1">MORE PEOPLE</div>
+<div class="cfont1 cf-hnt cf-s17">MORE PEOPLE</div>
 </div>
 
-<slick dots="false" infinite="true" arrows="true" slides-to-show="3" slides-to-scroll="1" data="widgets.people.data" init-onload="true" on-after-change="widgets.people.fn.onAfterChange();" id="slick-people" async2>
+<slick dots="false" infinite="true" arrows="true" slides-to-show="3" slides-to-scroll="1" data="widgets.people.data" init-onload="true" center-mode="true" center-padding="0.4em" focus-on-select="true" on-after-change="widgets.people.fn.onAfterChange();" id="slick-people" async2>
   <div ng-repeat="profile in widgets.people.data" ng-class="widgets.people.fn.get_classes($index);">
     <img ng-src="{{profile.image}}" alt="{{profile.name}}" />
   </div>
@@ -16,7 +16,7 @@
   <div class="name"><a href="#/{{widgets.people.featured.url}}">{{widgets.people.featured.name}}</a></div>
   <div class="title cfont13">{{widgets.people.featured.title}}</div>
   </div>
-  <div class="text cfont14 clearfix">{{widgets.people.featured.content}} <span class="more-link"><a href="#/{{widgets.people.featured.url}}" class="cfont11">more<img src="images/more_arrow.png" class="arrow-indicator"></a></span>
+  <div class="text clearfix">{{widgets.people.featured.content}} <span class="more-link"><a href="#/{{widgets.people.featured.url}}" class="cf-s12">more<img src="images/more_arrow.png" class="arrow-indicator"></a></span>
   </div>
 </div>
 

@@ -1,0 +1,5002 @@
+body, html {
+	background-color: #000000;
+	margin-top: 1px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-repeat: repeat-x;
+	background-position: 50% 0%;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.print {
+	background-color: #FFFFFF;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#contentHome, #content {
+	background-image: url('../images/bg-top.png');
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	width: 100%;
+}
+
+#contentKids {
+	background-image: url('../images/bg-top-kids.png');
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	width: 100%;
+}
+
+#container {
+	background-image: url('../images/bg-bottom.png');
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	width: 100%;
+}
+
+#contentbg1 {
+	background-image: url('../images/bg-top-gradient.png');
+	background-repeat: repeat-x;
+	background-position: 50% 0%;
+	width: 100%;
+}
+
+#contentbg2 {
+	background-image: url('../images/bg-bottom-gradient.png');
+	background-repeat: repeat-x;
+	background-position: 50% 100%;
+	width: 100%;
+}
+
+#content #top_siteBanner, #contentHome #top_siteBanner, #contentKids #top_siteBanner {
+	width: 950px;
+	height: 79px;
+	background-image: url('../images/border_bannershadow.png');
+}
+
+#main {
+	width: 950;
+	padding: 0;
+	margin: 0;
+}
+
+#content .mainContent {
+	background-color: #ffffff;
+}
+
+.mainContent {
+	float: right;
+	width: 750px;
+}
+
+.bodyContent {
+	background-image: url('../images/content_topshadow.png');
+	background-repeat: repeat-x;
+	padding-right: 9px;
+	padding-left: 9px;
+	font-size: 12px;
+	padding-top: 14px;
+	padding-bottom: 10px;
+}
+
+.bodyContentTab {
+	padding-right: 0px;
+	padding-left: 0px;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.bodyContentKids {
+	/*padding-right: 9px;
+	padding-left: 9px;*/
+	font-size: 12px;
+	/*padding-top: 5px;
+	padding-bottom: 10px;*/
+}
+
+.bodyContentPuzzles {
+	padding-right: 9px;
+	padding-left: 9px;
+	font-size: 12px;
+	padding-top: 14px;
+	padding-bottom: 10px;
+}
+
+.bodyContentPrint {
+	background-color: #FFFFFF;
+}
+
+.bodyContent p, .bodyContentTab p {
+	margin-top: 0px;
+}
+
+.bodyContent ul, .bodyContent ol, .bodyContentTab ul, .bodyContentTab ol {
+	padding-top: 0px;
+	margin-top: 0px;
+	/*color: #13245b;
+	font-weight: bold;*/
+}
+
+.bodyContent li, .bodyContentTab li {
+	font-family: Helvetica, Arial, sans-serif;
+	/*font-size: 12px*/}
+
+.bodyContent hr {
+	height: 1px;
+	border-width: 0px;
+	color: #FFFFFF;
+	background-color: #FFFFFF;
+}
+
+.bodyContentTab hr {
+	height: 1px;
+	border-width: 0px;
+	color: #D4DEEB;
+	background-color: #D4DEEB;
+}
+
+hr.audioHR, hr.downloadHR, hr.interactiveHR {
+	height: 2px;
+	border-width: 0px;
+	color: #113F7F;
+	background-color: #113F7F;
+}
+
+hr.galleryHR, hr.multimediaHR {
+	height: 2px;
+	border-width: 0px;
+	color: #989898;
+	background-color: #989898;
+}
+
+hr.modelHR {
+	height: 2px;
+	border-width: 0px;
+	color: #D5D5D5;
+	background-color: #D5D5D5;
+	margin: 0px;
+	padding: 0px;
+}
+
+hr.mostpopularHR {
+	height: 1px;
+	border-width: 0px;
+	color: #456C9C;
+	background-color: #456C9C;
+	margin: 0px;
+	padding: 0px;
+}
+
+hr.whiteHR {
+	height: 2px;
+	border-width: 0px;
+	color: #FFFFFF;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+
+.Title, .bodyContent .Title, .bodyContentTab .Title {
+	color: #000000;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.subTitle, .bodyContent .subTitle, .bodyContentTab .subTitle {
+	color: #01358A;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.bodyContentHome {
+	background-image: url('../images/content_homepageshadow.png');
+	background-repeat: repeat-x;
+	background-color: #2C5180;
+	font-size: 12px;
+}
+
+.bodyContentHome p {
+	margin-top: 0px;
+}
+
+.bodyContentHome ul, .bodyContentHome ol {
+	padding-top: 0px;
+	margin-top: 0px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.bodyContentHome li {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px}
+
+.bodyContentHome .Title {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 6px;
+	padding-bottom: 9px;
+}
+
+.bodyContentHome .subTitle {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.leftNav {
+	background-color: #36223E;
+	width: 200px;
+	margin: 0px;
+}
+
+.navItem a, .navItem a:visited, .navItem_on a, .navItem_on a:visited {
+	display: block;
+	width: 200px;
+}
+
+.navItem_on a, .navItem_on a:visited {
+	border-bottom: none;
+}
+
+.navItem_on a, .navItem_on a:visited {
+	background-image: url('images/navitembg_sel.gif');
+	background-repeat: repeat-y;
+}
+
+.navItem a:hover, .navItem_on a:hover {
+	background-image: url('images/navitembg_sel.gif');
+	background-repeat: repeat-y;
+}
+
+.navSub {
+	background-image: url('../images/leftnav_bottomshadowlight.png');
+	background-repeat: no-repeat;padding-top: 5px;padding-bottom: 5px;
+}
+
+.navItemSub {
+	color: #937B9E;
+	text-decoration: none;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.navItemSub a {
+	color: #937B9E;
+	text-decoration: none;
+}
+
+.navItemSub a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.navItemSub_on {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.navItemSub div {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+}
+
+.navItemSub2 {
+	color: #937B9E;
+	text-decoration: none;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	padding-left: 30px;
+	padding-right: 15px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.navItemSub2 a {
+	color: #937B9E;
+	text-decoration: none;
+}
+
+.navItemSub2 a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.navItemSub2_on {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.navItemSub2 div {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+}
+
+.navBottom {
+	background-image: url('../images/leftnav_bottomshadow.png');
+	background-repeat: no-repeat;
+	height: 16px;
+}
+
+.navBottom2 {
+	height: 16px;
+}
+
+.navBottomPoll {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #A5CEFF;
+}
+
+.navItemSub hr {
+	height: 1px;
+	border-width: 0px;
+	color: #2d411d;
+	background-color: #2d411d;
+	margin-left: -8px;
+}
+
+.contentTable {
+	font-size: 12px;
+	border-width: 2px 2px 2px 2px;
+	border-spacing: 0px;
+	border-style: solid solid solid solid;
+	border-color: #ffffff #ffffff #ffffff #ffffff;
+	border-collapse: collapse;
+	background-color: #dcddae;
+	text-align: left;
+}
+
+.breadcrumbText {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, sans-serif;
+	letter-spacing: 1px;
+	font-size: 12px;
+	color: #002562;
+	padding-right: 12px;
+	padding-left: 12px;
+	padding-top: 7px;
+	padding-bottom: 8px;
+}
+
+.breadcrumbText td {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, sans-serif;
+	letter-spacing: 1px;
+	font-size: 12px;
+	color: #002562;
+}
+
+.breadcrumbText a {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, sans-serif;
+	letter-spacing: 1px;
+	font-size: 12px;
+	color: #396DC0;
+	text-decoration: none;
+}
+
+.breadcrumbText a:hover {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, sans-serif;
+	letter-spacing: 1px;
+	font-size: 12px;
+	color: #396DC0;
+	text-decoration: underline;
+}
+
+.pageTitle {
+	color: #000000;
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	padding-right: 12px;
+	padding-left: 12px;
+	padding-top: 3px;
+	padding-bottom: 5px;
+}
+
+.pageTitlePuzzles {
+	color: #FFFFFF;
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.contentInset {
+	background-color: #112F5F;
+}
+
+.contentInsetCaption {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #B7CFF3;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.contentInsetImage {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF !important;
+}
+
+.searchBox {
+	width: 185px;
+	margin-left: 12px;
+}
+
+.searchButton {
+	background-image: url('../images/leftnav_searchbox_submit_off.png');
+}
+
+.searchTable {
+	background-image: url('../images/leftnav_searchbox_outerbg.png');
+	background-repeat: no-repeat;
+	width: 176px;
+	height: 28px;
+	margin-left: 16px;
+}
+
+.searchInput {
+	border: none;
+	background-image: url('../images/leftnav_searchbox_innerbg.png');
+	background-color: #2D4F7C;
+	background-repeat: no-repeat;
+	width: 149px;
+	height: 24px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #6886AD;
+	margin: 1px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.searchinput2 {
+	border: none;
+	background-color: transparent;
+	font-size: 12px;
+	margin-left: 6px;
+	margin-right: 6px;
+	padding: 0;
+	margin-top: 2px;
+	margin-bottom: 3px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #6886AD;
+	width: 143px;
+}
+
+.searchbox2 {
+	background-image: url('../images/leftnav_searchbox_bg.png');
+	background-repeat: no-repeat;
+	height: 28px;
+	padding-top: 5px !important;
+	padding-top: 2px;
+	width: 155px;
+	padding-right: -15px;
+}
+
+.searchbox3 {
+	background-image: url('../images/leftnav_searchbox_bg.gif');
+	background-repeat: no-repeat;
+	height: 28px;
+	padding-top: 5px !important;
+	padding-top: 2px;
+	width: 155px;
+	padding-right: -15px;
+}
+
+.errortext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #AA0000;
+}
+
+td.footerPanel1 {
+	background-image: url('../images/footer-panel1.jpg');
+	background-repeat: repeat-y;
+	width: 215px;
+}
+
+td.footerPanel2 {
+	background-image: url('../images/footer-panel2.jpg');
+	background-repeat: repeat-y;
+	width: 200px;
+}
+
+td.footerPanel3 {
+	background-image: url('../images/footer-panel3.jpg');
+	background-repeat: repeat-y;
+	width: 200px;
+}
+
+td.footerPanel4 {
+	background-image: url('../images/footer-panel4.jpg');
+	background-repeat: repeat-y;
+	 width: 197px;
+}
+
+a.footer:link, a.footer:visited {
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #8999B1;
+}
+
+a.footer:hover {
+	color: #FFFFFF;
+}
+
+a.footeradmin {
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #FF0000;
+}
+
+a.footeradmin:hover {
+	color: #FFFFFF;
+}
+
+.footerText {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 9px;
+	color: #8999b1;
+}
+
+.footerTextLarge {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #8999b1;
+}
+
+
+
+
+
+
+.maintext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF}
+
+.smalltext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF}
+
+.smalltext2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF}
+
+.goldtext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #FFC83F}
+
+.goldsmalltext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #FFC83F}
+
+.goldlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFC83F}
+
+.redtext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #AC3B0E}
+
+.redsmalltext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #AC3B0E}
+
+.ltbluetext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #A0B2CC}
+
+.ltbluesmalltext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #A0B2CC}
+
+.ltbluelink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A0B2CC;
+	text-decoration: none}
+
+.featureheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #AB0F2E}
+
+.featurearchivelink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #B39DB8;
+	text-decoration: none;
+}
+
+.adminheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #AB0F2E}
+
+.admintext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #AB0F2E}
+
+.adminlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #AB0F2E}
+
+.adminwhitelink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF}
+
+.userlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #003680}
+	
+.pagingtext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;}
+	
+.paginglinksel {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;}
+	
+.paginglinkon {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #003680;
+	text-decoration: none;}
+	
+.paginglinkoff {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #A2A2A2;
+	text-decoration: none;}
+
+.l2text {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #000000}
+
+.l2textnounderline {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	text-decoration: none}
+
+.l2smalltext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000}
+
+.l2smalltextnounderline {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none}
+
+.l2smalltext2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000}
+
+.l2smalltext2nounderline {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none}
+
+.l2missiontext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #000000;}
+
+.l2featuretitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #003680;
+	text-decoration: none}
+
+.l2featuresmalltitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #003680;
+	text-decoration: none}
+
+.l2featurelargetitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #003680;
+	text-decoration: none}
+
+.l2featuregold {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #A77700;
+	text-decoration: none}
+
+.l2featurelargegold {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #A77700;
+	text-decoration: none}
+
+.l2featuretext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000}
+
+.l2featurelink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none}
+	
+.l2featurelinkblue {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #043C96;
+	font-weight: bold;
+	text-decoration: none}
+
+.l2featurelinklight {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none}
+
+.l2greylink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #A2A2A2;
+	font-weight: bold;
+	text-decoration: none}
+
+.l2missiontitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none}
+	
+.l2missionsearchtitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	color: #774C0E;}
+
+.l2missionsearchtext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	padding: 9px;
+	color: #FFFFFF;}
+
+.l2missionsearchinputshort {
+	border: none;
+	width: 56px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	background-image: url('../missions/images/missionsort-bg-searchboxshort.gif');
+	color: #000000;}
+
+.l2missionsearchinputlong {
+	border: none;
+	width: 203px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	background-image: url('../missions/images/missionsort-bg-searchboxlong.gif');
+	color: #000000;}
+
+.l2missionsorttaboff {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: italic;
+	color: #456793;
+	opacity:0.6; filter:alpha(opacity=60);
+	text-decoration: none}
+
+.l2missionsorttabon, .l2missionsorttaboff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: italic;
+	color: #456793;
+	opacity:1; filter:alpha(opacity=100);
+	text-decoration: none}
+
+.l2missionstabletitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none}
+
+.l2missionsadvancedselect {
+	width: 167px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;}
+
+.l2missionsicon {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #26639A;
+	text-decoration: none;}
+
+.l2missionscoreboardtitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px;
+	color: #FFFFFF;
+	text-decoration: none;}
+
+.l2missionscoreboardgreen {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 5px;
+	color: #B2FF88;
+	text-decoration: none;}
+
+.l2missionscoreboardwhite {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	padding: 5px;
+	color: #FFFFFF;
+	text-decoration: none;}
+
+.l2missionscoreboardlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #B2FF88;
+	text-decoration: none;}
+
+.l2missionscoreboardlink:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;}
+
+.l2missionscoreboardlink2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;}
+
+.l2missionstatus {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
+	color: #003680;
+	text-decoration: none}
+
+.l2newslargetitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #003680;
+	text-decoration: none}
+
+.l2newsheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #A73A00;
+	text-decoration: none}
+
+.l2newsfeaturetitle {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 13px;
+	padding-bottom: 8px;
+}
+
+.l2newstitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none}
+
+.l2newsdate {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #54327F;
+	text-decoration: none}
+
+.l2newscolheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none}
+
+.l2newstabletext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding: 8px;
+	text-decoration: none}
+	
+.l2newsselect {
+	width: 210px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;}
+	
+.l2newsinput {
+	width: 25px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;}
+
+.l2newslink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #003680;
+	text-decoration: none}
+
+.l2newsresults {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #003680;
+	text-decoration: none}
+
+.l2newslettertitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #AC3B0E;
+	text-decoration: none}
+
+.l2newsletterlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #003680;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none}
+
+.l2newscaption {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-style: italic;
+}
+
+.newsdropdown {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+
+.l2notebookdate {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 14.5px;
+	color: #D11E1E;
+	text-decoration: none}
+
+.l2notebooklink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 14.5px;
+	color: #000000;
+	text-decoration: none}
+	
+.l2notebooklink:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 14.5px;
+	color: #000000;
+	text-decoration: underline;}
+
+.l2whatsupheader, .l2columnheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none}
+
+.l2whatsupboxheader, .l2columnBoxheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-bottom: 8px;}
+
+.l2whatsupboxyear, .l2columnboxyear {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;}
+
+.l2whatsupboxmonth, .l2columnboxmonth {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;}
+
+a.l2whatsupboxmonth:hover, .l2columnboxmonth:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;}
+
+.l2whatsupboxmonthsel, .l2columnboxmonthsel {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;}
+
+.l2whatsupfeaturetitle, .l2columnfeaturetitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	color: #FFFFFF;
+	text-decoration: none}
+
+.l2whatsupfeaturedate, .l2columnfeaturedate {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	color: #FFDF6A;
+	text-decoration: none}
+
+.l2whatsupfeaturetext,.l2columnfeaturetext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none}
+
+.l2whatsupfeaturelink, .l2columnfeaturelink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #FFDF6A;
+	text-decoration: underline}
+
+.l2whatsuplink, .l2columnlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	text-decoration: underline}
+
+.l2eventdate {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #003680;
+	text-decoration: none}
+
+.l2eventdateblack {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none}
+
+.l2eventlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none}
+
+.l2missionfeaturelink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.l2profilelink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+}
+
+.l2peoplefeature {
+	margin-left: 6px;
+	margin-right: 6px;
+	margin-bottom: 14px;
+}
+
+.l2peoplefeaturelink {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	color: #FFFFFF;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.l2peoplefeaturelink:hover {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	color: #FFFFFF;
+	font-size: 15px;
+	text-decoration: underline;
+}
+
+.l2peopleoccupationlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.l2peopleprofiletable {
+	background-color: #B2771B;
+	background-image: url('../people/images/bg-people-darkfull2.gif');
+	background-repeat: repeat-x;
+}
+
+.l2peopleprofilecaption {
+	background-color: #462E63;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 6px;
+}
+
+.l2peopleprofiletitle {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.l2peopleprofileoccupation {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	color: #FEE27F;
+	font-size: 20px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.l2peopleprofiletribute {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.l2peoplequoteright {
+	background-image: url('../people/images/bg-people-quoteright.png');
+	background-repeat: repeat-y;
+	background-position: 100% 0%;
+}
+
+.l2peoplequoteleft {
+	background-image: url('../people/images/bg-people-quoteleft.png');
+	background-repeat: repeat-y;
+}
+
+.l2peoplequote {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	color: #9D5E12;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.l2peoplequotetable {
+	background-color: #9D5E12;
+}
+
+.l2peoplecolheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none}
+
+.l2peopletabletext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding: 8px;
+	text-decoration: none}
+
+.l2qheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #AC3B0E;
+	text-decoration: none}
+
+.l2bycomparison {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-style: italic;
+	color: #003680;
+	text-decoration: none}
+
+.homepagetext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px}
+
+.homepagetextblue {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #B3C9DF;
+}
+
+.homepagetextpurple {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #CBB8D6;
+}
+
+.homepagedate {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #EEC330;
+	font-size: 11px;
+	text-decoration: none}
+
+.homepagetitle {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	font-size: 18px;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 13px;
+	padding-bottom: 8px;
+}
+
+.homepagelargetitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 20px;
+	text-decoration: none}
+
+.homepagesplashtitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	color: #FFCC33;
+	font-size: 18px;
+}
+
+.homepagesplashtext {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFCC33;
+	font-size: 12px;
+}
+
+.greatshotstext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.greatshotslink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #A5CEFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.sizecomparisontitle {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.sizecomparisontitleshadow {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.sizecomparisontext {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.sizecomparisoninst {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #F0C55B;
+	font-size: 11px;
+	font-style: italic;
+	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.sizecomparisonoption, a.sizecomparisonoption {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A5CEFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+a.sizecomparisonoption:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFDA5B;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.sizecomparisonoptionsel {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFDA5B;
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.sizecomparisonlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A5CEFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.sizecomparisonselect {
+	background-image: url('../planets/images/bg-sizecomparison-select.gif');
+	background-repeat: no-repeat;
+	width: 106px;
+	height: 22px;
+}
+
+.sizecomparisonresults {
+	background-image: url('../planets/images/bg-sizecomparison-results.gif');
+	background-repeat: no-repeat;
+	width: 106px;
+	height: 22px;
+}
+
+.scoreboardtitle {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.scoreboardtext {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.scoreboardnumber {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFCF5B;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.scoreboardlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.marsclocktitle {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.marsclocktext {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFCF5B;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.marsclocknumber {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.marsclockunit {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+.marsclockunitlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #9EC9FF;
+	font-weight: bold;
+	font-size: 10px;
+	opacity:0.6; filter:alpha(opacity=60);
+	text-decoration: none;
+}
+
+.marsclockunitlink:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #9EC9FF;
+	font-weight: bold;
+	font-size: 10px;
+	opacity:1; filter:alpha(opacity=100);
+	text-decoration: none;
+}
+
+.marsclocklink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #9EC9FF;
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.mostpopulartabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #08254B;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.mostpopulartabson, .mostpopulartabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #00132B;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.mostpopulartitle {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFDB61;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.mostpopularnumber {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFDB61;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.mostpopulartext {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A5CEFF;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.mostpopulartextfeatured {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.mostpopulartextcaption {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.hppeopletitle {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	letter-spacing: 1px;
+	color: #FFDB61;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.hppeopletext {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.hppeoplelink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFDB61;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.timelinetitle {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	letter-spacing: 1px;
+	color: #FFDB61;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.timelinetext {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.timelinetextgold {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFDB61;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.timelinetextheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFDB61;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.timelinelink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A5CEFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.timelineselect {
+	background-image: url('../images/bg-timeline-select.gif');
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 22px;
+}
+
+.timelineoption, a.timelineoption {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A5CEFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+a.timelineoption:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFDA5B;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.timelineoptionsel {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFDA5B;
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.timelinepast {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #D1B450;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+.timelinepresent {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A891C5;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+.timelinefuture {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #769FD4;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+.whitelink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+.whitelink2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.whitecolheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.whitecolheader2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.whiteheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+	
+.whiteheaderbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.whiteheaderbarsmall {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.purplecolheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #38007D;
+	text-decoration: none;
+}
+
+.purplecolheader2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	color: #38007D;
+	text-decoration: none;
+}
+
+.purpleheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #38007D;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+	
+.purpleheaderbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #38007D;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	background-image: url('../images/bg-header.gif');
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.purpleheaderbar2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #38007D;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	background-image: url('../images/bg-header.gif');
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.purpleheaderbarshort {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #38007D;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	background-image: url('../images/bg-headershort.gif');
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.purpleheaderbarshort2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #38007D;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	background-image: url('../images/bg-headershort.gif');
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.purpleheaderbarsmall {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #38007D;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.galleryheaderbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #003475;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../multimedia/images/bg-header-white.png');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.pastheaderbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-past.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.pastheaderbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-past.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.presentheaderbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-present.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.presentheaderbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-present.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.futureheaderbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-future.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.futureheaderbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-future.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.conceptheaderbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-concept.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.conceptheaderbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-concept.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.alphaheaderbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-alpha.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.alphaheaderbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-alpha.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron1950headerbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-1950.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron1950headerbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-1950.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron1960headerbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-1960.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron1960headerbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-1960.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron1970headerbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-1970.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron1970headerbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-1970.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron1980headerbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-1980.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron1980headerbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-1980.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron1990headerbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-1990.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron1990headerbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-1990.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron2000headerbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-2000.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron2000headerbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-2000.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron2010headerbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-2010.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron2010headerbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-2010.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron2020headerbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-2020.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.chron2020headerbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-2020.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.advancedheaderbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-header-advanced.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.advancedheaderbarlong {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../missions/images/bg-headerlong-advanced.jpg');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.newsheaderbarsmall {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #F6DA96;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.yellowheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFCC4C;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.purplebartext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #B699B8;font-size: 11px;
+}
+
+.purplebartext2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 11px;
+}
+
+.purplebarlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #C0DCFF;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.planetsheadergold, .scitechheadergold {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-header-gold.png');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.planetsheadergreen, .scitechheadergreen {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-header-green.png');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.planetsheaderblue, .scitechheaderblue {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-header-blue.png');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.planetsheaderred, .scitechheaderred {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-header-red.png');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.planetsheaderpurple, .scitechheaderpurple {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-header-purple.png');
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.goldheaderbar2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A87D0D;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-header.gif');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.goldheaderbarshort2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A87D0D;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-headershort.gif');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.greenheaderbar2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #3F7712;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-header.gif');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.greenheaderbarshort2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #3F7712;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-headershort.gif');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.blueheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #0E4392;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+	
+.blueheaderbar {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #0E4392;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	background-image: url('../images/bg-header.gif');
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.blueheaderbar2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #0E4392;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-header.gif');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.blueheaderbarshort2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #0E4392;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-headershort.gif');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.redheaderbar2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #921D15;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-header.gif');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.redheaderbarshort2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #921D15;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: url('../images/bg-headershort.gif');
+	background-repeat: no-repeat;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.size1 {
+	font-size: 10px}
+
+.size2 {
+	font-size: 13px}
+
+.size3 {
+	font-size: 20px}
+
+.pastmissions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #976F26;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.presentmissions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #513772;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.futuremissions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #043C96;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.conceptmissions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #264397;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.alphamissions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #AC3B0E;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.chron1950missions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #976F26;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.chron1960missions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #975E26;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.chron1970missions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #974826;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.chron1980missions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #972645;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.chron1990missions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #972679;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.chron2000missions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #652697;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.chron2010missions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #2F2697;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.chron2020missions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #264397;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.chrongreymissions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #8E8E8E;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.greymissions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #8E8E8E;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.advancedmissions {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #2B861D;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.pastmissionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #976F26;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.presentmissionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #513772;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.futuremissionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #043C96;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.conceptmissionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #264397;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.alphamissionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #AC3B0E;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.chron1950missionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #976F26;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.chron1960missionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #975E26;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.chron1970missionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #974826;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.chron1980missionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #972645;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.chron1990missionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #972679;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.chron2000missionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #652697;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.chron2010missionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #2F2697;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.chron2020missionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #264397;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.chrongreymissionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #8E8E8E;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.greymissionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #8E8E8E;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.advancedmissionslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #2B861D;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.pastlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #976F26;
+}
+
+.presentlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #513772;
+}
+
+.futurelink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #043C96;
+}
+
+.conceptlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #264397;
+}
+
+.alphalink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #AC3B0E;
+}
+
+.chron1950link {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #976F26;
+}
+
+.chron1960link {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #975E26;
+}
+
+.chron1970link {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #974826;
+}
+
+.chron1980link {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #972645;
+}
+
+.chron1990link {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #972679;
+}
+
+.chron2000link {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #652697;
+}
+
+.chron2010link {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #2F2697;
+}
+
+.chron2020link {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #264397;
+}
+
+.chrongreylink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #8E8E8E;
+}
+
+.greylink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #8E8E8E;
+}
+
+.advancedlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #2B861D;
+}
+
+.missiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+	opacity:0.6; filter:alpha(opacity=60);
+}
+
+.missiontabson, .missiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+	opacity:1; filter:alpha(opacity=100);
+}
+
+.greymissiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+	opacity:0.3; filter:alpha(opacity=30);
+}
+
+.pastmissiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #E4C98E;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.pastmissiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.presentmissiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #AE9BB0;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.presentmissiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.futuremissiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #86BBF8;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.futuremissiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.conceptmissiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #8EF6FF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.conceptmissiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.alphamissiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 5px;
+	opacity:0.6; filter:alpha(opacity=60)
+}
+
+.alphamissiontabson, .alphamissiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 5px;
+	opacity:1; filter:alpha(opacity=100)
+}
+
+.alphamissiontabsdead {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #346DA4;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 5px;
+	opacity:0.6; filter:alpha(opacity=60)
+}
+
+.chronmissiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	opacity:0.6; filter:alpha(opacity=60)
+}
+
+.chronmissiontabson, .chronmissiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	opacity:1; filter:alpha(opacity=100)
+}
+
+.chron1950missiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #D9C28F;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron1950missiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron1960missiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #D9B58E;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron1960missiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron1970missiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #DAA98F;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron1970missiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron1980missiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #DBA3A8;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron1980missiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron1990missiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #D3A2B8;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron1990missiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron2000missiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #BEAAC4;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron2000missiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron2010missiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #9EAFCC;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron2010missiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron2020missiontabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #8EF6FF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.chron2020missiontabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.missiondropdown {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+
+.missionbutton {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+
+.gallerydropdown {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	width: 132px;
+	color: #000000;
+}
+
+.gallerydropdown2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.gallerybutton {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+.l2programtitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #113F7F;
+}
+
+.l2programlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #113F7F;
+	text-decoration: none}
+
+.futureheaderblack {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.futureheaderblue {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #023069;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.futureheaderpurple {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #4F2453;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.expplansblack {
+	background-color: #000000;
+}
+
+.expplansdiscovery {
+	background-color: #023069;
+}
+
+.expplansnewfrontiers {
+	background-color: #A07400;
+}
+
+.expplansflagship {
+	background-color: #4F2453;
+}
+
+.expplanstext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF !important;
+}
+ 
+.expplanstext a:link, .expplanstext a:hover, .expplanstext a:visited {
+	color: #FFFFFF !important;
+}
+
+.expplanssectionheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFB600;
+}
+
+.l2kidslinktitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #113F7F;
+}
+
+.l2kidslink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #113F7F;
+	text-decoration: none;
+}
+
+.kidsfactsheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	color: #FDC848;
+	text-decoration: none;
+}
+
+.kidsfactstext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+.kidsfactstext a {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.kidsweightlabel {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	color: #FFDF4E;
+}
+
+.kidsweightresultheader {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: #FFEF5B;
+}
+
+.kidsweightresult {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+}
+
+.kidsweightinput {
+	font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;
+	font-size: 12px;
+}
+
+.kidspuzzleheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-decoration: none;
+}
+
+.kidspuzzlelink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #1D4581;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.kidspuzzleaboutheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.kidspuzzleabout {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 12px;
+}
+
+.planets {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #AC3B0E;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.planetslarge {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #3A1964;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.planetslarge2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #01358A;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.planetsmedium {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #01358A;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.planetsinteractive {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #01358A;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.planetslink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #043C96;
+}
+
+.planettabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #869FBE;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.planettabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.planettabson {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.l2planettaboff {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: italic;
+	color: #456793;
+	opacity:0.6; filter:alpha(opacity=60);
+	text-decoration: none}
+
+.l2planettabon, .l2planettaboff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: italic;
+	color: #456793;
+	opacity:1; filter:alpha(opacity=100);
+	text-decoration: none}
+
+.l2planetscaption {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-style: italic;
+}
+
+.l2planetssplash {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.l2planetssplashgold {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #FFCF5B;
+}
+
+.l2planetsfeature {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+}
+
+.greybanner {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	color: #666666;
+	text-decoration: none}
+
+.greybannerlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.l3link {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #A5CEFF;
+	text-decoration: none}
+
+.deadlink {
+	color: #AAAAAA;
+	text-decoration: none;
+}
+
+.insetdefault {
+	background-color: #FFFFFF;
+}
+
+.insetltblue {
+	background-color: #E6F0FF;
+}
+
+.l2imagecaption {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	margin: 5px;
+	color: #165AAE;
+}
+
+.l2imagecaption a {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #165AAE;
+	text-decoration: underline;
+}
+
+.l2imagecaptionwhite {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	margin: 5px;
+	color: #FFFFFF;
+}
+
+.l2imagecaptionwhite a {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+	
+.l2imagecaptiondkblue {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	margin: 5px;
+	color: #105C8B;
+}
+
+.l2imagecaptiondkblue a {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #105C8B;
+	text-decoration: underline;
+}
+
+.l2peopletitle {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #AC3B0E;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.l2peoplename {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.l2peoplenamesmall {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.l2peopleoccupation {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #023069;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.l2peopleoccupationsmall {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #023069;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.planetsKidsTitle {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #AC3B0E;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.planetsKidsFigure {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #AC3B0E;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.l2peoplelargetitle {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.l2peopletext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000}
+
+.planetsKidsText {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000}
+
+.planetsKidsLink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #513772}
+
+.l2peoplelisttitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #003680;
+	text-decoration: none}
+
+.l2peoplelist {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000}
+
+.l2peoplecaption {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-style: italic;
+}
+
+.l2peoplelink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #043C96;
+}
+
+.planetsKidsLink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #4726A5;
+	font-size: 13px;
+}
+
+.planetsKidsLink:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 13px;
+}
+
+.l2educlargeheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #A77700;
+	text-decoration: none}
+
+.l2educlargeheader2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #003680;
+	text-decoration: none}
+
+.l2educheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #A77700;
+	text-decoration: none}
+
+.l2educheader2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #003680;
+	text-decoration: none}
+
+.l2educsmallheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #A77700;
+	text-decoration: none}
+
+.l2educsmallheader2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #003680;
+	text-decoration: none;}
+
+.l2educsplashheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFFFFF;}
+
+.l2educsplashgold {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #F8DA8C;}
+
+.l2educsplashlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;}
+
+.educrotatortitle {
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.educrotatorsubtitle {
+	color: #D7E2EF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.educrotatortext {
+	color: #D7E2EF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.educrotatorlink {
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+.educrotatorbuttonoff {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	color: #0085E0;
+	text-decoration: none;
+	background-color: #00558C;
+	width:16px;
+	height:16px;
+}
+
+.educrotatorbuttonoff:hover, .educrotatorbuttonon {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	color: #7FD6FF;
+	text-decoration: none;
+	background-color: #0277B7;
+	width:16px;
+	height:16px;
+}
+
+.educrotatorbuttonsel {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #0277B7;
+	width:16px;
+	height:16px;
+}
+
+.educfeaturetitle {
+	color: #B96609;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.educfeaturesubtitle {
+	color: #000000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.educfeaturelink {
+	color: #1D5492;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.educfeaturesubmit {
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.educbyosstitle {
+	color: #1D5492;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.educbyosssubtitle {
+	color: #000000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.educbyosslinkoff {
+	color: #1D5492;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.educbyosslinkon {
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.educbyosslinktrans {
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+	opacity:0.8; filter:alpha(opacity=80);
+	text-decoration: none;
+}
+
+.educbyosslinktrans:hover {
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+	opacity:1; filter:alpha(opacity=100);
+	text-decoration: none;
+}
+
+.l2educnavlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #162B54;
+	text-decoration: none;}
+
+.l2eductaboff {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	color: #456793;
+	opacity:0.6; filter:alpha(opacity=60);
+	text-decoration: none}
+
+.l2eductabon, .l2eductaboff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	color: #456793;
+	opacity:1; filter:alpha(opacity=100);
+	text-decoration: none}
+
+.l2eelrheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #003680;
+	text-decoration: none;}
+
+.l2educlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #003680;
+}
+
+.l2educlink2 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #003680;
+	text-decoration: none;
+}
+
+.l2educsmalllink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #003680;
+}
+
+.l2educcaption {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #003680}
+
+select.l2educselect {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000}
+
+select.educfeatureselect {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	width: 193px;
+	color: #000000}
+
+.educlessonssearchheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #001F4E;
+	text-decoration: none;}
+
+select.educlessonsselect {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	width: 190px;
+	color: #000000}
+
+select.educlessonsselectwide {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	width: 390px;
+	color: #000000}
+
+input.educlessonsinput {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	width: 390px;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;}
+
+.educl2nav {
+	color: #98CEFD;
+	text-decoration: none;
+	font-size: 12px}
+
+.educl2navon {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px}
+
+.educl2navoff {
+	color: #98CEFD;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px}
+
+.skystoriestext {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 12px;}
+
+.skystorieslink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 12px;}
+
+.l2extremeheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #AA0000;
+	text-decoration: none;}
+
+.l2extremeheader2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #AA0000;
+	text-decoration: none;}
+
+.l2extremetitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #113F7F;
+	text-decoration: none;}
+
+.l2gallerynav {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #003680;
+	font-weight: bold;
+	text-decoration: none;}
+
+.l2gallerylink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;}
+
+.l2galleryfeaturetitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;}
+
+.l2galleryfeaturetext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;}
+
+.l2gallerylink1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;}
+
+.l2gallerytext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;}
+
+.l2multimediataboff {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	color: #456793;
+	opacity:0.6; filter:alpha(opacity=60);
+	text-decoration: none;}
+
+.l2multimediatabon, .l2multimediataboff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	color: #456793;
+	opacity:1; filter:alpha(opacity=100);
+	text-decoration: none;}
+
+.l2multimediafeaturedheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #C38B27;}
+
+.l2multimediafeaturedcaption {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding-top: 12px;}
+
+.l2multimediafeaturedtitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #3161C2;
+	text-decoration: none}
+
+.l2multimediafeaturedmore {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none}
+
+.l2faqheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #003680;
+	font-weight: bold;
+	text-decoration: none;}
+
+.l2faqheader2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #003680;
+	font-weight: bold;
+	text-decoration: none;}
+
+.l2faqheader3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #003680;
+	font-weight: bold;
+	text-decoration: none;}
+
+.l2faqlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;}
+
+.l2faqlink2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;}
+
+.l2faqquestion {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #003680;
+	text-decoration: none;}
+
+.l2faqanswer {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	margin-left: 1em;
+	margin-right: 1em}
+
+.l2featuredqheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #003680;
+	font-weight: bold;
+}
+
+.l2featuredqheadergold {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #FFB600;
+	font-weight: bold;
+}
+
+.l2searchheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #A73A00;
+	font-weight: bold;
+}
+
+.l2searchnumber {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A73A00;
+	font-weight: bold;
+}
+
+.l2searchlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #113F7F;
+	text-decoration: none;}
+
+.l2searchlink2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;}
+
+.l2searchgrey {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #A2A2A2;
+	text-decoration: none;}
+
+.l2scitechfeaturelink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #012A67;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.l2scitechlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.l2scigoalsheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 3px;
+}
+
+.l2scigoalstext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+	padding: 3px;
+}
+
+.l2scigoalslink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.l2dictheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #A73A00;
+	text-decoration: none;}
+
+.l2dictletter {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #976F26;
+}
+
+.l2dictlink{
+	font-family: Helvetica, Arial, sans-serif;
+	color: #113F7F;
+}
+
+.l2downloadlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #003680;
+	text-decoration: none;}
+
+.l2ratinggrey {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #929292;
+}
+
+.l2ratingtitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #113F7F;
+}
+
+.l2modeltitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #003371;
+	text-decoration: none;}
+
+.l2modeleasy {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #007B06;
+	text-decoration: none;}
+
+.l2modelmoderate {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #998000;
+	text-decoration: none;}
+
+.l2modelchallenging {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #9B3600;
+	text-decoration: none;}
+
+.l2modellink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #003371;
+	text-decoration: none;}
+
+.l2workshoptitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #003680;
+}
+
+.l2monospace {
+	font-family:  courier;
+	font-size: 14px}
+
+.gshomepagetitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.gsheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #AC3B0E;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.gslargeheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #AC3B0E;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.gstabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #95C38E;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.gstabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.gstabson {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.ssephomepagetitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.ssepheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #AC3B0E;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.sseplargeheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #AC3B0E;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.sseptranscript {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #113F7F;
+	font-size: 12px;
+}
+
+.sseptabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A792A9;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.sseptabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.sseptabson {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.dictionarytabson {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.dictionarytabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #708CB2;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.dictionarytabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.galileotabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #C68080;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.galileotabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.galileotabson {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.galileohomepagetitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.galileoheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.galileolargeheader {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.galileonavlinkon {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.galileonavsublinkon {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.galileonavlinkoff {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #BF7070;
+	text-decoration: none;
+}
+
+.galileonavsublinkoff {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #BF7070;
+	text-decoration: none;
+}
+
+.deepimpacttabsoff {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #C68080;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.deepimpacttabsoff:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.deepimpacttabson {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.deepimpactheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.deepimpactl2nav {
+	color: #736945;
+	text-decoration: none;
+	font-size: 12px}
+
+.deepimpactl2navon {
+	color: #000000;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+	font-size: 12px}
+
+.deepimpactl2navoff {
+	color: #666633;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+	font-size: 12px}
+
+.deepimpactimagecaption {
+	font-size: 11px}
+
+.ionText {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF}
+
+.ionLink {
+	color: #A5CEFF;
+}
+
+.ionPageTitle {
+	color: #A5CEFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.ionLessonLink {
+	color: #A5CEFF;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.insetnews {
+	background-color: #103C80;
+}
+
+.insetpeople {
+	background-color: #A73F00;
+}
+
+.insetplanets {
+	background-color: #043C96;
+}
+
+.insetscitechsci {
+	background-color: #A77700;
+}
+
+.insetscitechtech {
+	background-color: #13448B;
+}
+
+.insetscitechnasa {
+	background-color: #A73A00;
+}
+
+.insetscitechrep {
+	background-color: #A73A00;
+}
+
+.insetscitechast {
+	background-color: #A77700;
+}
+
+.insetscitechbio {
+	background-color: #13448B;
+}
+
+.insetscitechpwr {
+	background-color: #2B861D;
+}
+
+.insetscitechbest {
+	background-color: #2B861D;
+}
+
+.buttondownload {
+	color: #E9DDBF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.buttongallery {
+	color: #165AAE;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.buttongallery1 {
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	opacity:0.8; filter:alpha(opacity=80);
+}
+
+.buttonvideo {
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.buttonvideo1 {
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	opacity:0.8; filter:alpha(opacity=80);
+}
+
+.buttontop10 {
+	color: #884697;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.buttontop1 {
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.carouselfeaturetitle, .carouseleventtitle {
+	color: #FFFFFF;
+	/*font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.carouselplanettitle, .carouselfeaturesubtitle, .carouseleventdate {
+	color: #FFDA5B;
+	/*font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.carouselplanettext, .carouselmissiontitle, .carouselfeaturetext, .carouseleventtext {
+	color: #FFFFFF;
+	/*font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.carouselplanetlink, .carouselmissionlink, .carouselcaptionlink, .carouselfeaturelink, .carouseleventlink {
+	color: #FFDA5B;
+	/*font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;*/
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+.carouselplanetimagelink {
+	color: #417AA3;
+}
+
+.carouselmissiontext, .carouselcaptiontext {
+	color: #9EC9FF;
+	/*font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.rotatornumberoff {
+	color: #618ED5;
+	/*font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.rotatornumberon, .rotatornumberoff:hover {
+	color: #92B4E7;
+	/*font-family: "Myriad Pro", Myriad, Helvetica, Arial, verdana, sans-serif;*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.whitepaperheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #BE9D24;
+}
+
+.whitepaperheaderprint {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.whitepaperheaderlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.whitepaperheaderlink:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.whitepaperheaderprintlink {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.whitepaperheaderprintlink:hover {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+
+.whitepaperrow1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	background-color: #C8DDFF;
+}
+
+.whitepaperrow2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	background-color: #A8C4F1;
+}
+
+.whitepaperrowprint {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+.whitepaperbutton {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	width: 75px;
+}
+
+.pollheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #345E9B;
+}
+
+.polltextoff1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #F6F8FB;
+}
+
+.polltextoff2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+.polltextoff3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #E2ECF9;
+}
+
+.polltexton1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #C5D1E0;
+}
+
+.polltexton2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #CCD7E3;
+}
+
+.polltexton3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #B5C7DE;
+}
+
+.pollprevnext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #345E9B;
+	text-decoration: none;
+}
+
+input.pollinput {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #345E9B;
+	padding-left: 3px;
+	padding-right: 3px;  
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: 1px solid #8CA1BD; 
+	background-color: #FFFFFF ! important;
+}
+
+.pollsubmittext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.pollthanks {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #469B34;
+}
+
+.pollresulttitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.pollresulttext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+.pollresultlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+}
+
+.pollresultlink2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #002552;
+	text-decoration: none;
+}
+
+.pollresultinstructions {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #979797;
+}
+
+
+.slideshowheader {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #345E9B;
+}
+
+.slideshowtextoff1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #F6F8FB;
+}
+
+.slideshowtextoff2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+.slideshowtextoff3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #E2ECF9;
+}
+
+.slideshowtexton1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #C5D1E0;
+}
+
+.slideshowtexton2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #CCD7E3;
+}
+
+.slideshowtexton3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #B5C7DE;
+}
+
+.slideshowprevnext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #345E9B;
+	text-decoration: none;
+}
+
+input.slideshowinput {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #345E9B;
+	padding-left: 3px;
+	padding-right: 3px;  
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: 1px solid #8CA1BD; 
+	background-color: #FFFFFF ! important;
+}
+
+.slideshowsubmittext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.slideshowthanks {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #469B34;
+}
+
+.slideshowresulttitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.slideshowresulttext {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+.slideshowresultlink {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+}
+
+.slideshowresultlink2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #002552;
+	text-decoration: none;
+}
+
+.slideshowresultinstructions {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #979797;
+}

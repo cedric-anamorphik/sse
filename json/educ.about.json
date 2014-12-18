@@ -1,0 +1,132 @@
+{
+  "section": "Education",
+  "title": "Countdown to Pluto",
+  "path": ["educ","about"],
+  "update_date": "Jan, 14, 2014",
+  "source": "NASA",
+  "credits": {
+    "author": "Dr. Tony Phillips",
+    "editor": "Dr. Tony Phillips",
+    "Credit": "Science@NASA"
+  },
+  "main": {
+    "content": "<p>In the summer of 2014, a team of educators and education professionals reviewed the hundreds of lessons and content pages collected in the education section of this site. Our Web team also completed detailed analysis of several years of usage statistics to see how visitors were using the site.</p><p>The Conclusion: Most visitors come to this section to find NASA lessons, but Information clutter made useful materials hard to find.</p><p>[[image1]]</p><p>The Solution: A streamlined, focused education section that provides a best of selection of planetary science and math lessons. The lessons in our database were selected for their educational quality and potential alignment to <a href=\"http://www.nextgenscience.org/next-generation-science-standards\" target=\"_blank\">Next Generation Science Standards</a> (NGSS).</p><p>We hope you find this new tool useful. We'll continue refining based on your feedback.</p><p>FAQ</p><b>My favorite lessons are gone. What happened?</b><p>Many old favorites had outdated content or could not be aligned to the NGSS. Since the goal of this project was to provide a fast, focused search, we made the hard choice to remove them. Some may still be available in the NASA Wavelength Digital Library.</p>",
+    "images": [
+      {
+        "src": "images/Report.jpg",
+        "width": 258,
+        "alt": "Link to PDF of report"
+      }
+    ]
+  },
+  "related_stories": [
+    {
+      "title": "A New Meteor Shower in May?",
+      "url": "news/id"
+    },
+    {
+      "title": "Two Comets to Fly By Mercury",
+      "url": "news/id"
+    },
+    {
+      "title": "Comet ISON vs. the Solar Storm",
+      "url": "news/id"
+    },
+    {
+      "title": "Two Comets to Fly By Mercury",
+      "url": "news/id"
+    }
+  ],
+  "sidebar": {
+    "facts": {
+      "title": "Did you know?",
+      "content": "There are no known rings around dwarf planets"
+    },
+    "learn": [
+      {
+        "title": "Dwarf Planets",
+        "image": "dwarf_planets.jpg",
+        "url": "planets/dwarf_planets"
+      },
+	  {
+        "title": "(Other Planet",
+        "image": "dwarf_planets.jpg",
+        "url": "planets/dwarf_planets"
+      }
+    ],
+    "missions": {
+      "target": "Dwarf Planets",
+      "missions": [
+        {
+          "title": "Dawn",
+          "url": "mission/dawn"
+        },
+        {
+          "title": "New Horizons",
+          "url": "mission/new_horizons"
+        }
+      ]
+    },
+    "related_images": {
+      "title": "Dwarf Planets",
+      "images": [
+        {
+          "thumbnail": "images/thumb1.jpg",
+          "browse": "images/browse1.jpg",
+          "alttext": "alttext image 1",
+          "title": "title 1",
+          "imageid": 1
+        },
+        {
+          "thumbnail": "images/thumb1.jpg",
+          "browse": "images/browse1.jpg",
+          "alttext": "alttext image 1",
+          "title": "title 1",
+          "imageid": 1
+        },
+        {
+          "thumbnail": "images/thumb1.jpg",
+          "browse": "images/browse1.jpg",
+          "alttext": "alttext image 1",
+          "title": "title 1",
+          "imageid": 1
+        },
+        {
+          "thumbnail": "images/thumb1.jpg",
+          "browse": "images/browse1.jpg",
+          "alttext": "alttext image 1",
+          "title": "title 1",
+          "imageid": 1
+        },
+        {
+          "thumbnail": "images/thumb1.jpg",
+          "browse": "images/browse1.jpg",
+          "alttext": "alttext image 1",
+          "title": "title 1",
+          "imageid": 1
+        },
+        {
+          "thumbnail": "images/thumb1.jpg",
+          "browse": "images/browse1.jpg",
+          "alttext": "alttext image 1",
+          "title": "title 1",
+          "imageid": 1
+        },
+        {
+          "thumbnail": "images/thumb1.jpg",
+          "browse": "images/browse1.jpg",
+          "alttext": "alttext image 1",
+          "title": "title 1",
+          "imageid": 1
+        },
+        {
+          "thumbnail": "images/thumb1.jpg",
+          "browse": "images/browse1.jpg",
+          "alttext": "alttext image 1",
+          "title": "title 1",
+          "imageid": 1
+        }
+      ]
+    }
+  }
+}

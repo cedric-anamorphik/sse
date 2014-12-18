@@ -1,6 +1,6 @@
 // MAIN SSE APP
 // PLEASE BE RESPONSIBLE AND REMEMBER TO INSERT YOUR NEW DEPENDENCIES HERE
-var app = angular.module('sse', ['ui.router', 'sse.directives', 'timer', 'slick', 'sse.controllers', 'appDataFactory', 'pageController', 'ngSanitize', 'lodash', 'ui.bootstrap']);
+var app = angular.module('sse', ['ui.router', 'uiRouterStyles', 'sse.directives', 'timer', 'slick', 'sse.controllers', 'appDataFactory', 'pageController', 'ngSanitize', 'lodash', 'ui.bootstrap', 'ngAnimate', 'truncate']);
 
 // STATES are for loading content in a page when it loads based on the url
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -17,12 +17,17 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 				'sidebar-first':{
 					templateUrl: 'includes/partial-sidebar.html'
 				}
-			}
+			},
+			data: {css: 'css/home.css'}
 		})
 		.state('educ', {
 			url: '/educ/',
 			templateUrl: 'includes/partial-educationLanding.html',
 			controller: 'pageController'
+		})
+		.state('galleries', {
+			url: '/galleries/',
+			templateUrl: 'includes/partial-galleriesLanding.html'
 		})
 		.state('missionLanding',{
 			url: '/missions/',
@@ -52,9 +57,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 			url: '/planets/:planet_id',
 			templateUrl: 'includes/partial-planet-detail.html',
 			resolve: {
-				appDataFactory: 'appDataFactory',
 				page_data: ['appDataFactory','$stateParams', function(appDataFactory,$stateParams) {
-					console.log($stateParams);
 					return appDataFactory.queryData('planets',$stateParams);
 				}]
 			},
@@ -66,7 +69,6 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 			resolve: {
 				appDataFactory: 'appDataFactory',
 				page_data: ['appDataFactory','$stateParams', function(appDataFactory,$stateParams) {
-					console.log($stateParams);
 					return appDataFactory.queryData('planets',$stateParams);
 				}]
 			},
@@ -89,7 +91,6 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 			resolve: {
 				appDataFactory: 'appDataFactory',
 				page_data: ['appDataFactory','$stateParams', function(appDataFactory,$stateParams) {
-					//return appDataFactory.queryData('/news/' + $stateParams.news_year + '/' + $stateParams.news_month + '/' + $stateParams.news_day + '/' + $stateParams.news_title);
 					return appDataFactory.queryData('news',$stateParams);
 				}]
 			},
@@ -112,7 +113,6 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 			resolve: {
 				appDataFactory: 'appDataFactory',
 				page_data: ['appDataFactory','$stateParams', function(appDataFactory,$stateParams) {
-					//return appDataFactory.queryData('/educ/' + $stateParams.page_id);
 					return appDataFactory.queryData('educ',$stateParams);
 				}]
 			},

@@ -1,17 +1,38 @@
 // CORE CONTROLLERS
 angular.module('sse.controllers', [])
-	.controller('SSEdata', ['$scope', '$http', function ($scope, $http) {
+	.controller('SSEdata', ['$scope', '$http', function ($scope, $http, $timeout) {
     $scope.data,
 	$scope.people;
+	$scope.currentProfile = 0;
+	$scope.sbLinkClass = 'profileLink';
     var url = 'json/home-sidebar-json.cfm';
 	$http.get(url)
-        .success(function(data){
-            $scope.data = data;
-			$scope.people = data.people;
-        })
-		.error(function(data, status, headers, config){
-			console.log("We apologize, but the planetary information you requested is lost in space at the moment");
-		})
+	.success(function(data){
+		$scope.data = data;
+		$scope.people = data.people;
+		$scope.currProfile = data.people[0];
+		$scope.profileQuote = $scope.currProfile.quote;
+	})
+	.error(function(data, status, headers, config){
+		console.log("We apologize, but the planetary information you requested is lost in space at the moment");
+	})
+	
+	$scope.updateProfile = function(data){
+		$scope.currentProfile = $('#slick-people').slickCurrentSlide();
+		var activeSlide = $('#slick-people .slick-active')[0];
+		var inactiveSlide1 = $('#slick-people .slick-active')[1];
+		var inactiveSlide2 = $('#slick-people .slick-active')[2];
+		$scope.currProfile = $scope.people[$scope.currentProfile];
+		$scope.profileQuote = $scope.currProfile.quote;
+		$(activeSlide).addClass("selected");
+		$(inactiveSlide1).removeClass("selected");
+		$(inactiveSlide2).removeClass("selected");
+	}
+	
+	$scope.updateProfileClass = function(index){
+		return 
+	}
+	
 	}])
 	.controller('PopCtrl', function ($scope, sidePopFactory) {
 		sidePopFactory.get(function(data){
@@ -33,13 +54,8 @@ angular.module('sse.controllers', [])
 				$scope.popDownloadsUrl  = data.popDownloads[i].url;
 			}
 		});
+		$scope.myInterval = 0;
 	})
-	.controller('FeedCtrl', function ($scope, FeedList) {
-        $scope.feeds = FeedList.jsonp();
-        $scope.$on('FeedList', function (event, data) {
-            $scope.feeds = data;
-        });
-    })
 	.controller("SBNavCtrl", function ($scope) {
 		$scope.doStuff = function (item) {
 			//GET the current element's target value
@@ -124,16 +140,13 @@ angular.module('sse.controllers', [])
 		};
 		$scope.showMoreNews = function() {
 			pagesShown = pagesShown + 1;
-			$scope.updateListStyle();			
-		};
-		$scope.updateListStyle = function(){
-		var currSel = $('#sseGallery.news').find('a.selected'),
-			currType = $(currSel).attr("id");
-			if(currType == "list"){
-				var target = $('#news-gallery').find('.item');
-				console.log($(target));
-				$(target).addClass('list-group-item');
-			};
+			// var currSel = $('#sseGallery.news').find('a.selected'),
+			// currType = $(currSel).attr("id");
+			// if(currType == "list"){
+				// var target = $('#news-gallery').find('.item');
+				// console.log($(target));
+				// $(target).addClass('list-group-item');
+			// };			
 		};
 		$scope.list = function($event){
 			var currEl = $event.currentTarget;
@@ -142,26 +155,45 @@ angular.module('sse.controllers', [])
 			$('#news-gallery .item').addClass('list-group-item');
 			$('#news-gallery .item .gal-name').addClass("notransition");
 		};
-		$scope.$watch('$viewContentLoaded', function()
-        {
-            alert("blah");
-        });
-		// $scope.$on('$viewContentLoaded', function(){
-			// var currEl = $event.currentTarget;
-			// $('.navbar.news .btn-group a').removeClass("selected");
-			// $(currEl).addClass("selected");
-			// $('#news-gallery .item').removeClass('list-group-item');
-			// $('#news-gallery .item .gal-name').removeClass("notransition");
-		// };
+		$scope.grid = function($event){
+			var currEl = $event.currentTarget;
+			$('.navbar.news .btn-group a').removeClass("selected");
+			$(currEl).addClass("selected");
+			$('#news-gallery .item').removeClass('list-group-item');
+			$('#news-gallery .item .gal-name').removeClass("notransition");
+		};
 	})
-	.controller('FactoidsCarouselCtrl', function ($scope, sbFactory) {
+	.controller('FactoidsCarouselCtrl', function ($scope, sbFactory){
 		sbFactory.get(function(data){
 			$scope.slide = data;
 		});	
 		$scope.myInterval = 0;
-		$scope.$watch('div.active[1]', function (active) {
-		  if (active) {
-			alert('Hi you');
-		  }
-		});
+		// $('#factoid-carousel').bind('slide.bs.carousel', function (e) {
+			// alert("you made it here via bind");
+		// };
+	})
+	.controller('galleriesCtrl', function ($scope, galleriesGalFactory){
+		galleriesGalFactory.getBest().then(function(data){
+			$scope.bestofgal = data.category_galleries;
+			$scope.bestThumb = {};
+			$scope.planetgal = data.planets_galleries;
+			$scope.missiongal = data.mission_galleries;
+			if ($scope.bestofgal[0].image == '') {
+				$scope.bestThumb = data.category_galleries[0].image;
+			} else {
+				$scope.bestThumb = data.category_galleries[0].imagebrowse;
+			}
+		});		
+		
+		var pagesShown = 1;
+		var pageSize = 4;
+		$scope.bestLimit = function() {
+			return pageSize * pagesShown;
+		};
+		$scope.hasMorBestToShow = function() {
+			return pagesShown < ($scope.people.length / pageSize);
+		};
+		$scope.showMoreBest = function() {
+			pagesShown = pagesShown + 1;         
+		};
 	});

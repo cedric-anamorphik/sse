@@ -1,9 +1,9 @@
-<div id="planet-moons" class="content-widget">
+<div id="planet-moons" class="planet-moons content-widget" ng-show="widgets.planetmoons.show_widget == true">
 <div class="inner-wrapper">
   <div class="header-wrapper clearfix">
-  <div class="cfont7 pull-left">Moons</div>
-  <div class="pull-right more-link"><a href="#/{{widgets.planetmoons.data.url}}" class="cfont11">more<img src="images/more_arrow.png" class="arrow-indicator"></a></div>
+  <div class="cf-hnl cf-s26 pull-left">Moons</div>
+  <div class="pull-right more-link cf-s12"><a href="#/{{widgets.planetmoons.data.url}}" class="cfont11 cf-s12">more<img src="images/more_arrow.png" class="arrow-indicator"></a></div>
   </div><!-- /header-wrapper -->
-  <div class="content" ng-bind-html="widgets.planetmoons.data.blurb"></div>
+  <div class="content" ng-bind-html="widgets.planetmoons.data.moonscontent"></div>
 </div><!-- /inner-wrapper -->
 </div>

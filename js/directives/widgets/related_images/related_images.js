@@ -16,16 +16,16 @@ app.directive('relatedImages',['appDataFactory','_',function(appDataFactory,_) {
         scope.widgets.related_images.currentLearningFocus = {};
         scope.widgets.related_images.featured = {};
         scope.widgets.related_images.fn = {};
-        scope.widgets.related_images.header = 'Images';
+        scope.widgets.related_images.header = '';
         if(_.has(attrs,'header')) { scope.widgets.related_images.header = attrs.header; }
 
-        /*appDataFactory.loadData().then(function(page_data) {*/
+
           if(_.has(scope.page.data.sidebar,'learn') && scope.page.data.sidebar.learn.length > 0) {
             scope.widgets.related_images.currentLearningFocus = scope.page.data.sidebar.learn[scope.widgets.learningFocusIndex.value];
             if(_.has(scope.widgets.related_images.currentLearningFocus,'related_images')
               && scope.widgets.related_images.currentLearningFocus.related_images[0].images.length > 0) {
               scope.widgets.related_images.data = scope.widgets.related_images.currentLearningFocus.related_images[0];
-              scope.widgets.related_images.header = scope.widgets.related_images.data.title + ' ' + scope.widgets.related_images.header;
+              scope.widgets.related_images.header = scope.widgets.related_images.data.title + ' Images';
               scope.widgets.related_images.featured = {};
               scope.widgets.related_images.featured.index = 0;
               scope.widgets.related_images.featured.image_src = scope.widgets.related_images.data.images[0].browse;
@@ -36,13 +36,16 @@ app.directive('relatedImages',['appDataFactory','_',function(appDataFactory,_) {
               scope.widgets.related_images.rows.counter_collection = _.range(scope.widgets.related_images.rows.count);
             }
           }
-        /*});*/
 
-        scope.widgets.related_images.fn.set_featured = function(index) {
+
+        scope.widgets.related_images.fn.set_featured = function(row,column) {
+          var index = row * scope.widgets.related_images.rows.per_row + column;
+          if(scope.widgets.related_images.data.images[index] != undefined) {
           scope.widgets.related_images.featured.image_src = scope.widgets.related_images.data.images[index].browse;
           scope.widgets.related_images.featured.alttext = scope.widgets.related_images.data.images[index].alt;
           scope.widgets.related_images.featured.title = scope.widgets.related_images.data.images[0].title;
           scope.widgets.related_images.featured.index = index;
+          }
         }
 
         scope.widgets.related_images.fn.is_featured = function(index) {
@@ -61,32 +64,28 @@ app.directive('relatedImages',['appDataFactory','_',function(appDataFactory,_) {
           return classes;
         }
 
-        scope.widgets.related_images.fn.array_start_from = function(index) {
-/*          var startIndex = index - 1;
-          var indexes = [];
-          for(var i=0; i < scope.widgets.related_images.rows.per_row; i++) {
-            indexes.push(i + startIndex);
+        scope.widgets.related_images.fn.load_thumbnail_info = function(row, column, info) {
+          if(scope.widgets.related_images.data.images[row * scope.widgets.related_images.rows.per_row + column] != undefined) {
+            return scope.widgets.related_images.data.images[row * scope.widgets.related_images.rows.per_row + column][info];
+          } else {
+            if(info == 'thumbnail') return 'images/spacer.gif';
+            if(info == 'alt') return '';
           }
-          return _.at(scope.widgets.related_images.data,indexes);*/
-
         }
 
         scope.$watch('widgets.learningFocusIndex.value', function(newVal, oldVal) {
-          console.log('related_images');
-          console.log(scope.widgets.learningFocusIndex.value);
-          /*appDataFactory.loadData().then(function(page_data) {*/
             if(_.has(scope.page.data.sidebar,'learn')) {
               scope.widgets.related_images.currentLearningFocus = scope.page.data.sidebar.learn[scope.widgets.learningFocusIndex.value];
               if(_.has(scope.widgets.related_images.currentLearningFocus,'related_images')
                 && scope.widgets.related_images.currentLearningFocus.related_images[0].images.length > 0) {
                 scope.widgets.related_images.data = scope.widgets.related_images.currentLearningFocus.related_images[0];
+                scope.widgets.related_images.header = scope.widgets.related_images.data.title + ' Images';
                 scope.widgets.related_images.featured.index = 0;
                 scope.widgets.related_images.featured.image_src = scope.widgets.related_images.data.images[0].browse;
                 scope.widgets.related_images.featured.alttext = scope.widgets.related_images.data.images[0].alt;
                 scope.widgets.related_images.featured.title = scope.widgets.related_images.data.images[0].title;
               }
             }
-          /*});*/
         });
 
       }

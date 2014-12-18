@@ -10,10 +10,11 @@
 			<div class="sb1-nav"><a href=""><img src="images/button_social.png" scroller="social-wrapper" ng-click="doStuff($event.target)"/></a></div>
 		</div>
 		<!-- Factoids section -->
-		<div ng-controller="FactoidsCarouselCtrl">
+		<div>
 			<div id="factoids-wrapper">
-			<carousel interval="myInterval">
-			  <slide>				
+			<carousel interval="myInterval" id="factoid-carousel" disable-ng-animate>
+			  <slide>	
+				<div class="factoid-title hnb f18"><p>{{data.ssTitle}}</p></div>
 				<table class="factoid-table" >
 					<tr>
 						<td class="factoid-fact hnb f19 white">{{ data.ssPlanets }}</td>
@@ -42,6 +43,7 @@
 				</table>
 			  </slide>
 			  <slide>
+				<div class="factoid-title hnb f18"><p>{{data.mTitle}}</p></div>
 				<table class="factoid-table">
 					<tr>
 						<td class="factoid-fact hnb f19 white">{{ data.mInFlight }}</td>
@@ -66,6 +68,7 @@
 				</table>
 			  </slide>
 			  <slide>
+				<div class="factoid-title hnb f18"><p>{{data.cTitle}}</p></div>
 				<div>
 					<p class="hnl f16 light-purple" id="countdownSubhead">{{data.cSubhead}}</p>
 					<timer end-time="1420070400000" class="cf1">
@@ -92,37 +95,102 @@
 			</carousel>
 			</div>
 		</div>
-		<!-- Most Popular section -->
+		<!-- NEW Most Popular Section -->
 		<div ng-controller="PopCtrl" id="popular-wrapper">
 			<div class="hdr-popular">
 				<div class="hnb f18 white">Most Popular</div>
 			</div>
-			<slick  dots="false" infinite="false" arrows="true" init-onload="true" data="planets" id="slick-popular">
-				<div class="item"><popPlanets></popPlanets></div>
-				<div class="item"><popMissions></popMissions></div>
-				<div class="item"><popImages></popImages></div>
-				<div class="item"><popDownloads></popDownloads></div>
-			</slick>
+			<div ng-controller="PopCtrl">
+				<carousel interval="myInterval" wrap="false" id="popular-carousel" disable-ng-animate>
+					  <slide>	
+						<div id="pop-wrapper">
+							<div class="hdr-pop">
+								<div class="hnl f19 light-blue">Planets</div>
+							</div>
+							<img ng-src="{{popPlanetsUrl}}"/>
+							<div class="pop-list">
+								<div ng-repeat="planet in planets" class="item">
+									<a href="#/{{planet.pageUrl}}" ng-mouseover="updatePopImg($index)">
+										<p class="hnl f14 light-purple2">{{$index+1}}.</p>
+										<p class="hnl f14 light-purple2">{{planet.name}}</p>
+									</a>
+								</div>
+							</div>
+							<div class="sb-more">
+								<a href="#/planets/">
+									<p class="hnl f18">More</p>
+								</a>
+							</div>
+						</div>
+					</slide>
+					<slide>
+						<div id="pop-wrapper">
+							<div class="hdr-pop">
+								<div class="hnl f19 light-blue">Missions</div>
+							</div>
+							<img ng-src="{{popMissionsUrl}}"/>
+							<div class="pop-list">
+								<div ng-repeat="mission in missions" class="item">
+									<a href="#/{{planet.pageUrl}}" ng-mouseover="updatePopImg($index)">
+										<p class="hnl f14 light-purple2">{{$index+1}}.</p>
+										<p class="hnl f14 light-purple2">{{mission.name}}</p>
+									</a>
+								</div>
+							</div>
+							<div class="sb-more">
+								<a href="#/missions/">
+									<p class="hnl f18">More</p>
+								</a>
+							</div>
+						</div>
+					</slide>
+					<slide>
+						<div id="pop-wrapper">
+							<div class="hdr-pop">
+								<div class="hnl f19 light-blue">Images</div>
+							</div>
+							<img ng-src="{{popImagesUrl}}"/>
+							<div class="pop-list">
+								<div ng-repeat="image in images" class="item">
+									<a href="#/{{planet.pageUrl}}" ng-mouseover="updatePopImg($index)">
+										<p class="hnl f14 light-purple2">{{$index+1}}.</p>
+										<p class="hnl f14 light-purple2">{{image.name}}</p>
+									</a>
+								</div>
+							</div>
+							<div class="sb-more">
+								<a href="#/images/">
+									<p class="hnl f18">More</p>
+								</a>
+							</div>
+						</div>
+					</slide>
+					<slide>
+						<div id="pop-wrapper">
+							<div class="hdr-pop">
+								<div class="hnl f19 light-blue">Downloads</div>
+							</div>
+							<img ng-src="{{popDownloadsUrl}}"/>
+							<div class="pop-list">
+								<div ng-repeat="download in downloads" class="item">
+									<a href="#/{{planet.pageUrl}}" ng-mouseover="updatePopImg($index)">
+										<p class="hnl f14 light-purple2">{{$index+1}}.</p>
+										<p class="hnl f14 light-purple2">{{download.name}}</p>
+									</a>
+								</div>
+							</div>
+							<div class="sb-more">
+								<a href="#/downloads">
+									<p class="hnl f18">More</p>
+								</a>
+							</div>
+						</div>
+					</slide>
+				</carousel>
+			</div>
 		</div>
 		<!-- People section -->
-		<div id="people-wrapper">
-			<div class="hdr-people">
-				<div class="hnb f18 white">People</div>
-			</div>
-			<slick dots="false" infinite="true" arrows="true" slides-to-show="3" slides-to-scroll="1" data="people" init-onload="true" id="slick-people" async2>
-					<div ng-repeat="profile in people" class="item">
-						<img ng-src="{{profile.imgUrl}}" class="profile-img"/>
-						<p class="profile-name hnl f14">{{profile.name}}</p>
-						<p class="profile-title hnl f10">{{profile.title}}</p>
-						<!-- <p class="cf4">{{profile.quote}}</p> -->
-					</div>
-			</slick>
-			<div class="sb-more">
-				<a href="#/people/">
-					<p>More</p>
-				</a>
-			</div>
-		</div>
+		<sbpeople></sbpeople>
 		<!-- Social section -->
 		<div id="social-wrapper" ng-controller='FeedCtrl'>
 			<div ng-repeat="feed in feeds | orderBy:'title'">

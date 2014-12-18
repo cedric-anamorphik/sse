@@ -4,8 +4,8 @@
     <div class="main-content-wrapper">
     <div class="main-content-header clearfix">
 		<div class="featured">
-		<h1 class="story-section-title">People</h1>
-		<h2 class="story-title cfont9"><strong>{{page.data.title}}</strong>: {{page.data.main.featuredposition}}</h2>
+		<h1 class="story-section-title cf-ln cf-s26 ">People</h1>
+		<div class="story-title section-page-title cf-s18 cf-hnb">{{page.data.title}}: <span class="cf-hnl">{{page.data.subtitle}}</span></div>
 		<div class="image-wrapper">
 		<img src="{{page.data.main.featureImage}}"  />
 		</div>
@@ -13,7 +13,8 @@
 		</div>
 		</div> <!-- /header  -->
 		<div class="main-content-wrapper-inner">
-		<div class="cf14" ng-bind-html="page.data.main.content"></div>
+		<!-- <div ng-bind-html="page.data.main.content"></div> -->
+		<text-content-parse raw-html="page.data.main.content" content-images="page.data.main.images"></text-content-parse>
 		<div id="feature-credits" class="clearfix">
 <!-- 			<div class="page-related-stories cf11 col-xs-6" ng-show="page.data.related_stories.length > 0">
 				<div class="cf11" style="font-weight: bold;">Related Stories</div>
@@ -22,7 +23,7 @@
 				</ul>
 			</div>-->
 			<related-stories></related-stories>
-			<div class="col-xs-6 cf13" id="page-credits">
+			<div class="col-xs-6 cf-s12 credits-info" id="page-credits">
 				<div>Last Updated: {{page.data.update_date}}</div>
 			</div>
 		</div> <!-- /feature-credits -->

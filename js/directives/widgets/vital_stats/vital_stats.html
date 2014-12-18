@@ -1,5 +1,5 @@
 <div class="vital-stats clearfix">
-  <div class="vital-stats-header cfont15">
+  <div class="vital-stats-header cfont15 cf-s22">
     VITAL STATS
   </div>
   <div class="vital-stats-info">
@@ -7,8 +7,8 @@
     <div ng-include="widgets.vital_stats.stats_include"></div>
   </div>
   <div class="vital-stats-missions clearfix">
-  <div class="col-md-8 clearfix" ng-show="widgets.vital_stats.missions.data.length > 0">
-    <div class="cfont3 mission-count"><span class="cfont4">{{widgets.vital_stats.missions.data.length}}</span> missions</div>
+  <div class="col-md-9 col-sm-9 col-xs-9 mission-icons-container clearfix" ng-show="widgets.vital_stats.missions.data.length > 0">
+    <div class="cf-s50 cf-hnt mission-count"><span class="cf-s50 cf-hnb">{{widgets.vital_stats.missions.data.length}}</span> missions</div>
     <div ng-repeat="mission in widgets.vital_stats.missions.data" ng-class="widgets.vital_stats.missions.fn.mission_icon_classes($index)" ng-click="widgets.vital_stats.missions.fn.select($index);">
       <a class="icon">
       <img src="images/mission-type-icon-filler.png" class="filler" alt="spacer" />
@@ -21,12 +21,12 @@
       </a> -->
     </div>
   </div>
-  <div class="col-md-4 clearfix">
+  <div class="col-md-3 col-sm-3 col-xs-3 mission-info-container clearfix">
     <div class="mission_info">
-      <div class="title"><a href="{{widgets.vital_stats.missions.selected.url}}" class="cfont6">{{widgets.vital_stats.missions.selected.title}}</a></div>
+      <div class="title"><a href="{{widgets.vital_stats.missions.selected.url}}" class="cf-s16">{{widgets.vital_stats.missions.selected.title}}</a></div>
       <div class="content">{{widgets.vital_stats.missions.selected.content}}</div>
     </div>
   </div>
   </div>
-  <div class="more-button more-stats cfont5"><div>More Stats</div></div>
+  <div class="more-button more-stats cf-hnl cf-s24"><div>More Stats</div></div>
 </div>

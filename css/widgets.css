@@ -5,11 +5,16 @@
 #sidebar-second .widgets .content-wrapper
 { padding-bottom: 3em; padding-top: 3em; border-bottom: 1px solid #1c2e42; }
 .page.basic #sidebar-second .widgets .content-wrapper { border-color: #fff; }
+.page.basic .more-link a { color: #2b5782; }
 
 #sidebar-second .widgets.no-bottom .content-wrapper { padding-bottom: 0; border-bottom: 0; }
 .content-widget { background-color: #fff; }
 #sidebar-second .widgets .sidebar-second-col-wrapper { padding-left: 3em; padding-right: 3em; }
-.inner-wrapper { padding: 2em; }
+.inner-wrapper {
+  padding: 2em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
 .header-wrapper { padding-bottom: 1em; }
 .more-button { width: 40%; margin-left: auto; margin-right: auto; padding-bottom: 2em; padding-top: 2em; }
 .more-button div {
@@ -19,39 +24,48 @@
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
+
 .arrow-indicator { margin-left: 0.5em; }
 .content-widget a.cfont11 { color: #0e4692; }
 .header-wrapper .more-link { padding-top: 0.5em; }
-
+.page.basic .widgets .title { color: #2b5782; }
 /* learning focus */
+#learn-more-section .slick-slider { margin-bottom: 0; }
 #learn-more-section .title { padding-bottom: 1em; }
 #learn-more-section .slick-prev, #learn-more-section .slick-next { top: 4%; }
 #learn-more-section .slick-prev:before, #learn-more-section .slick-next:before {
   content: "";
 }
+#learn-more-section img.img-responsive { width: 100%; height: auto; }
 #learn-more-section .slick-prev {
   background-image: url("../images/arrow_prev_carrot.png");
   background-repeat: no-repeat;
   height: 30px;
-  left: 45px;
+  left: 1%;
 }
 #learn-more-section .slick-next {
   background-image: url("../images/arrow_next_carrot.png");
   background-repeat: no-repeat;
   height: 30px;
-  right: 45px;
+  right: 1%;
 }
 .page.planets #learn-more-section .cf7,
 .page.missions #learn-more-section .cf7,
 .page.planets #learn-more-section .cf7 { color: #fff; }
+
+#learn-more-section .slick-slide .more-link { padding-top: 1em; }
+#learn-more-section .slick-slide .more-link img {
+  display: inline;
+  margin: 0 0 0 8px;
+}
 /* sidebar nav */
 #sidebar-second .widgets.sidebar-nav .content-wrapper { padding-top: 1em; }
-.sidebar-nav.nav-panel a { font-size: 18px; }
+.sidebar-nav.nav-panel a { font-size: 18pt; }
 #sidebar-second .sidebar-nav .tab-content ul { padding-left: 2em; }
 .nav-tabs>li.tab-header a {
-  font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif; font-weight:normal; font-stretch:normal;
+  font-family: 'Conv_HelveticaNeue-Thin', "Helvetica Neue", "Arial", sans-serif;
   color: #799dc3;
-  font-size: 17px;
+  font-size: 17pt;
   background-color: transparent;
   border: 0;
 }
@@ -61,20 +75,45 @@
 .nav-tabs>li.tab-header.active>a:hover,
 .nav-tabs>li.tab-header.active>a:focus,
 .nav-tabs>li.tab-header>a:hover {
-  color: #fff;
   background-color: transparent;
   border: 0;
 }
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+  color: #799dc3;
+}
+
+.nav-tabs>li.tab-header.active>a span,
+.nav-tabs>li.tab-header.active>a:hover span,
+.nav-tabs>li.tab-header.active>a:focus span,
+.nav-tabs>li.tab-header>a:hover span {
+  color: #fff;
+}
 .nav-tabs { border: 0; }
-.nav-tabs>li.tab-header.first a,
-.nav-tabs>li.tab-header.first.active>a,
-.nav-tabs>li.tab-header.first.active>a:hover,
-.nav-tabs>li.tab-header.first.active>a:focus,
-.nav-tabs>li.tab-header.first>a:hover
+.nav-tabs>li.tab-header.first a span,
+.nav-tabs>li.tab-header.first.active>a span,
+.nav-tabs>li.tab-header.first.active>a:hover span,
+.nav-tabs>li.tab-header.first.active>a:focus span,
+.nav-tabs>li.tab-header.first>a:hover span
  { border-right: 1px solid #46535f;  padding-right: 15px; }
 
 /* featured-carousel */
 .featured-carousel { padding-top: 1em; }
+.featured-carousel .carousel-inner img { width: 100%; height: auto; }
+.featured-carousel .carousel-caption {
+  left: 0;
+  text-align: left;
+  right: 0;
+  bottom: 0;
+  padding-left: 2em;
+  padding-right: 5em;
+  padding-bottom: 2.5em;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators { bottom: 0; }
+.carousel-indicators li,
+.carousel-indicators li.active { margin-right: 0.3em; }
 .carousel-control.left,
 .carousel-control.right { background-image: none; }
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
@@ -83,14 +122,22 @@
 .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
   margin-left: -1.5em;
   background: url(../images/prev-arrow.png) no-repeat;
-  width: 1.7em;
-  height: 2.4em;
+  /*width: 1.7em;
+  height: 2.4em;*/
+  background-size: 100%;
+  background-position: center center;
+  width: 40%;
+  height: 17%;
 }
 .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
   margin-right: -1.5em;
   background: url(../images/next-arrow.png) no-repeat;
-  width: 1.7em;
-  height: 2.4em;
+  /*width: 1.7em;
+  height: 2.4em;*/
+  background-size: 100%;
+  background-position: center center;
+  width: 40%;
+  height: 17%;
 }
 .glyphicon-chevron-right:before,
 .glyphicon-chevron-left:before {
@@ -98,7 +145,7 @@
 }
 .insetFrame {
   width: 835px;
-  height: 435px;
+  height: 450px;
   overflow: hidden;
 }
 .box {
@@ -112,7 +159,7 @@
 }
 
 /* related images */
-.related-images-title { color: #2b5782; font-size: 16px; }
+.related-images-title { color: #2b5782; }
 .page.planets .related-images-title,
 .page.missions .related-images-title,
 .page.people .related-images-title { color: #fff; }
@@ -131,64 +178,73 @@
 .page.people .related-images-content-wrapper { border-top: 0; }
 .related-images-content-wrapper .feature-tagline { padding-top: 1em; }
 .featured-image .image-wrapper { height: 201px; overflow: hidden; }
+#related-images-list { color: #799dc3; }
 #related-images-list li { list-style: none; padding: 0; }
 .related-images-gallery { padding: 0; margin: 0; }
 .thumb-collection .thumb { padding: 0; padding-left: 0.2em; padding-right: 0.2em; }
 .thumb-collection .thumb img { border: 2px solid #151f2a; }
-.thumb-collection .thumb img.featured { border: 1px solid #fff; }
+.page.basic .thumb-collection .thumb img { border-color: #c6d0da; }
+.thumb-collection .thumb img.featured,
+.page.basic .thumb-collection .thumb img.featured{ border: 1px solid #fff; }
 .thumb-collection.first { margin-bottom: 1em; }
 
 /* related mission */
 /*#sidebar-second #related-missions-section { margin-top: 3em; }*/
-#mission-list { margin-left: 1em; }
-#mission-list li { padding-bottom: 0.5em; }
-#mission-list li:before {
+.mission-list { margin-left: 0; padding-top: 1em; }
+.mission-list li { padding-bottom: 0.5em; }
+.mission-list li:before {
     content: "• ";
     color: #799dc3;
 }
 
 /* related events */
-#sidebar-second ul.event-list { padding-top: 2em; }
+#sidebar-second ul.event-list { padding-top: 1em; }
 .event-item { padding-bottom: 1em; }
 .event-item .date, .event-item .title { padding-left: 0; padding-right: 0; }
-.event-item a.cfont14 { color: #fff; }
+.event-item .title a { color: #fff; }
 
 /* vital stats */
 .vital-stats-header { padding: 1.5em; }
 .vital-stats-info img { width: 100%; }
+.vital-stats .mission_info { padding-left: 2em; }
 .vital-stats .mission_info .title { padding-top: 2em; padding-bottom: 1em; }
+.vital-stats .mission_info .title a { color: #ffba33; }
 .vital-stats .mission_info .content { color: #fff; }
-.mission-count { text-align: center; }
+.vital-stats-missions { padding-top: 2em; padding-left: 2em; padding-right: 2.5em; }
+.mission-icons-container { padding: 0; }
+.mission-info-container { padding: 0; }
+.mission-count { text-align: center; color: #799dc3; }
 .vital-stats { border-bottom: 1px solid #334558; }
 .more-stats div {
+  color: #fff;
   background-color: #0c1622;
   border: 1px solid #355174;
 }
 .vital-stats .spritz { padding-bottom: 1em; }
-.mission-orbiter img.sprite { left: -79px }
+.mission-orbiter img.sprite { left: -116%; /*left: -79px;*/ }
 .mission-orbiter.active img.sprite,
-.mission-orbiter a:hover img.sprite { left: -725px; }
+.mission-orbiter a:hover img.sprite { left: -1048%; /*left: -725px;*/ }
 .mission-probe img.sprite { left: 0; }
 .mission-probe.active img.sprite,
-.mission-probe a:hover img.sprite { left: -644px; }
-.mission-sample-return img.sprite { left: -158px; }
+.mission-probe a:hover img.sprite { left: -930%; /*left: -644px;*/ }
+.mission-sample-return img.sprite { left: -232%; /*left: -158px;*/ }
 .mission-sample-return.active img.sprite,
-.mission-sample-return a:hover img.sprite { left: -805px; }
-.mission-flyby img.sprite { left: -241px; }
+.mission-sample-return a:hover img.sprite { left: -1163%; /*left: -805px;*/ }
+.mission-flyby img.sprite { left: -347%; /*left: -241px;*/ }
 .mission-flyby.active img.sprite,
-.mission-flyby a:hover img.sprite { left: -885px; }
-.mission-rover img.sprite { left: -318px; }
+.mission-flyby a:hover img.sprite { left: -1278%; /*left: -885px;*/ }
+.mission-rover img.sprite { left: -464%; /*left: -318px;*/ }
 .mission-rover.active img.sprite,
-.mission-rover a:hover img.sprite { left: -318px; }
-.mission-impact img.sprite { left: -397px; }
+.mission-rover a:hover img.sprite { left: -1394%; /*left: -318px;*/ }
+.mission-impact img.sprite { left: -581%; /*left: -397px;*/ }
 .mission-impact.active img.sprite,
-.mission-impact a:hover img.sprite { left: -1046px; }
-.mission-aerial img.sprite { left: 563px; }
+.mission-impact a:hover img.sprite { left: -1511%; /*left: -1046px;*/ }
+.mission-aerial img.sprite { left: -813%; /*left: -563px;*/ }
 .mission-aerial.active img.sprite,
-.mission-aerial a:hover img.sprite { left: -1206px; }
-.mission-lander img.sprite { left: -483px; }
+.mission-aerial a:hover img.sprite { left: -1743%; /*left: -1206px;*/ }
+.mission-lander img.sprite { left: -697%; /*left: -483px;*/ }
 .mission-lander.active img.sprite,
-.mission-lander a:hover img.sprite { left: -1128px; }
+.mission-lander a:hover img.sprite { left: -1629%; /*left: -1128px;*/ }
 /* quick links */
 #quick_links ul { padding-left: 0; }
 #quick_links li { list-style: none; }
@@ -212,20 +268,31 @@
 }*/
 .timeline .slick-list { width: 80%; margin: auto; }
 .timeline .slick-prev, .timeline .slick-next { width: 30px; }
-.timeline .slick-prev { left: 0.5em; }
-.timeline .slick-next { right: 0.5em; }
-.timeline .selected { text-align: center; }
-.more-button { padding-left: 0.5em; padding-right: 0.5em; width: 30%; }
+.timeline .slick-prev { left: 0.5em; top: 35%; }
+.timeline .slick-next { right: 0.5em; top: 35%; }
+.timeline .selected {
+  text-align: center;
+  padding-left: 11%;
+  padding-right: 11%;
+}
+.timeline .selected .title,
+.timeline .selected .content { color: #000; }
+.timeline .selected .date { padding: 1em; }
+.more-button { padding-left: 0.5em; padding-right: 0.5em; }
 .more-info div {
   background-color: #e4ad19;
   border: 1px solid #fff;
 }
-.timeline a.cfont9 { color: #fff; }
-.timeline a.cfont9:hover { text-decoration: none; color: #e4ad19; }
-.timeline .featured img { border: 2px solid #fff; }
+.timeline .more-info a { color: #fff; }
+.timeline .more-info a:hover { text-decoration: none; color: #e4ad19; }
+.timeline .featured img { border: 4px solid #fff; }
 
 /* related news */
 /* planet moons */
+.planet-moons .header-wrapper,
+.related-news .header-wrapper,
+.quick-links .header-wrapper { color: #deaf2f; }
+.planet-moons .content { color: #000; }
 #related_news .col-md-4,
 #related_news .col-sm-4,
 #related_news .col-xs-4,
@@ -239,7 +306,16 @@
 #related_news .col-xs-6 {
   padding-right: 1em;
 }
-.news-img img { width: 100%; }
+/*.news-img img { width: 100%; }
+.news-item, .news-pubdate { line-height: 0.9em; }
+.news-item {
+  font-weight: bold;
+}*/
+.related-news .item img { width: 48%; padding-right: 2%; height: 101px; max-height: 101px; }
+.related-news .news-item,
+.related-news .news-pubdate { line-height: 0.9em; }
+.related-news .news-item { font-weight: bold; }
+.related-news .news-pubdate { position: absolute; bottom: 1%; left: 45%; }
 
 /* profile */
 #profiles .text { padding-top: 1em; }
@@ -247,3 +323,35 @@
 #profiles .slick-slider img { max-width: 100px; }
 #profiles .slick-slide { overflow: hidden; }
 #profiles .featured img { border: 2px solid #fff; }
+
+/* related stories */
+.page-related-stories{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b0b0b0;
+  padding: 2em;
+  height: auto;
+}
+.page-related-stories ul{
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.page-related-stories li{
+  list-style-position: inside;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page-related-stories li a { color: #0e4692; }
+/* credits info */
+.credits-info {
+  color: #b0b0b0;
+}
+
+/* related facts */
+.related-facts .header-wrapper { color: #2b5782; }
+
+/* media query overwrite */
+@media screen and (max-width: 385px) {
+  .more-button div { padding: 0; }
+}

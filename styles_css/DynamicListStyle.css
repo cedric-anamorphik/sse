@@ -1,0 +1,532 @@
+/* DYNAMICLIST and DYNAMICFORM styles */
+
+#dynamiclist { font-family: Helvetica, Arial, sans-serif; }
+
+#dynamicform { font-family: Helvetica, Arial, sans-serif; }
+
+form.dynamicform {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+color: #0D2498;
+padding-left: 0px;
+padding-right: 0px; 
+border: 0px;
+background-color: #FFFFFF ! important;
+}
+
+input.dynamicformInput {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+color: #0D2498;
+padding-left: 3px;
+padding-right: 3px;  
+padding-top: 2px;
+padding-bottom: 2px;
+border: 1px solid #89B4E4; 
+background-color: #FFFFFF ! important;
+}
+
+input.dynamicformInputCompact {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+color: #0D2498;
+padding-left: 3px;
+padding-right: 3px;  
+padding-top: 2px;
+padding-bottom: 2px;
+border: 1px solid #89B4E4; 
+background-color: #FFFFFF ! important;
+}
+
+textarea.dynamicformTextarea {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+color: #0D2498;
+padding-left: 3px;
+padding-right: 3px;  
+padding-top: 2px;
+padding-bottom: 2px;
+border: 1px solid #89B4E4; 
+height: 75px;
+width: 98%;
+background-color: #FFFFFF ! important;
+}
+
+input.dynamicformInputDate {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+color: #0D2498;
+padding-left: 3px;
+padding-right: 3px;  
+padding-top: 2px;
+padding-bottom: 2px;
+border: 1px solid #89B4E4; 
+width: 70px;
+background-color: #FFFFFF ! important;
+}
+
+input.dynamicformInputOther{
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+color: #0D2498;
+padding-left: 3px;
+padding-right: 3px;  
+padding-top: 2px;
+padding-bottom: 2px;
+border: 1px solid #89B4E4; 
+width: 50%;
+background-color: #FFFFFF ! important;
+}
+
+input.dynamicformFile {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+color: #0D2498;
+width: 50%;
+border: 1px solid #89B4E4;
+background-color: #FFFFFF ! important;
+}
+
+.dynamicformButton {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+font-weight: normal;
+color: #000000;
+background-color: #FFFFFF ! important;
+}
+
+.dynamicformInputError {
+border: 1px solid #AA0000 ! important; 
+}
+
+select.dynamicformSelect, option.dynamicformOption {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+color: #0D2498;
+border: 1px inset #89B4E4;
+background-color: #FFFFFF ! important;
+}
+
+select.dynamicformSelectMin, option.dynamicformOptionMin {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+color: #0D2498;
+border: 1px inset #89B4E4;
+background-color: #FFFFFF ! important;
+}
+
+checkbox.dynamicformCheckbox, radio.dynamicformOption {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;s
+background-color: White;
+border: 1px solid #89B4E4; 
+/* border: 1px inset #89B4E4; */
+}
+
+
+/* outer table */
+td.dynamiclistTblPaging
+{
+vertical-align: top;
+}
+
+td.dynamiclistTblTtl, .dynamicformTtl
+{
+background-color: #1F44A6;
+vertical-align: top;
+}
+
+.dynamiclistTtlText, .dynamiclistTblTtlText
+{
+color: #FFFFFF;
+font-size: 14px;
+font-weight: bold;
+line-height: 30px;
+}
+
+.dynamicformTtlText
+{
+color: #000000;
+font-size: 14px;
+font-weight: bold;
+line-height: 25px;
+}
+
+.dynamicformDescText
+{
+color: #0D2498;
+font-size: 12px;
+padding-left: 10px;
+padding-right: 15px;
+line-height: 25px;
+}
+
+.dynamicformDescError
+{
+color: #FFFF00;
+font-size: 12px;
+font-weight: bold;
+line-height: 25px;
+}
+
+.dynamicformCharLimit
+{
+color: #89B4E4;
+font-size: 10px;
+font-weight: bold;
+}
+
+.dynamicformCharLimitOver
+{
+color: #AA0000;
+font-size: 10px;
+font-weight: bold;
+}
+
+/* right column */
+td.dynamiclistRightColumnSpacer, .dynamicformRightColumnSpacer
+{
+vertical-align: top;
+text-align: left;
+width: 13px; 
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+padding-bottom: 0px;
+margin: 0px;
+}
+
+td.dynamiclistRightColumn
+{
+background-color: #89B4E4;   
+vertical-align: top;
+text-align: left;
+width: 25%;
+padding-left: 5px;
+padding-right: 15px;
+padding-top: 11px;
+padding-bottom: 11px;
+}
+
+.dynamicformRightColumn
+{
+background-color: ##Attributes.TableBorder#;
+vertical-align: top;
+text-align: left;
+width: 25%;
+padding-left: 5px;
+padding-right: 15px;
+padding-top: 9px;
+padding-bottom: 9px;
+}
+
+.dynamiclistRightColumnText
+{
+color: #0D2498;
+font-size: 11px;  
+}
+
+a.dynamiclistRightColumnLnk, a.dynamiclistRightColumnLnk:visited 
+{
+color: #0D2498;
+text-decoration: underline;
+}
+
+a.dynamiclistRightColumnLnk:hover {
+color: #FFFFFF;
+text-decoration: underline;
+}
+
+
+/* inner table */
+table.dynamiclistInnerTbl
+{
+background-color: #CDDEF5;
+}
+
+table.dynamicformInnerTbl
+{
+background-color: #89B4E4;
+}
+
+tr.dynamiclistTblHdr
+{
+color: #89B4E4;
+font-size: 11px;
+font-weight: bold;
+text-align: left;
+vertical-align: bottom;
+height: 20px; 
+}
+
+tr.dynamicformHdr
+{
+background-color: #89B4E4;
+color: #FFFFFF;
+font-size: 11px;
+font-weight: bold;
+text-align: right;
+vertical-align: bottom;
+height: 19px;
+}
+
+.dynamicformFtr
+{
+color: #FFFFFF;
+font-size: 11px;
+font-weight: bold;
+text-align: center;
+vertical-align: bottom;
+height: 19px;
+}
+
+.dynamiclistTblHdrLnk, a.dynamiclistTblHdrLnk, a.dynamiclistTblHdrLnk:visited, a.dynamicformHdrLnk, a.dynamicformHdrLnk:visited 
+{
+color: #FFFFFF;
+font-size: 11px;
+font-weight: bold;
+text-decoration: none;
+}
+
+tr.dynamiclistTblPagingRow
+{
+color: #0D2498;
+font-size: 12px;
+text-align: left;
+vertical-align: top;
+}
+
+a.dynamiclistTblPagingLnk, a.dynamiclistTblPagingLnk:visited
+{
+color: #0D2498;
+font-size: 12px;
+text-decoration: none;
+}
+
+a.dynamiclistTblPagingLnk:hover { text-decoration: underline; }
+
+.dynamiclistTblPagingLnkDead
+{
+color: #AAAAAA;
+font-size: 12px;
+text-decoration: none;
+}
+
+.dynamiclistTblPagingLnkActive
+{
+color: #000000;
+font-size: 12px;
+font-weight: bold;
+text-decoration: none;
+}
+
+a.dynamiclistTblHdrLnk:hover { text-decoration: none; }
+
+a.dynamicformHdrLnk:hover { color: #FFFFFF; }
+
+th.dynamiclistTblHdrLt { background-color: #89B4E4; color: #FFFFFF;}
+
+th.dynamiclistTblHdrDrk { background-color: #1F44A6; color: #FFFFFF;}
+
+th.dynamiclistTblHdrMouseOver { background-color: #5F99DB; color: #FFFFFF;}
+
+tr.dynamiclistTblRow
+{
+background-color: #F5F8FD;
+color: #0D2498;
+font-size: 11px;
+text-align: left;
+vertical-align: top;
+}
+
+tr.dynamiclistTblRowMouseOver
+{
+background-color: #CDDEF5;
+color: #0D2498;
+font-size: 11px;
+text-align: left;
+vertical-align: top;
+}
+
+.dynamicformDataView
+{
+color: #0D2498;
+font-size: 12px;
+text-align: left;
+vertical-align: middle;
+padding-bottom: 8px;
+float: right;
+}
+
+.dynamicformDataView ul
+{
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 10px;
+padding-left: 0px;
+}
+
+/*.dynamicformDataView:hover
+{
+border: 1px solid #0D2498;
+}*/
+
+.dynamicformDataEdit
+{
+color: #0D2498;
+font-size: 11px;
+text-align: left;
+vertical-align: middle;
+padding-bottom: 8px;
+float: right;
+}
+
+.dynamicformDataEmpty
+{
+color: #0D2498;
+font-size: 11px;
+text-align: left;
+vertical-align: middle;
+padding-bottom: 8px;
+float: right;
+}
+
+.dynamicformDataLight
+{
+color: #F5F8FD;
+}
+
+td.dynamiclistIcons
+{
+text-align: center;
+vertical-align: top;
+padding-left: 0px;
+padding-right: 0px;
+width: 10%;
+}
+
+.dynamicformLblHeader
+{
+color: #000000;
+font-size: 13px;
+font-weight: bold;
+text-align: center;
+vertical-align: top;
+padding-left: 9px;
+padding-right: 9px;
+padding-bottom: 4px;
+}
+
+.dynamicformLblHeader hr
+{
+border: 1px solid #0D2498;;
+}
+
+.dynamicformLbl
+{
+color: #000000;
+font-size: 12px;
+font-weight: bold;
+text-align: right;
+vertical-align: top;
+padding-right: 12px;
+padding-bottom: 12px;
+float: left;
+}
+
+.dynamicformLblError
+{
+color: #AA0000;
+font-size: 12px;
+font-weight: bold;
+text-align: right;
+vertical-align: top;
+padding-right: 12px;
+padding-bottom: 12px;
+float: left;
+}
+
+.dynamicformSpacerDark
+{
+background-color: ##Attributes.TableBorder#;
+padding: 0px;
+width: 1px;
+}
+
+.dynamicformSpacerLight
+{
+background-color: #F5F8FD;
+padding: 0px;
+}
+
+.dynamicformSpacer
+{
+background-color: ##Attributes.PageBG#; 
+height: 1px;
+padding: 0px;
+}
+
+a.dynamiclistLnk, a.dynamiclistLnk:visited 
+{
+color: #0D2498;
+text-decoration: none;
+}
+
+a.dynamiclistLnk:hover {
+text-decoration: underline;
+}
+
+div.protected {
+display: none;
+}
+
+.smartedit {
+	padding: 8px;
+	font-size: 12px;
+}
+
+.smartedit a, .smartedit a:hover {
+	text-decoration: none;
+	color: #0D2498;
+	font-weight: bold;
+	cursor: hand;
+}
+
+.smarteditbox {
+	font-size: 12px;
+	border: 1px solid #0D2498;
+	padding: 8px; 
+}
+
+.dynamicFormTabWrapper {
+	padding-right: 4px;
+	padding-top: 4px;
+	float: left;
+}
+
+.dynamicFormTabTitleOn {
+	border: 1px solid #0D2498;
+	padding: 4px;
+}
+.dynamicFormTabTitleOn a {
+	font-size: 12px;
+	color: #0D2498;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: hand;
+}
+.dynamicFormTabTitleOff {
+	border: 1px solid #89B4E4;
+	padding: 4px;
+}
+.dynamicFormTabTitleOff a {
+	font-size: 12px;
+	color: #89B4E4;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: hand;
+}
+.dynamicFormTab {
+	padding-top: 8px;
+	/*border: 1px solid #0D2498;*/
+}

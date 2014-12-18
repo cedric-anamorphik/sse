@@ -10,8 +10,7 @@ app.directive('featuredCarousel',['appDataFactory', function(appDataFactory) {
       scope.widgets.featured_carousel.data = [];
       scope.widgets.featured_carousel.fn = {};
       scope.widgets.featured_carousel.interval = 10000;
-      /*appDataFactory.loadData().then(function(page_data) {
-        if(_.has(page_data.main,'carousel') && page_data.main.carousel.length > 0) {*/
+
       if(_.has(scope.page.data.main,'carousel') && scope.page.data.main.carousel.length > 0) {
         scope.widgets.featured_carousel.data = scope.page.data.main.carousel;
         _.forEach(scope.widgets.featured_carousel.data, function(val, index) { if(index == 0) { val.active = true; } else { val.active = false; } });
@@ -24,8 +23,7 @@ app.directive('featuredCarousel',['appDataFactory', function(appDataFactory) {
         if(index == 0) { classes.push('active'); }
         return classes;
       }
-        /*}
-      });*/
+
     }
   };
 }]);

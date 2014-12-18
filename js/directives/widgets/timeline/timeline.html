@@ -1,7 +1,9 @@
 <div class="timeline" ng-show="widgets.timeline.data.length > 0">
 <div class="inner-wrapper">
-
-  <slick dots="false" infinite="true" arrows="true" slides-to-show="5" slides-to-scroll="1" data="widgets.timeline.data" init-onload="true" on-after-change="widgets.timeline.fn.set_featured();" id="slick_timeline">
+  <div class="header-wrapper">
+    <div class="cf-hnl cf-s26">{{page.data.title}} Timeline</div>
+  </div>
+  <slick dots="false" infinite="false" arrows="true" slides-to-show="5" slides-to-scroll="1" data="widgets.timeline.data" init-onload="true" focus-on-select="true" on-after-change="widgets.timeline.fn.set_featured();" on-before-change="widgets.timeline.fn.set_slide();" center-mode="true" id="slick_timeline">
     <div ng-repeat="item in widgets.timeline.data" ng-class="widgets.timeline.fn.item_classes($index);">
       <div class="image-wrapper">
         <div class="image-wrapper-inner">
@@ -11,11 +13,11 @@
     </div>
   </slick>
   <div class="selected">
-    <div class="cfont8">{{widgets.timeline.selected.title}}</div>
-    <div class="cfont9">{{widgets.timeline.selected.date}}</div>
-    <div class="cfont10">{{widgets.timeline.selected.content}}</div>
+    <div class="cf-hnl cf-s20 title">{{widgets.timeline.selected.title}}</div>
+    <div class="cf-hnl cf-s18 date">{{widgets.timeline.selected.date}}</div>
+    <div class="cf-hnl cf-s13 content">{{widgets.timeline.selected.content}}</div>
 
-    <div class="more-button more-info"><div><a href="#/{{widgets.timeline.selected.url}}" class="cfont9">More</a></div></div>
+    <div class="more-button more-info"><div><a href="#/{{widgets.timeline.selected.url}}" class="cf-hnl cf-s18">More</a></div></div>
   </div>
 
 </div>

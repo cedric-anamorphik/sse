@@ -1,0 +1,12 @@
+#header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1038;
+	transform: translate3d(0,0,0);
+}
+#sidebarFirst{
+	top: 55px;
+	margin-bottom: 55px;
+}

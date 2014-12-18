@@ -7,14 +7,11 @@ app.directive('relatedFacts',['appDataFactory', function(appDataFactory) {
     replace: true,
     link: function(scope, elem, attrs) {
       scope.widgets.related_facts = [];
-      appDataFactory.loadData().then(function(page_data) {
-        /*if(typeof page_data.sidebar.facts != 'undefined') {
-          scope.facts = page_data.sidebar.facts;
-        }*/
-        if(_.has(page_data.sidebar,'facts') && page_data.sidebar.facts.length > 0) {
-          scope.widgets.related_facts.push(page_data.sidebar.facts[0]);
-        }
-      });
+
+      if(_.has(scope.page.data.sidebar,'facts') && scope.page.data.sidebar.facts.length > 0) {
+        scope.widgets.related_facts.push(scope.page.data.sidebar.facts[0]);
+      }
+
     }
   };
 }]);
