@@ -24,6 +24,10 @@ angular.module('appDataFactory',['ngResource'])
           api_url.page = api_url.page + 'news/' + stateparams.news_year + '/' + stateparams.news_month + '/' + stateparams.news_day + '/' + stateparams.news_title;
         break;
 
+		case 'galleries':
+          api_url.page = api_url.page + 'galleries/' + stateparams.galleries_sub + '/' + stateparams.galleries_id;
+        break;
+		
         case 'planets':
           api_url.page = api_url.page + 'planets/' + stateparams.planet_id;
           if(_.has(stateparams,'sub_id')) {

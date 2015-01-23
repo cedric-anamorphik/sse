@@ -29,6 +29,16 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 			url: '/galleries/',
 			templateUrl: 'includes/partial-galleriesLanding.html'
 		})
+		.state('galleriesdetail', {
+			url: '/galleries/:galleries_sub/:galleries_id',
+			templateUrl: 'includes/partial-galleries-l2.html',
+			resolve: {
+				page_data: ['appDataFactory','$stateParams', function(appDataFactory,$stateParams) {
+					return appDataFactory.queryData('galleries',$stateParams);
+				}]
+			},
+			controller: 'galleriesCtrl'
+		})
 		.state('missionLanding',{
 			url: '/missions/',
 			templateUrl:'includes/partial-missionsLanding.html'

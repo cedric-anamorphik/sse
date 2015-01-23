@@ -88,21 +88,7 @@ $(document).ready(function(){
 	$('#header').removeClass("navbar-fixed-top");
 	// Center gallery images
 	var galpic = $('.gal-pic:nth-child(1)'),
-	galpicWidth = galpic.width();	
-	
-	// Activate flowtype
-/*	$("body").flowtype({
-		minFont:16,
-		maxFont:40,
-		fontRatio:65
-	});
-	$('#relatedFacts>p').flowtype({
-		minimum   : 200,
-		maximum   : 1200,
-		minFont   : 14,
-		maxFont   : 200,
-		fontRatio : 30
-	});*/
+	galpicWidth = galpic.width();
 
 	// Search field in header
 	var searchVis = 0;
@@ -163,68 +149,67 @@ $(document).ready(function(){
 	$('#menu').delegate('.menu-item:first-child input', 'click', function(){
 		window.location.href = "#/";
 	});
-	
 	// This is the connector function.
 	// It connects one item from the navigation carousel to one item from the
 	// stage carousel.
 	// The default behaviour is, to connect items with the same index from both
 	// carousels. This might _not_ work with circular carousels!
-	var connector = function(itemNavigation, carouselMain) {
-		return carouselMain.jcarousel('items').eq(itemNavigation.index());
-	};
+	// var connector = function(itemNavigation, carouselMain) {
+		// return carouselMain.jcarousel('items').eq(itemNavigation.index());
+	// };
 
 	// Setup the carousels. Adjust the options for both carousels here.
-	var carouselMain      = $('.carousel-main').jcarousel();
-	console.log(carouselMain);
-	var carouselNavigation = $('.carousel-navigation').jcarousel();
-	console.log(carouselNavigation);
+	// var carouselMain      = $('.carousel-main').jcarousel();
+	// console.log(carouselMain);
+	// var carouselNavigation = $('.carousel-navigation').jcarousel();
+	// console.log(carouselNavigation);
 
 	// We loop through the items of the navigation carousel and set it up
 	// as a control for an item from the stage carousel.
-	carouselNavigation.jcarousel('items').each(function() {
-		var item = $(this);
+	// carouselNavigation.jcarousel('items').each(function() {
+		// var item = $(this);
 
 	// This is where we actually connect to items.
-	var target = connector(item, carouselMain);
+	// var target = connector(item, carouselMain);
 
-	item
-		.on('jcarouselcontrol:active', function() {
-			carouselNavigation.jcarousel('scrollIntoView', this);
-			item.addClass('active');
-			var label = item.find('.navigation-label').html();
-			$('.active-label').html(label);
-		})
-		.on('jcarouselcontrol:inactive', function() {
-			item.removeClass('active');
-		})
-		.jcarouselControl({
-			target: target,
-			carousel: carouselMain
-		});
-});
+	// item
+		// .on('jcarouselcontrol:active', function() {
+			// carouselNavigation.jcarousel('scrollIntoView', this);
+			// item.addClass('active');
+			// var label = item.find('.navigation-label').html();
+			// $('.active-label').html(label);
+		// })
+		// .on('jcarouselcontrol:inactive', function() {
+			// item.removeClass('active');
+		// })
+		// .jcarouselControl({
+			// target: target,
+			// carousel: carouselMain
+		// });
+	// });
 
-// Setup controls for the stage carousel
-$('.prev-main')
-	.on('jcarouselcontrol:inactive', function() {
-		$(this).addClass('inactive');
-	})
-	.on('jcarouselcontrol:active', function() {
-		$(this).removeClass('inactive');
-	})
-	.jcarouselControl({
-		target: '-=1'
-	});
+	// Setup controls for the stage carousel
+	// $('.prev-main')
+	// .on('jcarouselcontrol:inactive', function() {
+		// $(this).addClass('inactive');
+	// })
+	// .on('jcarouselcontrol:active', function() {
+		// $(this).removeClass('inactive');
+	// })
+	// .jcarouselControl({
+		// target: '-=1'
+	// });
 
-$('.next-main')
-	.on('jcarouselcontrol:inactive', function() {
-		$(this).addClass('inactive');
-	})
-	.on('jcarouselcontrol:active', function() {
-		$(this).removeClass('inactive');
-	})
-	.jcarouselControl({
-		target: '+=1'
-	});
+	// $('.next-main')
+	// .on('jcarouselcontrol:inactive', function() {
+		// $(this).addClass('inactive');
+	// })
+	// .on('jcarouselcontrol:active', function() {
+		// $(this).removeClass('inactive');
+	// })
+	// .jcarouselControl({
+		// target: '+=1'
+	// });
 
 });
 
@@ -269,12 +254,6 @@ $(window).resize(function(){
 		offsetVal = footerOffset.top - hdrHeight;
 		$('#menu').css("height", offsetVal);
 	
-	if(winWidth<900){
-		$('.navbar.news .btn-group a').removeClass("selected");
-		$('.navbar.news .btn-group a#list').addClass("selected");
-		$('#news-gallery .item').addClass("list-group-item");
-	}
-	
 	var pathname = window.location.pathname;
 	if (pathname == "/devel/sse/dev/" || "/devel/sse/staging/"){
 		var windowH = $(window).height(),
@@ -283,6 +262,52 @@ $(window).resize(function(){
 		$("#menu").css("height", targetH);
 	}
 	
+	$('#sseGallery.people').find('.item .img-window').each(function(){
+		var thisEl = $(this);
+		if(winWidth < 1215){
+			var imgWidth = $(thisEl).width();
+			$(thisEl).css("height", imgWidth);
+		} else {
+			$(thisEl).css("height", "319px");
+		}
+	});
+	
+	$('#sseGallery.people .item').find('img.img-responsive').each(function(){
+		var thisEl = $(this),
+		parentEl = $(thisEl).parent(),
+		imgHeight = $(thisEl).height(),
+		imgWidth = $(thisEl).width(),
+		parentHeight = $(parentEl).height(),
+		imgGradient = $(parentEl).find('.txt-bg');
+		
+		if(imgHeight < parentHeight){
+			$(imgGradient).css("height", "50%");
+			var gradHeight = $(imgGradient).height(),
+				offset = (imgHeight - gradHeight) + 1;
+			$(imgGradient).css("top", offset);
+		} else {
+			$(imgGradient).css("height", "100%");
+			$(imgGradient).css("top", "0");
+		}
+	});
+	
+	$('#sseGallery.galleries .item').find('img.img-responsive').each(function(){
+		var thisEl = $(this),
+		parentEl = $(thisEl).parent(),
+		imgHeight = $(thisEl).height(),
+		parentHeight = $(parentEl).height(),
+		imgGradient = $(parentEl).find('.txt-bg');
+		
+		if(imgHeight < parentHeight){
+			$(imgGradient).css("height", "50%");
+			var gradHeight = $(imgGradient).height(),
+				offset = (imgHeight - gradHeight) + 1;
+			$(imgGradient).css("top", offset);
+		} else {
+			$(imgGradient).css("height", "100%");
+			$(imgGradient).css("top", "0");
+		}
+	});
 });
 
 /*+++++++++++++++++++++++*/
@@ -511,22 +536,93 @@ function mis(data){
 	$(currArrow).css('backgroundPosition', "-22px,0");
 }
 
+/*+++++++++++++++++++++++*/
+/* People Landing Gallery
+/*++++++++++++++++++++++*/
+function checkSize_people(data){
+	var thisEl = data,
+		parentEl = $(thisEl).parent(),
+		imgHeight = $(thisEl).height(),
+		imgGradient = $(parentEl).find('.txt-bg');
+		
+		if(imgHeight < 319){
+			$(imgGradient).css("height", "50%");
+			var gradHeight = $(imgGradient).height(),
+				offset = (imgHeight - gradHeight) + 1;
+			$(imgGradient).css("top", offset);
+		} else {
+			$(imgGradient).css("height", "100%");
+			$(imgGradient).css("top", "0");
+		}
+};
+
+/*+++++++++++++++++++++++++*/
+/* Galleries Landing Gallery
+/*++++++++++++++++++++++++*/
+function checkSize_galleries(data){
+	var thisEl = data,
+		parentEl = $(thisEl).parent(),
+		imgHeight = $(thisEl).height(),
+		imgGradient = $(parentEl).find('.txt-bg'),
+		winWidth = $(window).innerWidth(),
+		itemWidth = $('#sseGallery.galleries .item').width(),
+		itemHeight = itemWidth*.69;
+		
+		if(winWidth < 1215){
+			$('#sseGallery.galleries').find('.item').css("height", itemHeight);
+			$('#sseGallery.galleries').find('.img-window').css("height", itemHeight);
+			$('#sseGallery.galleries').find('a').css("height", itemHeight);
+		}
+		
+		if(imgHeight < 224){
+			$(imgGradient).css("height", "50%");
+			var gradHeight = $(imgGradient).height(),
+				offset = (imgHeight - gradHeight) + 1;
+			$(imgGradient).css("top", offset);
+		} else {
+			$(imgGradient).css("height", "100%");
+			$(imgGradient).css("top", "0");
+		}
+};
+
+function setGalleryItemShadow(){
+	$('#sseGallery .item').find('.img-responsive').each(function(){
+		var thisEl = $(this),
+		parentEl = $(thisEl).parent(),
+		imgHeight = $(thisEl).height(),
+		parentHeight = $(parentEl).height(),
+		imgGradient = $(parentEl).find('.txt-bg');
+		
+		if(imgHeight < parentHeight){
+			$(imgGradient).css("height", "50%");
+			var gradHeight = $(imgGradient).height(),
+				offset = (imgHeight - gradHeight) + 1;
+			$(imgGradient).css("top", offset);
+		} else {
+			$(imgGradient).css("height", "100%");
+			$(imgGradient).css("top", "0");
+		}
+	});
+}
+
+/*++++++++++++++++++++++*/
+/* News Landing Gallery
+/*++++++++++++++++++++++*/
 // News Items
-function hover(el){
+function newsHover(el){
 	var currEl = el,
-	target = $(currEl).parent().parent().parent();
+		target = $(currEl).parent().parent();
 	$(target).addClass("highlighted");
 };
-function hoverOut(el){
+function newsHoverOut(el){
 	var currEl = el,
-	target = $(currEl).parent().parent().parent();
+		target = $(currEl).parent().parent();
 	$(target).removeClass("highlighted");
 };
 function gotoArticle(el){
 	var currEl = el,
-	parentEl = $(currEl).parent(),
-	target = $(parentEl).attr("href");
-	alert(target);
+		parentEl = $(currEl).parent(),
+		target = $(parentEl).attr("href");
 }
 
 $('#factoids-carousel').on('slide.bs.carousel', function (event) {
@@ -537,3 +633,125 @@ $('#factoids-carousel').on('slide.bs.carousel', function (event) {
 	var to = next.index();
 	var direction = event.direction;
 });
+
+// Detect BS State
+function checkGalState(){
+	var state,
+		scale,
+		itemHeight,
+		innerHeight,
+		galWidth = $('body').find('.img-gallery').width(),
+		listState = $('#sseGallery.news .btn-group #list'),
+		gridState = $('#sseGallery.news .btn-group #grid'),
+		winWidth = $(window).innerWidth();
+	
+	if ($(listState).hasClass("selected") && winWidth > 600){
+		$('#news-gallery .item').addClass('list-group-item');
+		$('#news-gallery .item .gal-name').addClass("notransition");
+		$('#sseGallery.news .btn-group').css("display", "inline-block");
+	} else if($(listState).hasClass("selected") && winWidth < 600){
+		$('#news-gallery .item').removeClass('list-group-item');
+		$('#news-gallery .item .gal-name').removeClass("notransition");
+		$('#sseGallery.news .btn-group').css("display", "none");
+	};
+	
+	if(isBreakpoint('xs')){
+		state = "xs";
+		scale = "1";
+		itemHeight = galWidth * scale;
+		innerHeight = itemHeight - 25;
+		$('#sseGallery.news .item').css('height', itemHeight);
+		$('#sseGallery.news .item .img-window').css('height', innerHeight);
+		$('#sseGallery.news .item .img-window').css('width', innerHeight);
+		$('#sseGallery.news .item .item-ovrly').css('height', innerHeight);
+		$('#sseGallery.news .item .item-ovrly').css('width', innerHeight);
+		$('#sseGallery.news .item .txt-background').css('height', innerHeight);
+		$('#sseGallery.news .item .txt-background').css('width', innerHeight);
+		if ($(gridState).hasClass("selected")){
+			$('#sseGallery.news .btn-group').css("display", "none");
+		}
+		setGalleryItemShadow();
+	};
+	
+	if(isBreakpoint('sm')){
+		state = "sm";
+		scale = ".5";
+		itemHeight = galWidth * scale;
+		innerHeight = itemHeight - 25;
+		$('#sseGallery.news .item').css('height', itemHeight);
+		$('#sseGallery.news .item .img-window').css('height', innerHeight);
+		$('#sseGallery.news .item .img-window').css('width', innerHeight);
+		$('#sseGallery.news .item .item-ovrly').css('height', innerHeight);
+		$('#sseGallery.news .item .item-ovrly').css('width', innerHeight);
+		$('#sseGallery.news .item .txt-background').css('height', innerHeight);
+		$('#sseGallery.news .item .txt-background').css('width', innerHeight);
+		$('#sseGallery.news .btn-group').css("display", "inline-block");
+		setGalleryItemShadow();
+	};
+	if(isBreakpoint('md')){
+		state = "md";
+		scale = ".33";
+		itemHeight = galWidth * scale;
+		innerHeight = itemHeight - 25;
+		$('#sseGallery.news .item').css('height', itemHeight);
+		$('#sseGallery.news .item .img-window').css('height', innerHeight);
+		$('#sseGallery.news .item .img-window').css('width', innerHeight);
+		$('#sseGallery.news .item .item-ovrly').css('height', innerHeight);
+		$('#sseGallery.news .item .item-ovrly').css('width', innerHeight);
+		$('#sseGallery.news .item .txt-background').css('height', innerHeight);
+		$('#sseGallery.news .item .txt-background').css('width', innerHeight);
+		setGalleryItemShadow();
+	};
+	if(isBreakpoint('lg')){
+		state = "lg";
+		scale = ".25";
+		itemHeight = galWidth * scale;
+		innerHeight = itemHeight - 25;
+		$('#sseGallery.news .item').css('height', itemHeight);
+		$('#sseGallery.news .item .img-window').css('height', innerHeight);
+		$('#sseGallery.news .item .img-window').css('width', innerHeight);
+		$('#sseGallery.news .item .item-ovrly').css('height', innerHeight);
+		$('#sseGallery.news .item .item-ovrly').css('width', innerHeight);
+		$('#sseGallery.news .item .txt-background').css('height', innerHeight);
+		$('#sseGallery.news .item .txt-background').css('width', innerHeight);
+		setGalleryItemShadow();
+	};
+};
+function isBreakpoint(alias){
+	return $('.device-' + alias).is(':visible');
+}
+
+/*++++++++++++++++++++++++++++++++++*/
+/* Responsive Elliptical Truncating
+/* Multi-Line-Support
+/*+++++++++++++++++++++++++++++++++*/
+// $('#user-menu .btn-search').on("click", multiParElliptical());
+function multiParElliptical(){
+	var cntnr = $('.par-elliptical');
+	cntnr.html('<span>'+cntnr.html().replace(/ /g,'</span> <span>')+'</span>');
+	var words = Array.prototype.slice.call(cntnr.find("span"),0);
+	var lastw = null;
+	for(var i=0,c=words.length;i<c;i++){
+		var w = $(words[i]);
+		var wbot = w.height() + w.offset().top;
+		var wleft = w.position().left;
+		var wright = wleft+w.width();
+		console.log(wbot);
+		if(wbot >= cntnr.height() && wleft <= cntnr.width()){
+			w = $(words[i+1]);
+			lastw = w.text("...");  
+			break;
+		}
+	}
+	cntnr.html(cntnr.text());
+	console.log(lastw);
+};
+
+/*++++++++++++++*/
+/* Squishy Text
+/*++++++++++++++*/
+function txtResponsive(){
+	var cntnr = $('.txt-cntnr'),
+		resText = $('.txt-responsive');
+	
+}

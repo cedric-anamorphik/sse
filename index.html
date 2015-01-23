@@ -7,8 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
-		<link rel="stylesheet" type="text/css" href="css/planet-interactive.css"/>
-		<link rel="stylesheet" type="text/css" href="css/SSE_gallery.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/planet-interactive.css"/>
+		<link rel="stylesheet" type="text/css" href="css/SSE_gallery.css"> -->
 		
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script>
@@ -26,13 +26,13 @@
 		<script src="js/scripts.js"></script>
 		<script src="js/ui-router-styles.js"></script>
 		<script src="js/models/angular-timer.min.js"></script>
-		<script type="text/javascript" src="js/jquery.jcarousel-core.min.js"></script>
+		<!-- <script type="text/javascript" src="js/jquery.jcarousel-core.min.js"></script>
 		<script type="text/javascript" src="js/jquery.jcarousel-control.min.js"></script>
 		<script type="text/javascript" src="js/jquery.jcarousel-scrollintoview.min.js"></script>
-		<script type="text/javascript" src="js/jquery.jcarousel-autoscroll.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jcarousel-autoscroll.min.js"></script> -->
 
-		<script type="text/javascript" src="js/libraries/jquery-mousewheel/jquery.mousewheel.js"></script>
-		<script type="text/javascript" src="js/libraries/gsap/TweenMax.js"></script>
+		<!-- <script type="text/javascript" src="js/libraries/jquery-mousewheel/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/libraries/gsap/TweenMax.js"></script> -->
 		<script type="text/javascript" src="js/libraries/lodash/lodash.js"></script>
 		<script type="text/javascript" src="js/libraries/lodash/angular-lodash.js"></script>
 		<script type="text/javascript" src="js/libraries/angular-ui-bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
@@ -60,7 +60,7 @@
 		<script type="text/javascript" src="js/directives/widgets/sidebar_nav/sidebar_nav.js"></script>
 		<script type="text/javascript" src="js/directives/widgets/timeline/timeline.js"></script>
 		<script type="text/javascript" src="js/directives/widgets/planetmoons/planetmoons.js"></script>
-		<script type="text/javascript" src="js/directives/widgets/planet_interactive/planet_interactive.js"></script>
+		<!-- <script type="text/javascript" src="js/directives/widgets/planet_interactive/planet_interactive.js"></script> -->
 		<script type="text/javascript" src="js/directives/widgets/quick_links/quick_links.js"></script>
 		<script type="text/javascript" src="js/directives/widgets/vital_stats/vital_stats.js"></script>
 		<script type="text/javascript" src="js/directives/widgets/text_content_parse/text_content_parse.js"></script>
@@ -102,14 +102,14 @@
 						<!-- New Menu -->
 						<div id="menu-panel">
 							<div id="menu" ng-controller="MainNavCtrl">
-								<accordion close-others="true">
+								<accordion close-others="true" id="mm-accordion">
 									<accordion-group ng-repeat="menu in mainMenu" is-open="group.open" class="menu-item" >
 										<accordion-heading>
 											<div class="arrow" onclick="mis(this)"></div>
 											<input type="button" class="btn btn-primary hnro" data-url="{{menu.sectionUrl}}" onmouseover="mif(this)" onmouseout="miu(this)" onclick="mis(this)" value="{{menu.sectionTitle}}">
 										</accordion-heading>
 										<ul id="{{menu.sectionName}}-tgt">
-											<a href="#/{{menu.sectionUrl}}" onclick="mm()">Main</a>
+											<a href="#/{{menu.sectionUrl}}" onclick="mm()" class="hnro">Main</a>
 											<li ng-repeat="sub in menu.sub">
 												<a ng-href="#/{{sub.pageUrl}}" onclick="mm()">
 													<p title="{{sub.pageTitle}}" class="hnro">{{sub.pageTitle}}</p>
