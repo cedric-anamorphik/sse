@@ -9,23 +9,26 @@ app.directive('vitalStats', ['appDataFactory', function(appDataFactory) {
       if(!_.has(scope.widgets,'vital_stats')) {
         scope.widgets.vital_stats = {};
       }
+      scope.widgets.vital_stats.show = false;
       scope.widgets.vital_stats.missions = {};
       scope.widgets.vital_stats.missions.data = [];
       scope.widgets.vital_stats.missions.selected = {};
       scope.widgets.vital_stats.missions.fn = {};
       scope.widgets.vital_stats.stats_include = '';
 
-      if(_.has(scope.page.data,'missions')) {
+      if(_.has(scope.page.data,'missions') && scope.page.data.missions.length > 0) {
         scope.widgets.vital_stats.missions.data = scope.page.data.missions;
         _.forEach(scope.widgets.vital_stats.missions.data,function(mission) {
-          mission.classes = ['col-md-2','col-sm-3','col-xs-4','spritz','mission-' + mission.type.toLowerCase()];
+          mission.classes = ['col-md-2','col-sm-3','col-xs-3','spritz','mission-type','mission-' + mission.type.toLowerCase()];
         });
         scope.widgets.vital_stats.missions.data[0].classes.push('active');
         scope.widgets.vital_stats.missions.selected = scope.widgets.vital_stats.missions.data[0];
+        scope.widgets.vital_stats.show = true;
       }
 
       if(_.has(scope.page.data,'vitalstats')) {
         scope.widgets.vital_stats.stats_include = scope.page.data.vitalstats;
+        scope.widgets.vital_stats.show = true;
       }
 
       scope.widgets.vital_stats.missions.fn.select = function(index) {

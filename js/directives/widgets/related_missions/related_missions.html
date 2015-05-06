@@ -8,14 +8,14 @@
       <div class="mission-list clearfix">
         <div class="col-md-6 col-sm-6 col-xs-6">
           <ul>
-          <li ng-repeat="mission in widgets.related_missions.columns.right">
+          <li ng-repeat="mission in widgets.related_missions.columns.left">
             <a href="#/{{mission.url}}">{{mission.title}}</a>
           </li>
           </ul>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6">
           <ul>
-          <li ng-repeat="mission in widgets.related_missions.columns.left">
+          <li ng-repeat="mission in widgets.related_missions.columns.right">
             <a href="#/{{mission.url}}">{{mission.title}}</a>
           </li>
           </ul>

@@ -15,7 +15,7 @@
   <div class="selected">
     <div class="cf-hnl cf-s20 title">{{widgets.timeline.selected.title}}</div>
     <div class="cf-hnl cf-s18 date">{{widgets.timeline.selected.date}}</div>
-    <div class="cf-hnl cf-s13 content">{{widgets.timeline.selected.content}}</div>
+    <div class="cf-hnl cf-s13 content" ng-bind-html="widgets.timeline.selected.content"></div>
 
     <div class="more-button more-info"><div><a href="#/{{widgets.timeline.selected.url}}" class="cf-hnl cf-s18">More</a></div></div>
   </div>

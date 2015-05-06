@@ -7,7 +7,7 @@
 </div>
 </div><!-- /header-wrapper -->
 <div class="content-wrapper clearfix">
-<div ng-repeat="item in widgets.news.data | limitTo:widgets.news.limitTo" class="item col-md-4 col-sm-4 col-xs-6 clearfix">
+<div ng-repeat="item in widgets.news.data | limitTo:widgets.news.limitTo" class="item col-md-4 col-sm-4 col-xs-12 clearfix">
   <!-- <div class="news-img pull-left clearfix" ng-show="widgets.news.fn.showThumbnail(item);"> --><img ng-src="{{item.image}}" class="pull-left" ng-show="widgets.news.fn.showThumbnail(item);" /><!-- </div> -->
 
   <div class="news-item"><a href="#/{{item.url}}" class="cfont11 cf-s12">{{item.title | characters: 65 }}</a></div>

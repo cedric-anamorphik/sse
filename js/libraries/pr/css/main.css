@@ -1,0 +1,109 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #2b1d2f;
+}
+
+.interactive-container {
+  position: relative;
+  margin-top: 100px;
+}
+
+.interactive-inner {
+  position: relative;
+}
+
+.control {
+  position: absolute;
+  font-size: 5em;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  top: 200px;
+  cursor: pointer;
+  z-index: 100;
+}
+.control:hover, .control:focus {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.control.left {
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.control.right {
+  right: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.interactive-object,
+.interactive-object {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.interactive-object {
+  position: absolute;
+}
+
+.interactive-object.active {
+  z-index: 100;
+}
+
+.interactive-object img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.interactive-object .overlay {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+.interactive-object .object-container {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  transition: 0.4s ease-in-out;
+  transition-property: width, margin-left, margin-top, padding-bottom;
+}
+
+.interactive-object.active .overlay {
+  opacity: 0;
+}
+.interactive-object.active .object-container {
+  width: 200%;
+  padding-bottom: 200%;
+  margin-left: -50%;
+  margin-top: -50%;
+}
+
+#saturn .ring {
+  opacity: 0.8;
+}
+#saturn img {
+  width: 233%;
+  left: -66.5%;
+}
+
+#uranus img {
+  top: -50%;
+  transition: 0.4s ease-in-out;
+  transition-property: top;
+}
+
+#sun img {
+  width: 150%;
+  height: 150%;
+  left: -25%;
+  top: -25%;
+}

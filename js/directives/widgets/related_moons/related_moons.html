@@ -1,0 +1,66 @@
+<div id="related-moons-section" ng-show="widgets.related_moons.show_widget" ng-class="widgets.related_moons.container.classes">
+  <div class="sidebar-second-col-wrapper">
+    <div class="content-wrapper">
+      <div class="moons" ng-repeat="list in widgets.related_moons.data">
+        <div class="cfont1 cf-hnt cf-s17 title">{{list.listtitle}}</div>
+        <div class="moon-list clearfix">
+          <div class="column col-md-6 col-sm-6 col-xs-6">
+            <ul>
+              <li ng-repeat="moon in list.column_left" class="clearfix">
+                <div>{{moon.index}}.</div><a href="#/{{moon.url}}">{{moon.title}}</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column col-md-6 col-sm-6 col-xs-6">
+            <ul>
+              <li ng-repeat="moon in list.column_right" class="clearfix">
+                <div>{{moon.index}}.</div><a href="#/{{moon.url}}">{{moon.title}}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="main moons" ng-show="widgets.related_moons.main.data.listitems.length > 0">
+        <div class="cfont1 cf-hnt cf-s17 title">{{widgets.related_moons.main.data.listtitle}}</div>
+        <div class="moon-list clearfix">
+          <div class="column col-md-6 col-sm-6 col-xs-6">
+            <ul>
+              <li ng-repeat="moon in widgets.related_moons.main.columns.left" class="clearfix">
+                <div>{{moon.index}}.</div><a href="#/{{moon.url}}">{{moon.title}}</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column col-md-6 col-sm-6 col-xs-6">
+            <ul>
+              <li ng-repeat="moon in widgets.related_moons.main.columns.right" class="clearfix">
+                <div>{{moon.index}}.</div><a href="#/{{moon.url}}">{{moon.title}}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="provisional moons" ng-show="widgets.related_moons.provisional.data.listitems.length > 0">
+        <div class="cfont1 cf-hnt cf-s17 title">{{widgets.related_moons.provisional.data.listtitle}}</div>
+        <div class="moon-list clearfix">
+          <div class="column col-md-6 col-sm-6 col-xs-6">
+            <ul>
+              <li ng-repeat="moon in widgets.related_moons.provisional.columns.left" class="clearfix">
+                <div>{{moon.index}}.</div><a href="#/{{moon.url}}">{{moon.title}}</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column col-md-6 col-sm-6 col-xs-6">
+            <ul>
+              <li ng-repeat="moon in widgets.related_moons.provisional.columns.right" class="clearfix">
+                <div>{{moon.index}}.</div><a href="#/{{moon.url}}">{{moon.title}}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    -->
+    </div>
+  </div>
+</div>
